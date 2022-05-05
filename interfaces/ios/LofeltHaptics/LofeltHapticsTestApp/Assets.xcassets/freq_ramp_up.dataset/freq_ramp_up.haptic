@@ -1,0 +1,41 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "metadata": {
+    "author": "",
+    "editor": "By hand",
+    "source": "",
+    "project": "",
+    "tags": [],
+    "description": ""
+  },
+  "signals": {
+    "continuous": {
+      "envelopes": {
+        "amplitude": [
+          {
+            "time": 0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 2.0,
+            "amplitude": 1.0
+          }
+        ],
+        "frequency": [
+          {
+            "time": 0,
+            "frequency": 1.0
+          },
+          {
+            "time": 2.0,
+            "frequency": 0.0
+          }
+        ]
+      }
+    }
+  }
+}

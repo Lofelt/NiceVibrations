@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "ramp_down_with_emp.haptic",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

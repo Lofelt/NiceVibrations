@@ -1,0 +1,53 @@
+{
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "metadata": {
+        "author": "",
+        "editor": "",
+        "source": "",
+        "project": "",
+        "tags": [],
+        "description": "Varying amplitude with constant frequency"
+    },
+    "signals": {
+        "continuous": {
+            "envelopes": {
+                "amplitude": [
+                    {
+                        "time": 0.0,
+                        "amplitude": 1
+                    },
+                    {
+                        "time": 2.0,
+                        "amplitude": 1.0
+                    },
+                    {
+                        "time": 3.5,
+                        "amplitude": 0.0
+                    },
+                    {
+                        "time": 5.0,
+                        "amplitude": 1
+                    },
+                    {
+                        "time": 10,
+                        "amplitude": 0.0
+                    }
+                ],
+                "frequency": [
+                    {
+                        "time": 0.0,
+                        "frequency": 0
+                    },
+                    {
+                        "time": 10.0,
+                        "frequency": 0
+                    }
+                ]
+            }
+        }
+    }
+}

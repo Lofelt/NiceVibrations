@@ -1,0 +1,85 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "metadata": {
+    "author": "",
+    "editor": "Lofelt Studio",
+    "source": "",
+    "project": "",
+    "tags": [],
+    "description": ""
+  },
+  "signals": {
+    "continuous": {
+      "envelopes": {
+        "amplitude": [
+          {
+            "time": 0,
+            "amplitude": 0
+          },
+          {
+            "time": 0.5,
+            "amplitude": 0,
+            "emphasis": {
+              "amplitude": 1.0,
+              "frequency": 0.0
+            }
+          },
+          {
+            "time": 1.0,
+            "amplitude": 0,
+            "emphasis": {
+              "amplitude": 1.0,
+              "frequency": 0.2
+            }
+          },
+          {
+            "time": 1.5,
+            "amplitude": 0,
+            "emphasis": {
+              "amplitude": 1.0,
+              "frequency": 0.4
+            }
+          },
+          {
+            "time": 2.0,
+            "amplitude": 0,
+            "emphasis": {
+              "amplitude": 1.0,
+              "frequency": 0.6
+            }
+          },
+          {
+            "time": 2.5,
+            "amplitude": 0,
+            "emphasis": {
+              "amplitude": 1.0,
+              "frequency": 0.8
+            }
+          },
+          {
+            "time": 2.5,
+            "amplitude": 0,
+            "emphasis": {
+              "amplitude": 1.0,
+              "frequency": 1.0
+            }
+          }
+        ],
+        "frequency": [
+          {
+            "time": 0,
+            "frequency": 0.0
+          },
+          {
+            "time": 2.5,
+            "frequency": 0.0
+          }
+        ]
+      }
+    }
+  }
+}

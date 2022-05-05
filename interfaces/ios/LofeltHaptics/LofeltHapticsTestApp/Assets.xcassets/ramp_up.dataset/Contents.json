@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "ramp_up.haptic",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
