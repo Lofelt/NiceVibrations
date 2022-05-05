@@ -1,0 +1,12 @@
+/*! \mainpage Overview
+ *
+ * This is the API documentation for Nice Vibrations, a Unity plugin by
+ * <a href="https://lofelt.com/">Lofelt</a> that provides haptic feedback for mobile devices
+ * and gamepads.
+ *
+ * Read the <a href="https://developer.lofelt.com/integrating-haptics/nice-vibrations-by-lofelt/">
+ * online documentation</a> for an introduction and more high-level guide to Nice Vibrations.
+ *
+ * Get Nice Vibrations from the <a href="https://assetstore.unity.com/packages/tools/integration/nice-vibrations-by-lofelt-hd-haptic-feedback-for-mobile-and-game-197444">
+ * Unity Asset Store</a>.
+ */

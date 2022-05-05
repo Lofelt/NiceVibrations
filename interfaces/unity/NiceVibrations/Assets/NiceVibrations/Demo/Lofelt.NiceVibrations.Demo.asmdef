@@ -1,0 +1,15 @@
+{
+    "name": "Lofelt.NiceVibrations.Demo",
+    "references": [
+        "GUID:57a0b9bc628ab4740af4b6f1f0b2e134"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
