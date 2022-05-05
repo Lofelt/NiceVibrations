@@ -1,0 +1,169 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+android {
+    compileSdkVersion 31
+
+    defaultConfig {
+        minSdkVersion 17
+
+        // Don't warn about not using the latest available SDK version.
+        // Upgrading the target SDK requires upgrading Gradle, the Android
+        // Gradle Plugin, the Rust Gradle Plugin and Java. The updated Java
+        // broke the CI, as the sdkmanager, used to install the NDK on the CI,
+        // is not compatible with Java 11.
+        //noinspection OldTargetApi
+        targetSdkVersion 31
+
+        versionCode 1
+        versionName "1.3.3"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    // Specifying the version of the NDK is needed because otherwise the Rust
+    // plugin doesn't find the NDK. The actual version doesn't matter, any would do.
+    // See https://github.com/mozilla/rust-android-gradle/issues/29.
+    android.ndkVersion "21.3.6528147"
+
+    buildTypes {
+        release {
+            buildConfigField("String", "VERSION_NAME", "\"${defaultConfig.versionName}\"")
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField("String", "VERSION_NAME", "\"${defaultConfig.versionName}\"")
+            jniDebuggable true
+
+            // The doNotStrip option is not properly scoped to the "debug" build type, therefore
+            // it is commented out. Uncomment this if you need to debug the Rust code.
+            // See https://issuetracker.google.com/issues/155215248.
+            // But even with this debugging doesn't yet work,
+            // see https://github.com/mozilla/rust-android-gradle/issues/22.
+//            packagingOptions {
+//                doNotStrip '**/*.so'
+//            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        // generate to the CLI a text report of issues
+        textReport true
+        // treat all warnings as errors
+        warningsAsErrors true
+    }
+}
+
+apply plugin: 'org.mozilla.rust-android-gradle.rust-android'
+
+dependencies {
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'junit:junit:4.13.2'
+
+    // The version check here is disabled, because it incorrectly warns that a
+    // new version, "20030203.000550", is available. That version however is more
+    // than 15 years old.
+    //noinspection GradleDependency
+    androidTestImplementation 'commons-io:commons-io:2.11.0'
+
+    implementation 'androidx.annotation:annotation:1.3.0'
+}
+
+cargo {
+    module = "../../../../core/api"
+    targetDirectory = "../../../../target"
+    libname = "lofelt_sdk"
+    targets = ["arm", "x86", "arm64", "x86_64"]
+    verbose = true
+    // Although the Java library has a minSdkVersion=17, it only loads Lofelt Haptics Core shared
+    // library (.so) for Android SDK API levels >= 26 so it is built only from that API level on.
+    apiLevel = 26
+    // There doesn't seem to be a simpler way to get the current buildType than to check the task names,
+    // see https://stackoverflow.com/a/53261807/1005419.
+    profile = gradle.startParameter.taskNames.any { it.toLowerCase().contains("debug") } ? "debug" : "release"
+}
+
+// Inspired by https://stackoverflow.com/a/52286740/1005419
+android.libraryVariants.all { variant ->
+    if (variant.name == 'release') {
+        project.tasks.create("generateJavadoc", Javadoc) {
+            group "Build"
+            description "Generate API documentation with Javadoc"
+            failOnError true
+
+            doFirst {
+                classpath = project.files(variant.javaCompileProvider.get().classpath.files,
+                        project.android.getBootClasspath())
+            }
+
+            destinationDir = file("../javadoc/")
+            source = variant.sourceSets.collect { sourceSet -> sourceSet.java.sourceFiles }
+                    .inject { acc, val -> acc + val }
+
+            options.addStringOption('Xdoclint:all', '-Xwerror')
+            options.windowTitle = "Lofelt Studio SDK"
+            options.memberLevel = JavadocMemberLevel.PROTECTED
+            options.links("https://developer.android.com/reference/")
+
+            // Disable a bunch of things that clutter the navigation bar. For our small API such
+            // navigation elements are not needed.
+            options.noDeprecatedList()
+            options.noHelp()
+            options.noIndex()
+            options.noTree()
+
+            // Workaround for https://github.com/gradle/gradle/issues/11182
+            def currentJavaVersion = JavaVersion.current()
+            if (currentJavaVersion >= JavaVersion.VERSION_1_9) {
+                options.addStringOption("-release", "8")
+            }
+        }
+    }
+}
+
+// Taken from https://github.com/mozilla/rust-android-gradle/blob/master/samples/library/build.gradle
+afterEvaluate {
+    android.libraryVariants.all { variant ->
+        def productFlavor = ""
+        variant.productFlavors.each {
+            productFlavor += "${it.name.capitalize()}"
+        }
+        def buildType = "${variant.buildType.name.capitalize()}"
+        tasks["generate${productFlavor}${buildType}Assets"].dependsOn(tasks["cargoBuild"])
+    }
+}
+
+// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
+afterEvaluate {
+    publishing {
+        publications {
+            LofeltHaptics(MavenPublication) {
+                from components.release
+                version = android.defaultConfig.versionName
+                groupId = "com.lofelt.haptics"
+                artifactId = "lofelt-haptics"
+            }
+        }
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = "https://maven.pkg.github.com/lofelt/lofelt-sdk"
+                credentials {
+                    username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
+                    password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
+                }
+            }
+        }
+    }
+}

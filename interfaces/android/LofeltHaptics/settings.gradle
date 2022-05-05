@@ -1,0 +1,2 @@
+include ':LofeltHaptics'
+rootProject.name = "LofeltHaptics"
