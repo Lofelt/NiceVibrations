@@ -25,7 +25,7 @@ use {
             self,
             streaming::{self, AmplitudeEvent, FrequencyEvent},
         },
-        HapticsController, RealtimeHapticEvent, VersionSupport,
+        HapticsController, VersionSupport,
     },
     std::{
         ffi::c_void,
@@ -48,11 +48,6 @@ pub struct LofeltSdkController(HapticsController);
 /// A collection of callbacks that the core uses to call back into native driver code
 #[repr(C)]
 pub struct Callbacks {
-    /// Will be called when new haptic events have been produced from audio analysis
-    /// of realtime audio-to-haptics
-    play_realtime_audio_to_haptics_events:
-        extern "C" fn(*mut c_void, *const RealtimeHapticEvent, usize),
-
     /// Will be called for amplitude events streamed during pre-authored clip playback
     play_streaming_amplitude_event: extern "C" fn(*mut c_void, AmplitudeEvent),
 
@@ -142,34 +137,7 @@ pub extern "C" fn lofelt_sdk_controller_create(
     };
 
     let mut haptics_controller = HapticsController::new(Box::new(player));
-    set_controller_audio_to_haptic_callback(&mut haptics_controller, native_driver, callbacks);
     Box::into_raw(Box::new(LofeltSdkController(haptics_controller)))
-}
-
-/// Helper that passes the audio-to-haptic callback from `callbacks` to the
-/// `HapticController`
-fn set_controller_audio_to_haptic_callback(
-    haptics_controller: &mut HapticsController,
-    native_driver: *mut c_void,
-    callbacks: Callbacks,
-) {
-    let native_driver_for_callback = CVoidPtr(native_driver);
-
-    // `audio_to_haptic_closure` uses the c-to-rust-and-back-with-data pattern
-    // https://github.com/Lofelt/code-patterns/blob/master/c-to-rust-and-back-with-data/src/c_api.rs
-    // It calls `audio_to_haptic_callback` internally with
-    // 1. `native_driver`
-    // 2. The arguments that get passed it from `HapticsController`
-    // The reason we use `audio_to_haptic_closure` is so that we can call into C function pointers
-    // from `core/lib` without `core/lib` being aware that they are C function pointers.
-    let audio_to_haptic_closure = move |buffer: &[RealtimeHapticEvent]| {
-        (callbacks.play_realtime_audio_to_haptics_events)(
-            native_driver_for_callback.0,
-            buffer.as_ptr(),
-            buffer.len(),
-        )
-    };
-    haptics_controller.set_audio_to_haptic_callback(audio_to_haptic_closure);
 }
 
 /// Deallocates `LofeltSdkController` struct.
@@ -318,60 +286,6 @@ pub unsafe extern "C" fn lofelt_sdk_controller_get_clip_duration(
     controller.0.get_clip_duration()
 }
 
-/// Registers a realtime audio source with the controller.
-///
-/// This must be called before attempting to process audio via
-/// lofelt_sdk_controller_process_audio_buffer.
-///
-/// Only a single audio source is currently supported.
-#[no_mangle]
-pub extern "C" fn lofelt_sdk_controller_register_audio_source(
-    controller: &mut LofeltSdkController,
-    sample_rate: f32,
-) -> c_int {
-    match controller.0.register_audio_source(sample_rate) {
-        Ok(_) => SUCCESS,
-        Err(error) => set_error(format!("Error registering audio source: \n{}", error)),
-    }
-}
-
-/// Unregisters a realtime audio source previously registered with
-/// `lofelt_sdk_controller_register_audio_source()`.
-#[no_mangle]
-pub extern "C" fn lofelt_sdk_controller_unregister_audio_source(
-    controller: &mut LofeltSdkController,
-) -> c_int {
-    match controller.0.unregister_audio_source() {
-        Ok(_) => SUCCESS,
-        Err(error) => set_error(format!("Error unregistering audio source: \n{}", error)),
-    }
-}
-
-/// Processes an audio buffer for haptic analysis.
-///
-/// Only mono input is currently supported.
-///
-/// # Arguments
-/// * `audio_buffer` - A pointer to the first sample of a monophonic audio buffer.
-///
-/// * `buffer_length` - The number of samples in the buffer.
-///
-/// # Safety
-/// `audio_buffer` and `buffer_length` must point to valid data.
-#[no_mangle]
-pub unsafe extern "C" fn lofelt_sdk_controller_process_audio_buffer(
-    controller: &mut LofeltSdkController,
-    audio_buffer: *const f32,
-    buffer_length: usize,
-) -> c_int {
-    let buffer = std::slice::from_raw_parts(audio_buffer, buffer_length);
-
-    match controller.0.process_audio_buffer(buffer) {
-        Ok(_) => SUCCESS,
-        Err(error) => set_error(format!("Error processing audio buffer: \n{}", error)),
-    }
-}
-
 /// Returns the length of the last error message in bytes, or 0 if there is no last
 /// error message.
 ///
@@ -416,18 +330,10 @@ mod tests {
 
     #[no_mangle]
     pub extern "C" fn init_thread_dummy() {}
-
-    pub extern "C" fn play_audio_to_haptic_dummy(
-        _: *mut c_void,
-        _: *const RealtimeHapticEvent,
-        _: usize,
-    ) {
-    }
-
+    
     #[test]
     fn check_errors_play() {
         let callbacks = Callbacks {
-            play_realtime_audio_to_haptics_events: play_audio_to_haptic_dummy,
             play_streaming_amplitude_event: play_streaming_amplitude_event_dummy,
             play_streaming_frequency_event: play_streaming_frequency_event_dummy,
             init_thread: init_thread_dummy,
@@ -445,7 +351,6 @@ mod tests {
     #[test]
     fn check_errors_load() {
         let callbacks = Callbacks {
-            play_realtime_audio_to_haptics_events: play_audio_to_haptic_dummy,
             play_streaming_amplitude_event: play_streaming_amplitude_event_dummy,
             play_streaming_frequency_event: play_streaming_frequency_event_dummy,
             init_thread: init_thread_dummy,
