@@ -12,7 +12,7 @@ pub use clip_players;
 pub use datamodel::VersionSupport;
 pub use utils::Error;
 
-/// Class for playing pre-authored clips and realtime audio-to-haptics
+/// Class for playing pre-authored clips
 pub struct HapticsController {
     /// Player to which all functionality of playing back pre-authored clips is delegated to
     pub pre_authored_clip_player: Box<dyn PreAuthoredClipPlayback>,

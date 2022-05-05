@@ -22,14 +22,12 @@ extern NSString *_Nonnull const LofeltErrorDomain;
 
              When the app is put into the background, Core Haptics will not allow
              playing any haptics. LofeltHaptics will detect this situation and cease
-             all activity such as realtime audio-to-haptics processing.
+             all activity.
              When the app is put into the foreground again, Core Haptics will allow
              playing haptics again, and LofeltHaptics re-initalizes itself. However,
              haptics that were interrupted when the app was backgrounded do not
              automatically resume and need to be started again by calling @c play().
-             Realtime audio-to-haptics will resume automatically, no need to call
-             @c attachAudioSource() again.
- @author     Joao Freire, James Kneafsey, Thomas McGuire
+ @author     Joao Freire, James Kneafsey, Thomas McGuire, Tomash GHz
  @copyright  © 2020 Lofelt. All rights reserved.
  */
 @interface LofeltHaptics : NSObject
@@ -158,14 +156,6 @@ extern NSString *_Nonnull const LofeltErrorDomain;
     @return         Duration of the loaded clip
  */
 - (float)getClipDuration;
-
-/*! @abstract           Attaches an AVAudioNode as a source for real-time audio to haptics.
-    @discussion         Haptic output will begin as soon as audio starts playing.
-    @param audioNode    Any audio source with base type AVAudioNode.
-    @param error        If the attachAudioSource operation fails, this will be set to a valid NSError describing the error.
-    @return             Whether the operation succeeded
- */
-- (BOOL)attachAudioSource:(AVAudioNode *)audioNode error:(NSError *_Nullable *_Nullable)error API_AVAILABLE(ios(13));
 
 @end
 

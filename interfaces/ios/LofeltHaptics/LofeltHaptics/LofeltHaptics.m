@@ -49,7 +49,6 @@ NSString *const LofeltErrorDomain = @"com.lofelt.LofeltSDK";
 
 // When suspending, we stop all playback:
 // - pre-authored clip playback is stopped with a call to stop()
-// - realtime audio-to-haptics is stopped by removing the audio tap
 //
 // This is only needed so that when the app comes into the foreground again,
 // no code is attempting to play haptics and therefore use CoreHapticPlayer.

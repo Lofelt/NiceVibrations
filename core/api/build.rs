@@ -10,7 +10,6 @@ fn main() {
         .with_parse_deps(true)
         .with_parse_include(&[
             "api",
-            "realtime-audio-to-haptics",
             "lib",
             "clip-players",
             "datamodel",

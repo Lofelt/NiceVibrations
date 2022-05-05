@@ -231,5 +231,4 @@ To use the library in your application:
 - The Android library is not code signed. On Android this is possible but not required.
 - The Android library is not minified/obfuscated. Since that would only affect the Java code
   and not the Rust core library, it would not gain us much.
-- The Rust library contains some code that isn't needed on Android, such as AHAP and
-  realtime audio-to-haptics
+- The Rust library contains some code that isn't needed on Android, such as AHAP

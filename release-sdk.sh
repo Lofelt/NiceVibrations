@@ -25,7 +25,6 @@ mkdir -p release
 zip --verbose --recurse-paths -X "release/sdk-$SDK_VERSION.zip" \
     examples/android/LofeltHapticsExamplePreAuthored/ \
     examples/ios/LofeltHapticsExamplePreAuthored/ \
-    examples/ios/LofeltHapticsExampleRealtime/ \
     ios-framework/ \
     android-library/ \
     licenses/ \
