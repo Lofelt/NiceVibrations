@@ -1,0 +1,68 @@
+# Builds and tests the core and the iOS framework.
+# This workflow runs on macOS, which is not free. Therefore it is run only on merges to main and
+# not on every push.
+name: ios
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-test-macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cargo/registry
+          ~/.cargo/git
+          target
+        key: ios-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-v3
+
+# TODO: remove once https://lofelt.atlassian.net/browse/SDK-15 is fixed
+    - name: Install Rust 1.55.0 toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+          toolchain: 1.55.0
+          override: true
+          components: rustfmt, clippy
+
+    - name: Install cargo-lipo
+      run: cargo install cargo-lipo
+
+    - name: Install rustup iOS targets
+      run: rustup target add aarch64-apple-ios x86_64-apple-ios
+
+    - name: Install bitcode-enabled Rust iOS toolchain
+      run: |
+          wget https://github.com/getditto/rust-bitcode/releases/download/nightly-2021-10-05/rust-ios-arm64-nightly-2021-10-05.zip
+          unzip rust-ios-arm64-nightly-2021-10-05.zip
+          cd rust-ios-arm64-nightly-2021-10-05
+          sh ./install.sh
+          cd ..
+
+    - name: Install iOS development certificate
+      uses: apple-actions/import-codesign-certs@v1
+      with:
+        p12-file-base64: ${{ secrets.APPLE_DEVELOPMENT_CERT }}
+        p12-password: ${{ secrets.APPLE_DEVELOPMENT_CERT_PWD }}
+
+    - name: Run CI script
+      run: ./ci-ios.sh
+
+    # The webhook is configured at https://api.slack.com/apps/A01HJJHNK1N/incoming-webhooks?
+    # and added to the GitHub repo as a secret on https://github.com/Lofelt/lofelt-sdk/settings/secrets/actions
+    - name: Report CI Failure to Slack
+      if: ${{ failure() && github.ref == 'refs/heads/main' }}
+      uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ job.status }}
+        fields: commit,eventName,ref,workflow,action,author,job,took
+        text: ':x: CI Failed :x:'
+        author_name: CI Failure Bot 3000
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.CI_FAILURES_SLACK_WEBHOOK }}

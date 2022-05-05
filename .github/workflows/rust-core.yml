@@ -1,0 +1,56 @@
+# Builds, lints and tests the core and the internal apps.
+name: rust-core
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - 'prototype**'
+
+jobs:
+  build-test-rust-core:
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cargo/registry
+          ~/.cargo/git
+          target
+        key: rust-core-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+    - name: Install rustup components
+      run: rustup component add clippy rustfmt
+
+    - name: Install wasm-pack
+      uses: jetli/wasm-pack-action@v0.3.0
+      # Don't use v0.10.2 due to https://github.com/rustwasm/wasm-pack/issues/1097,
+      # which makes wasm-pack fail on Windows
+      with:
+        version: 'v0.10.1'
+
+    - name: Run CI script
+      run: sh ci-rust-core.sh
+
+    # The webhook is configured at https://api.slack.com/apps/A01HJJHNK1N/incoming-webhooks?
+    # and added to the GitHub repo as a secret on https://github.com/Lofelt/lofelt-sdk/settings/secrets/actions
+    - name: Report CI Failure to Slack
+      if: ${{ failure() && github.ref == 'refs/heads/main' }}
+      uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ job.status }}
+        fields: commit,eventName,ref,workflow,action,author,job,took
+        text: ':x: CI Failed :x:'
+        author_name: CI Failure Bot 3000
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.CI_FAILURES_SLACK_WEBHOOK }}

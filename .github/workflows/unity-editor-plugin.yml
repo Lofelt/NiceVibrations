@@ -1,0 +1,50 @@
+# Builds the Unity Editor plugin on macOS and Windows
+name: unity-editor-plugin
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+
+jobs:
+  unity-editor-plugin:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: rust-core-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Install rustup macOS Apple Silicon target
+        run: rustup target add aarch64-apple-darwin
+        shell: bash
+
+      - name: Run CI script
+        run: sh ci-unity-editor-plugin.sh
+        shell: bash
+
+      # The webhook is configured at https://api.slack.com/apps/A01HJJHNK1N/incoming-webhooks?
+      # and added to the GitHub repo as a secret on https://github.com/Lofelt/lofelt-sdk/settings/secrets/actions
+      - name: Report CI Failure to Slack
+        if: ${{ failure() && github.ref == 'refs/heads/main' }}
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          fields: commit,eventName,ref,workflow,action,author,job,took
+          text: ':x: CI Failed :x:'
+          author_name: CI Failure Bot 3000
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.CI_FAILURES_SLACK_WEBHOOK }}
+          MATRIX_CONTEXT: ${{ toJson(matrix) }}
+
+

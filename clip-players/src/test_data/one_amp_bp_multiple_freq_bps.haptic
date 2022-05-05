@@ -1,0 +1,41 @@
+{
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "metadata": {
+        "editor": "VSCode",
+        "author": "SDK Team"
+    },
+    "signals": {
+        "continuous": {
+            "envelopes": {
+                "amplitude": [
+                    {
+                        "time": 0.3,
+                        "amplitude": 0.9
+                    }
+                ],
+                "frequency": [
+                    {
+                        "time": 0.0,
+                        "frequency": 0.95
+                    },
+                    {
+                        "time": 0.15,
+                        "frequency": 0.9
+                    },
+                    {
+                        "time": 0.3,
+                        "frequency": 0.8
+                    },
+                    {
+                        "time": 0.4,
+                        "frequency": 0.7
+                    }
+                ]
+            }
+        }
+    }
+}

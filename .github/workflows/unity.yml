@@ -1,0 +1,41 @@
+name: unity
+
+on:
+  workflow_dispatch:
+  push:
+    # Only run on the main branch, as this workflow takes more than 15 minutes to run
+    branches:
+      - main
+
+jobs:
+  unity:
+    # This workflow doesn't work on Linux, as Unity is not able to run without an X server
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install Doxygen
+      run: brew install doxygen graphviz
+
+    - name: Setup Unity
+      uses: kuler90/setup-unity@v1
+      with:
+        unity-version: 2019.4.16f1
+        unity-modules: linux-il2cpp
+        project-path: ${{ github.workspace }}/interfaces/unity/NiceVibrations/
+
+    # We use the unity@lofelt.com account for the credentials for activating the license.
+    # The username and password for the account can be found in 1Password, and the authenticator key
+    # can be obtained from Ben.
+    # Those credentials are stored as GitHub secrets at https://github.com/Lofelt/lofelt-sdk/settings/secrets/actions.
+    - name: Activate Unity
+      uses: kuler90/activate-unity@v1
+      with:
+        unity-username: ${{ secrets.UNITY_USERNAME }}
+        unity-password: ${{ secrets.UNITY_PASSWORD }}
+        unity-authenticator-key: ${{ secrets.UNITY_AUTHENTICATOR_KEY }}
+
+    - name: Run CI script
+      run: ./ci-unity.sh
+      env:
+        UNITY_EXECUTABLE: ${{ env.UNITY_PATH }}

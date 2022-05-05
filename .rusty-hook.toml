@@ -1,0 +1,8 @@
+[hooks]
+pre-commit = "cargo fmt -- --check"
+
+# Skip WASM to make this hook run faster
+pre-push = "./ci-rust-core.sh --skip-wasm"
+
+[logging]
+verbose = true
