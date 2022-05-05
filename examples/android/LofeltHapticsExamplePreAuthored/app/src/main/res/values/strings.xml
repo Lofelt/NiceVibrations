@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lofelt Haptics - Pre-authored Example</string>
+    <string name="text_button_achievement">Achievement</string>
+    <string name="text_button_stroke">Stroke</string>
+    <string name="playback_error_toaster">Unable to play clip: %1$s</string>
+    <string name="low_haptic_capability">Unfortunately your Android device does not meet the minimum requirements to play Lofelt haptics. Please try this demo on another phone.</string>
+</resources>
