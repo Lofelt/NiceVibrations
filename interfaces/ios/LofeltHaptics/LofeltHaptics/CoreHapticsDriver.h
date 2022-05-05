@@ -3,7 +3,7 @@
  @brief         The CoreHapticsDriver class
  @discussion    This class talks directly to the CoreHaptics API. The Rust core of the
                 SDK talks to CoreHapticsDriver via a C API defined in LofeltSDK.m
- @author        James Kneafsey
+ @author        James Kneafsey, Tomash Ghz
  @copyright     © 2020 Lofelt. All rights reserved.
  */
 

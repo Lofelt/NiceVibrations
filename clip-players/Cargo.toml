@@ -1,7 +1,7 @@
 [package]
 name = "clip-players"
 version = "0.1.0"
-authors = ["Se Sneaky <se@sesneaky.com>", "Thomas McGuire <thomas@lofelt.com>"]
+authors = ["Se Sneaky <se@sesneaky.com>", "Thomas McGuire <thomas@lofelt.com>", "Tomash Ghz <tomash@lofelt.com>"]
 edition = "2018"
 
 [dependencies]

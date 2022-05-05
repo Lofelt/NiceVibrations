@@ -1,7 +1,7 @@
 [package]
 name = "api"
 version = "1.3.3"
-authors = ["João Freire <joao@lofelt.com>", "Thomas McGuire <thomas@lofelt.com>"]
+authors = ["João Freire <joao@lofelt.com>", "Thomas McGuire <thomas@lofelt.com>", "Tomash Ghz <tomash@lofelt.com>"]
 edition = "2018"
 
 [lib]
