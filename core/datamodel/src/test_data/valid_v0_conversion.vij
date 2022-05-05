@@ -1,0 +1,154 @@
+{
+    "metadata": {
+        "editor": "Lofelt GmbH",
+        "format": "additive",
+        "duration": 9.961360544217687
+    },
+    "variation": {
+        "total gain": 0.0,
+        "partials": 0.0
+    },
+    "voices": {
+        "envelopes": [
+            [
+                {
+                    "time": 0.0,
+                    "amplitude": 0.2
+                },
+                {
+                    "time": 0.1,
+                    "amplitude": 0.3
+                },
+                {
+                    "time": 0.2,
+                    "amplitude": 0.2
+                },
+                {
+                    "time": 0.3,
+                    "amplitude": 0.5
+                }
+            ],
+            [
+                {
+                    "time": 0.01,
+                    "amplitude": 0.99
+                },
+                {
+                    "time": 0.02,
+                    "amplitude": 0.54
+                },
+                {
+                    "time": 0.025,
+                    "amplitude": 0.8
+                },
+                {
+                    "time": 0.03,
+                    "amplitude": 0.9
+                },
+                {
+                    "time": 0.04,
+                    "amplitude": 0.99
+                },
+                {
+                    "time": 0.05,
+                    "amplitude": 0.54
+                },
+                {
+                    "time": 0.06,
+                    "amplitude": 0.8
+                },
+                {
+                    "time": 0.07,
+                    "amplitude": 0.9
+                },
+                {
+                    "time": 0.08,
+                    "amplitude": 0.99
+                },
+                {
+                    "time": 0.09,
+                    "amplitude": 0.54
+                },
+                {
+                    "time": 0.10,
+                    "amplitude": 0.8
+                },
+                {
+                    "time": 0.11,
+                    "amplitude": 0.9
+                },
+                {
+                    "time": 0.12,
+                    "amplitude": 0.99
+                },
+                {
+                    "time": 0.13,
+                    "amplitude": 0.54
+                },
+                {
+                    "time": 0.14,
+                    "amplitude": 0.8
+                },
+                {
+                    "time": 0.15,
+                    "amplitude": 0.9
+                },
+                {
+                    "time": 0.16,
+                    "amplitude": 0.99
+                },
+                {
+                    "time": 0.17,
+                    "amplitude": 0.54
+                },
+                {
+                    "time": 0.18,
+                    "amplitude": 0.8
+                },
+                {
+                    "time": 0.19,
+                    "amplitude": 0.9
+                },
+                {
+                    "time": 0.20,
+                    "amplitude": 0.99
+                },
+                {
+                    "time": 0.21,
+                    "amplitude": 0.54
+                },
+                {
+                    "time": 0.22,
+                    "amplitude": 0.8
+                },
+                {
+                    "time": 0.23,
+                    "amplitude": 0.9
+                }
+            ]
+        ],
+        "bands": [],
+        "transients": [
+            [
+                {
+                    "time": 0.1,
+                    "amplitude": 0.5
+                },
+                {
+                    "time": 0.2,
+                    "amplitude": 0.3
+                }
+            ],
+            [
+                {
+                    "time": 0.1,
+                    "amplitude": 0.6
+                },
+                {
+                    "time": 0.2,
+                    "amplitude": 0.7
+                }
+            ]
+        ]
+    }
+}

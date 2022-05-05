@@ -1,0 +1,29 @@
+{
+  "version": {
+    "major": 1
+  },
+  "signals": {
+    "continuous": {
+      "envelopes": {
+        "amplitude": [
+          {
+            "time": 0.0,
+            "amplitude": 0.2
+          },
+          {
+            "time": 0.1,
+            "amplitude": 0.3
+          },
+          {
+            "time": 0.2,
+            "amplitude": 0.2
+          },
+          {
+            "time": 0.3,
+            "amplitude": 0.5
+          }
+        ]
+      }
+    }
+  }
+}
