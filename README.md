@@ -90,39 +90,11 @@ The source code for Android library is available in `interfaces/android`. Check 
 
 The source code for Unity Editor plugin is available in `unity-editor-plugin`. Check the [README](./unity-editor-plugin/README.md) for more info.
 
-## Build and Test Lofelt Wasm Package
-
-The source code for the Lofelt Wasm package is available in `interfaces/wasm`. Check the [README](./interfaces/wasm/README.md) for more info.
-
 ## Git rules
 
 We ensure code quality by using git hooks provided by [`rusty-hooks`](https://github.com/swellaby/rusty-hook) for cargo. The git hook setup can be seen in `.rusty-hook.toml` file.
 
 # Structure
-The structure of this repo follows the decision made [here](https://lofelt.atlassian.net/wiki/spaces/PD/pages/177700899/What+is+our+repo+structure+for+the+SDK)
-
-The directory structure is as follows:
-
-```
-├── apps
-├── core
-│   ├── api
-│   ├── datamodel
-│   ├── lib
-│   └── utils
-├── licenses
-├── examples
-│   ├── android
-│   └── ios
-├── interfaces
-│   ├── android
-│   ├── ios
-│   ├── unity
-│   └── wasm
-├── clip-players
-|   └── src
-\── unity-editor-plugin
-```
 
 - [interfaces](./interfaces/README.md) provides native frameworks for the SDK.
 - [apps](./apps/README.md) contains applications using the features SDK, using the native frameworks from [Interfaces](./interfaces/README.md).
