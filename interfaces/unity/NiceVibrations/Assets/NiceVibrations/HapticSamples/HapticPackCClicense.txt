@@ -1,0 +1,115 @@
+
+The haptic library packs use many sounds from freesound.org
+The audio files used in these packs have been modified from the original form.
+
+licensed under CCBYNC 3.0
+http://freesound.org licensed under CCBY 3.0
+
+For the full list see below:
+
+
+S: Door Knob.wav by SoundDragon18 | License: Creative Commons 0
+S: Ripping Clothes by altfuture | License: Creative Commons 0
+S: Velcro Pull 02 by Rudmer_Rotteveel | License: Creative Commons 0
+S: keys jingling.wav by Fenodyrie | License: Creative Commons 0
+S: spacebarKey.wav by UberBosser | License: Creative Commons 0
+S: money4.wav by florian_reinke | License: Creative Commons 0
+S: Till Open and Close by muse384 | License: Creative Commons 0
+S: Coins Being Dropped-Assorted by FractalStudios | License: Creative Commons 0
+S: Writing On Paper.wav by rivernile7 | License: Creative Commons 0
+S: Flashlight clicking.wav by Marissrar | License: Creative Commons 0
+S: Turning Book Pages.wav by sophiehall3535 | License: Creative Commons 0
+S: Paging through a book.wav by Rainkiljoy | License: Creative Commons 0
+S: Single clicks Keyboard Sound by StrikeWhistler | License: Creative Commons 0
+S: Breaker-1.wav by Deathscyp | License: Creative Commons 0
+S: Switch Flip #1 by IanStarGem | License: Creative Commons 0
+
+S: door knock by SubwaySandwitch420 | License: Creative Commons 0
+S: Knocking on the door by oldhiccup | License: Creative Commons 0
+S: Knock_the_door.wav by anagar | License: Creative Commons 0
+S: Fan (heating) by giddster | License: Creative Commons 0
+S: Fan 1.mp3 by denstoltejyde | License: Creative Commons 0
+S: Lit Fireplace by lurpsis | License: Creative Commons 0
+S: fireplace by martats | License: Creative Commons 0
+S: Stove by LinaManjarrez | License: Creative Commons 0
+S: Natalie Godinez - stove tick by nataliedg | License: Creative Commons 0
+S: Old Electric Stove, Stove Dials.wav by AslakHostaker | License: Creative Commons 0
+S: rocker_switch.wav by joedeshon | License: Attribution
+S: Light Switch ON / OFF by FillSoko | License: Creative Commons 0
+S: Breaker-1.wav by Deathscyp | License: Creative Commons 0
+S: WoodSaw1.wav by Pingel | License: Creative Commons 0
+S: Hammering.wav by Dvideoguy | License: Creative Commons 0
+S: loud_cat_purring.wav by the_semen_incident | License: Creative Commons 0
+S: Clank Car Crash Collision by qubodup | License: Creative Commons 0
+S: Boost.wav by Eponn | License: Creative Commons 0
+S: Car peels off by therisingorder | License: Creative Commons 0
+S: Rain on car roof.wav by jakobhandersen | License: Creative Commons 0
+S: Big Splash.wav by Bird_man | License: Creative Commons 0
+S: Lluvia.wav by josecruz98 | License: Creative Commons 0
+S: Rain_Falling_On_Umbrella.wav by ivolipa | License: Creative Commons 0
+
+S: electrocymbal-choke by Sassaby | License: Creative Commons 0
+S: Long Ride Cymbal 2 by Cringegaming64yt | License: Creative Commons 0
+S: Cymbal by deLargeBC | License: Creative Commons 0
+S: dw tom 1.wav by Veiler | License: Creative Commons 0
+S: Floortom.wav by mixmasterdylan | License: Creative Commons 0
+S: Snare Drum.wav by KEVOY | License: Creative Commons 0
+S: Vegas kick 01.wav by DreStortion | License: Creative Commons 0
+S: kick swedish.wav by Veiler | License: Creative Commons 0
+S: Type UI by Kernafval | License: Creative Commons 0
+S: beep_down.wav by paep3nguin | License: Creative Commons 0
+S: beep_up.wav by paep3nguin | License: Creative Commons 0
+S: Yume Nikki Effect Equip by plasterbrain | License: Creative Commons 0
+S: button-pressed.wav by StavSounds | License: Creative Commons 0
+S: UserInterface by audioninja001 | License: Creative Commons 0
+S: SFX UI Button Click by suntemple | License: Creative Commons 0
+S: Bullet Hit - Glass - 5 by FilmmakersManual | License: Creative Commons 0
+S: Bullet Hit - Glass (4) by FilmmakersManual | License: Creative Commons 0
+S: Bullet Hit - Glass (7) by FilmmakersManual | License: Creative Commons 0
+S: Light Machine Gun (M249) - Loading Ammo Belt (1) by FilmmakersManual | License: Creative Commons 0
+S: Light Machine Gun (M249) - Full Auto (1) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Concrete Hit (1) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Concrete Hit (4) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Concrete Hit (3) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Crack (2) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Crack (11) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Crack (10) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Crack (5) by FilmmakersManual | License: Creative Commons 0
+S: Sniper Rifle Firing Shot (1) by FilmmakersManual | License: Creative Commons 0
+
+S: Heavy Machine Gun (.50 Caliber) - Single Shot (2) by FilmmakersManual | License: Creative Commons 0
+S: Heavy Machine Gun (.50 Caliber) - Cocking Gun (3) by FilmmakersManual | License: Creative Commons 0
+S: Heavy Machine Gun (.50 Caliber) - Full Auto (2) by FilmmakersManual | License: Creative Commons 0
+S: Shells Hitting Ground (26) by FilmmakersManual | License: Creative Commons 0
+S: Shotgun - Firing (2) by FilmmakersManual | License: Creative Commons 0
+S: Shotgun - Cocking (4) by FilmmakersManual | License: Creative Commons 0
+S: Shotgun - Cocking (3) by FilmmakersManual | License: Creative Commons 0
+S: Shotgun - Cocking (2) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Hit Body (7) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Hit Body (8) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Hit Body (9) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Hit Body (1) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Metal Hit (1) by FilmmakersManual | License: Creative Commons 0
+S: Semi Auto Pistol - Pistol Slide Cocking (4) by FilmmakersManual | License: Creative Commons 0
+S: Semi Auto Pistol - Pistol Firing Single Shot (2) by FilmmakersManual | License: Creative Commons 0
+S: Semi Auto Pistol - Pistol Firing Single Shot (3) by FilmmakersManual | License: Creative Commons 0
+S: Semi Auto Pistol - Pistol Firing Single Shot (5) by FilmmakersManual | License: Creative Commons 0
+S: Semi Auto Pistol - Pistol Firing Single Shot (6) by FilmmakersManual | License: Creative Commons 0
+S: Semi Auto Pistol - Pistol Firing Single Shot (1) by FilmmakersManual | License: Creative Commons 0
+S: Semi Auto Pistol - Pistol Slide Cocking (2) by FilmmakersManual | License: Creative Commons 0
+S: Gun Shots From a Distance (21) by FilmmakersManual | License: Creative Commons 0
+S: Gun Shots From a Distance (20) by FilmmakersManual | License: Creative Commons 0
+S: Gun Shots From a Distance (6) by FilmmakersManual | License: Creative Commons 0
+S: Gun Shots From a Distance (5) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Wood Hit (4) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Wood Hit (3) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Wood Hit (2) by FilmmakersManual | License: Creative Commons 0
+S: Bullet - Wood Hit (1) by FilmmakersManual | License: Creative Commons 0
+S: 9mm pistol load and chamber by michorvath | License: Creative Commons 0
+S: gun_cocking.wav by Department64 | License: Creative Commons 0
+P: Grassy Footsteps by Ali_6868
+P: Gravel Footsteps by Ali_6868
+
+
+
+
