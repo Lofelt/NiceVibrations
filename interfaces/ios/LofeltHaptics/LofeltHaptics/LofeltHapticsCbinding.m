@@ -236,7 +236,7 @@ BOOL lofeltHapticsReleaseBinding(CFTypeRef haptics) {
     }
 }
 
-BOOL lofeltHapticsSystemHapticsInitializeBinding() {
+BOOL lofeltHapticsSystemHapticsInitializeBinding(void) {
     if (@available(iOS 11, *)) {
         if(SystemHapticsInitialize()) {
             return YES;
@@ -248,7 +248,7 @@ BOOL lofeltHapticsSystemHapticsInitializeBinding() {
     }
 }
 
-BOOL lofeltHapticsSystemHapticsReleaseBinding() {
+BOOL lofeltHapticsSystemHapticsReleaseBinding(void) {
     if (@available(iOS 11, *)) {
         SystemHapticsRelease();
         return YES;

@@ -58,7 +58,7 @@ void SystemHapticsRelease()
     softImpactFeedbackGenerator = nil;
 }
 
-void triggerSelectionFeedbackGenerator()
+void triggerSelectionFeedbackGenerator(void)
 {
     if(selectionFeedbackGenerator != nil) {
         [selectionFeedbackGenerator prepare];
@@ -66,7 +66,7 @@ void triggerSelectionFeedbackGenerator()
     }
 }
 
-void triggerSuccessFeedbackGenerator()
+void triggerSuccessFeedbackGenerator(void)
 {
     if(notificationFeedbackGenerator != nil) {
         [notificationFeedbackGenerator prepare];
@@ -74,7 +74,7 @@ void triggerSuccessFeedbackGenerator()
     }
 }
 
-void triggerWarningFeedbackGenerator()
+void triggerWarningFeedbackGenerator(void)
 {
     if(notificationFeedbackGenerator != nil) {
         [notificationFeedbackGenerator prepare];
@@ -82,7 +82,7 @@ void triggerWarningFeedbackGenerator()
     }
 }
 
-void triggerFailureFeedbackGenerator()
+void triggerFailureFeedbackGenerator(void)
 {
     if(notificationFeedbackGenerator != nil) {
         [notificationFeedbackGenerator prepare];
@@ -90,7 +90,7 @@ void triggerFailureFeedbackGenerator()
     }
 }
 
-void triggerLightImpactFeedbackGenerator()
+void triggerLightImpactFeedbackGenerator(void)
 {
     if(lightImpactFeedbackGenerator != nil) {
         [lightImpactFeedbackGenerator prepare];
@@ -98,7 +98,7 @@ void triggerLightImpactFeedbackGenerator()
     }
 }
 
-void triggerMediumImpactFeedbackGenerator()
+void triggerMediumImpactFeedbackGenerator(void)
 {
     if(mediumImpactFeedbackGenerator != nil) {
         [mediumImpactFeedbackGenerator prepare];
@@ -106,7 +106,7 @@ void triggerMediumImpactFeedbackGenerator()
     }
 }
 
-void triggerHeavyImpactFeedbackGenerator()
+void triggerHeavyImpactFeedbackGenerator(void)
 {
     if(heavyImpactFeedbackGenerator != nil) {
         [heavyImpactFeedbackGenerator prepare];
@@ -114,7 +114,7 @@ void triggerHeavyImpactFeedbackGenerator()
     }
 }
 
-void triggerRigidImpactFeedbackGenerator()
+void triggerRigidImpactFeedbackGenerator(void)
 {
     if(rigidImpactFeedbackGenerator != nil) {
         [rigidImpactFeedbackGenerator prepare];
@@ -122,7 +122,7 @@ void triggerRigidImpactFeedbackGenerator()
     }
 }
 
-void triggerSoftImpactFeedbackGenerator()
+void triggerSoftImpactFeedbackGenerator(void)
 {
     if(softImpactFeedbackGenerator != nil) {
         [softImpactFeedbackGenerator prepare];
