@@ -8,7 +8,7 @@ exit_with_failure()
 [ "$1" != "--skip-connected-check" ] ; SKIP_CONNECTED_CHECK=$?
 
 echo "➡️ Building"
-./build.sh android || exit_with_failure "Building failed"
+./build-sdk.sh android || exit_with_failure "Building failed"
 
 cd interfaces/android/LofeltHaptics
 

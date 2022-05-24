@@ -1,0 +1,4425 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "metadata": {
+    "author": "andrew@lofelt.com",
+    "editor": "Lofelt Studio",
+    "source": "Car Engine 2.wav",
+    "project": "Car Engine 2",
+    "tags": [],
+    "description": ""
+  },
+  "signals": {
+    "continuous": {
+      "envelopes": {
+        "amplitude": [
+          {
+            "time": 0,
+            "amplitude": 0.00818711
+          },
+          {
+            "time": 0.0010204081,
+            "amplitude": 0.00818711
+          },
+          {
+            "time": 0.010022676,
+            "amplitude": 0.10010424
+          },
+          {
+            "time": 0.04600907,
+            "amplitude": 0.07509731
+          },
+          {
+            "time": 0.05201814,
+            "amplitude": 0.16507311
+          },
+          {
+            "time": 0.083015874,
+            "amplitude": 0.13064833
+          },
+          {
+            "time": 0.099002264,
+            "amplitude": 0.24778208
+          },
+          {
+            "time": 0.13401361,
+            "amplitude": 0.13316181
+          },
+          {
+            "time": 0.15102041,
+            "amplitude": 0.4511656
+          },
+          {
+            "time": 0.16600907,
+            "amplitude": 0.3253656
+          },
+          {
+            "time": 0.1710204,
+            "amplitude": 0.45507663
+          },
+          {
+            "time": 0.18600906,
+            "amplitude": 0.35154164
+          },
+          {
+            "time": 0.19301587,
+            "amplitude": 0.593371
+          },
+          {
+            "time": 0.21201813,
+            "amplitude": 0.3674968
+          },
+          {
+            "time": 0.21600907,
+            "amplitude": 0.5381936
+          },
+          {
+            "time": 0.23501134,
+            "amplitude": 0.35683367
+          },
+          {
+            "time": 0.2410204,
+            "amplitude": 0.54255575
+          },
+          {
+            "time": 0.27201813,
+            "amplitude": 0.24989532
+          },
+          {
+            "time": 0.31501132,
+            "amplitude": 0.18399188
+          },
+          {
+            "time": 0.35600907,
+            "amplitude": 0.07934618
+          },
+          {
+            "time": 0.4540136,
+            "amplitude": 0.051701516
+          },
+          {
+            "time": 0.47201812,
+            "amplitude": 0.10336332
+          },
+          {
+            "time": 0.54600906,
+            "amplitude": 0.03975813
+          },
+          {
+            "time": 0.55501133,
+            "amplitude": 0.08002275
+          },
+          {
+            "time": 0.59999996,
+            "amplitude": 0.040432062
+          },
+          {
+            "time": 0.60501134,
+            "amplitude": 0.1129041
+          },
+          {
+            "time": 0.64,
+            "amplitude": 0.10403936
+          },
+          {
+            "time": 0.6460091,
+            "amplitude": 0.21064311
+          },
+          {
+            "time": 0.6909977,
+            "amplitude": 0.07616372
+          },
+          {
+            "time": 0.7270068,
+            "amplitude": 0.18118808
+          },
+          {
+            "time": 0.7670068,
+            "amplitude": 0.094316885
+          },
+          {
+            "time": 0.81,
+            "amplitude": 0.12075597
+          },
+          {
+            "time": 0.8309977,
+            "amplitude": 0.07290339
+          },
+          {
+            "time": 0.85501134,
+            "amplitude": 0.17243445
+          },
+          {
+            "time": 0.89800453,
+            "amplitude": 0.15499096
+          },
+          {
+            "time": 0.89900225,
+            "amplitude": 0.260990384,
+            "emphasis": {
+              "amplitude": 0.32623798,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 0.9240136,
+            "amplitude": 0.22650267999999998,
+            "emphasis": {
+              "amplitude": 0.28312835,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 0.95199543,
+            "amplitude": 0.12792236
+          },
+          {
+            "time": 0.9650113,
+            "amplitude": 0.28525638400000003,
+            "emphasis": {
+              "amplitude": 0.35657048,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 0.9929932,
+            "amplitude": 0.21295795
+          },
+          {
+            "time": 1.0009977,
+            "amplitude": 0.24635069600000004,
+            "emphasis": {
+              "amplitude": 0.30793837,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.0019954,
+            "amplitude": 0.24351067199999998,
+            "emphasis": {
+              "amplitude": 0.30438834,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.0219954,
+            "amplitude": 0.17899358
+          },
+          {
+            "time": 1.04,
+            "amplitude": 0.29145756,
+            "emphasis": {
+              "amplitude": 0.36432195,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.0630158,
+            "amplitude": 0.18383592
+          },
+          {
+            "time": 1.0919955,
+            "amplitude": 0.341510128,
+            "emphasis": {
+              "amplitude": 0.42688766,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.1409978,
+            "amplitude": 0.2010176
+          },
+          {
+            "time": 1.1580045,
+            "amplitude": 0.318021392,
+            "emphasis": {
+              "amplitude": 0.39752674,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.1810204,
+            "amplitude": 0.20608346
+          },
+          {
+            "time": 1.2120181,
+            "amplitude": 0.32938384,
+            "emphasis": {
+              "amplitude": 0.4117298,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.259025,
+            "amplitude": 0.19762588
+          },
+          {
+            "time": 1.2770067,
+            "amplitude": 0.316911696,
+            "emphasis": {
+              "amplitude": 0.39613962,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.3090249,
+            "amplitude": 0.16066304
+          },
+          {
+            "time": 1.3290249,
+            "amplitude": 0.36233630400000005,
+            "emphasis": {
+              "amplitude": 0.45292038,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.3770294,
+            "amplitude": 0.20460713
+          },
+          {
+            "time": 1.3950113,
+            "amplitude": 0.320531824,
+            "emphasis": {
+              "amplitude": 0.40066478,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.4280272,
+            "amplitude": 0.16384928
+          },
+          {
+            "time": 1.4580272,
+            "amplitude": 0.37583172000000004,
+            "emphasis": {
+              "amplitude": 0.46978965,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.4930159,
+            "amplitude": 0.18749931
+          },
+          {
+            "time": 1.5060318,
+            "amplitude": 0.327573416,
+            "emphasis": {
+              "amplitude": 0.40946677,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.535034,
+            "amplitude": 0.19598886
+          },
+          {
+            "time": 1.555034,
+            "amplitude": 0.209897712,
+            "emphasis": {
+              "amplitude": 0.26237214,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.5740362,
+            "amplitude": 0.42103120000000005,
+            "emphasis": {
+              "amplitude": 0.526289,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.6090249,
+            "amplitude": 0.20199032
+          },
+          {
+            "time": 1.6160318,
+            "amplitude": 0.33623926400000004,
+            "emphasis": {
+              "amplitude": 0.42029908,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.651043,
+            "amplitude": 0.1984016
+          },
+          {
+            "time": 1.671043,
+            "amplitude": 0.24138337
+          },
+          {
+            "time": 1.6900454,
+            "amplitude": 0.4084632,
+            "emphasis": {
+              "amplitude": 0.510579,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.7240362,
+            "amplitude": 0.20188096
+          },
+          {
+            "time": 1.7430385,
+            "amplitude": 0.349077104,
+            "emphasis": {
+              "amplitude": 0.43634638,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.7660317,
+            "amplitude": 0.21023393
+          },
+          {
+            "time": 1.7870295,
+            "amplitude": 0.22483670400000003,
+            "emphasis": {
+              "amplitude": 0.28104588,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.7930385,
+            "amplitude": 0.392369344,
+            "emphasis": {
+              "amplitude": 0.49046168,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.8400453,
+            "amplitude": 0.20593506
+          },
+          {
+            "time": 1.8570521,
+            "amplitude": 0.33317861600000004,
+            "emphasis": {
+              "amplitude": 0.41647327,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.8820407,
+            "amplitude": 0.20396268
+          },
+          {
+            "time": 1.9020408,
+            "amplitude": 0.2496742
+          },
+          {
+            "time": 1.9220408,
+            "amplitude": 0.369865416,
+            "emphasis": {
+              "amplitude": 0.46233177,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 1.9550567,
+            "amplitude": 0.19498661
+          },
+          {
+            "time": 1.9730386,
+            "amplitude": 0.34790788,
+            "emphasis": {
+              "amplitude": 0.43488485,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.0000453,
+            "amplitude": 0.22369172800000003,
+            "emphasis": {
+              "amplitude": 0.27961466,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.001043,
+            "amplitude": 0.21469152000000002,
+            "emphasis": {
+              "amplitude": 0.2683644,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.0370522,
+            "amplitude": 0.36960544,
+            "emphasis": {
+              "amplitude": 0.4620068,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.0690477,
+            "amplitude": 0.19067134
+          },
+          {
+            "time": 2.08805,
+            "amplitude": 0.337763568,
+            "emphasis": {
+              "amplitude": 0.42220446,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.121043,
+            "amplitude": 0.2384815
+          },
+          {
+            "time": 2.1370294,
+            "amplitude": 0.4575888800000001,
+            "emphasis": {
+              "amplitude": 0.5719861,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.161043,
+            "amplitude": 0.28018941599999997,
+            "emphasis": {
+              "amplitude": 0.35023677,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.1940362,
+            "amplitude": 0.22927944,
+            "emphasis": {
+              "amplitude": 0.2865993,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.2000453,
+            "amplitude": 0.39975288000000003,
+            "emphasis": {
+              "amplitude": 0.4996911,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.2340362,
+            "amplitude": 0.22044775
+          },
+          {
+            "time": 2.2500226,
+            "amplitude": 0.41151461600000006,
+            "emphasis": {
+              "amplitude": 0.51439327,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.295034,
+            "amplitude": 0.2422374
+          },
+          {
+            "time": 2.313016,
+            "amplitude": 0.381281232,
+            "emphasis": {
+              "amplitude": 0.47660154,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.3370295,
+            "amplitude": 0.23615858
+          },
+          {
+            "time": 2.363016,
+            "amplitude": 0.39322352000000005,
+            "emphasis": {
+              "amplitude": 0.4915294,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.4080272,
+            "amplitude": 0.22022784
+          },
+          {
+            "time": 2.426009,
+            "amplitude": 0.359030296,
+            "emphasis": {
+              "amplitude": 0.44878787,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.4500227,
+            "amplitude": 0.22830582
+          },
+          {
+            "time": 2.4760091,
+            "amplitude": 0.40433184000000005,
+            "emphasis": {
+              "amplitude": 0.5054148,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.526009,
+            "amplitude": 0.1977596
+          },
+          {
+            "time": 2.54,
+            "amplitude": 0.32542868,
+            "emphasis": {
+              "amplitude": 0.40678585,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.5590022,
+            "amplitude": 0.22890735
+          },
+          {
+            "time": 2.5909977,
+            "amplitude": 0.345398136,
+            "emphasis": {
+              "amplitude": 0.43174767,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 2.6119955,
+            "amplitude": 0.21881983
+          },
+          {
+            "time": 2.6509976,
+            "amplitude": 0.1548234
+          },
+          {
+            "time": 2.6619954,
+            "amplitude": 0.3442909
+          },
+          {
+            "time": 2.6919954,
+            "amplitude": 0.19082732
+          },
+          {
+            "time": 2.7090023,
+            "amplitude": 0.44391596
+          },
+          {
+            "time": 2.7319953,
+            "amplitude": 0.5390397
+          },
+          {
+            "time": 2.7559865,
+            "amplitude": 0.36747772
+          },
+          {
+            "time": 2.756984,
+            "amplitude": 0.62830937
+          },
+          {
+            "time": 2.772993,
+            "amplitude": 0.44271484
+          },
+          {
+            "time": 2.7749887,
+            "amplitude": 0.70555633
+          },
+          {
+            "time": 2.8059864,
+            "amplitude": 0.3500834
+          },
+          {
+            "time": 2.8079817,
+            "amplitude": 0.54783565
+          },
+          {
+            "time": 2.8359864,
+            "amplitude": 0.5053749
+          },
+          {
+            "time": 2.8669841,
+            "amplitude": 0.2317487
+          },
+          {
+            "time": 2.9449885,
+            "amplitude": 0.11047569
+          },
+          {
+            "time": 2.9579818,
+            "amplitude": 0.26664224
+          },
+          {
+            "time": 3.000975,
+            "amplitude": 0.20980224
+          },
+          {
+            "time": 3.0019727,
+            "amplitude": 0.20689525
+          },
+          {
+            "time": 3.030975,
+            "amplitude": 0.183368672,
+            "emphasis": {
+              "amplitude": 0.2844739978947369,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.0969615,
+            "amplitude": 0.13570029
+          },
+          {
+            "time": 3.133968,
+            "amplitude": 0.22204176000000003,
+            "emphasis": {
+              "amplitude": 0.3328153578947369,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.173968,
+            "amplitude": 0.15132241
+          },
+          {
+            "time": 3.1829705,
+            "amplitude": 0.32015898400000004,
+            "emphasis": {
+              "amplitude": 0.45546188789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.21195,
+            "amplitude": 0.15880866
+          },
+          {
+            "time": 3.248957,
+            "amplitude": 0.14429766
+          },
+          {
+            "time": 3.258957,
+            "amplitude": 0.20236488000000002,
+            "emphasis": {
+              "amplitude": 0.30821925789473686,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.2829478,
+            "amplitude": 0.17971894
+          },
+          {
+            "time": 3.2969613,
+            "amplitude": 0.268645784,
+            "emphasis": {
+              "amplitude": 0.39107038789473686,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.3169613,
+            "amplitude": 0.15496504,
+            "emphasis": {
+              "amplitude": 0.24896945789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.335941,
+            "amplitude": 0.272391816,
+            "emphasis": {
+              "amplitude": 0.3957529278947369,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.367959,
+            "amplitude": 0.12948777
+          },
+          {
+            "time": 3.3929477,
+            "amplitude": 0.16399009600000003,
+            "emphasis": {
+              "amplitude": 0.26025077789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.4239454,
+            "amplitude": 0.14047489
+          },
+          {
+            "time": 3.4399545,
+            "amplitude": 0.189034752,
+            "emphasis": {
+              "amplitude": 0.29155659789473687,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.4649432,
+            "amplitude": 0.15619723
+          },
+          {
+            "time": 3.4749432,
+            "amplitude": 0.25046587200000003,
+            "emphasis": {
+              "amplitude": 0.36834549789473686,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.5049431,
+            "amplitude": 0.12904553
+          },
+          {
+            "time": 3.5099318,
+            "amplitude": 0.21693692000000003,
+            "emphasis": {
+              "amplitude": 0.3264343078947369,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.5369387,
+            "amplitude": 0.1569923
+          },
+          {
+            "time": 3.5389342,
+            "amplitude": 0.2495444,
+            "emphasis": {
+              "amplitude": 0.36719365789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.585941,
+            "amplitude": 0.14799103
+          },
+          {
+            "time": 3.5909297,
+            "amplitude": 0.242465976,
+            "emphasis": {
+              "amplitude": 0.35834562789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.6409297,
+            "amplitude": 0.10443574
+          },
+          {
+            "time": 3.659932,
+            "amplitude": 0.31192752,
+            "emphasis": {
+              "amplitude": 0.44517255789473686,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.6819274,
+            "amplitude": 0.29579604000000004,
+            "emphasis": {
+              "amplitude": 0.42500820789473687,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.7209296,
+            "amplitude": 0.13837159
+          },
+          {
+            "time": 3.7379138,
+            "amplitude": 0.24360944,
+            "emphasis": {
+              "amplitude": 0.35977495789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.7729251,
+            "amplitude": 0.17298108
+          },
+          {
+            "time": 3.803923,
+            "amplitude": 0.15948458
+          },
+          {
+            "time": 3.810907,
+            "amplitude": 0.2530744,
+            "emphasis": {
+              "amplitude": 0.37160615789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.8389115,
+            "amplitude": 0.1333929
+          },
+          {
+            "time": 3.8789115,
+            "amplitude": 0.241591,
+            "emphasis": {
+              "amplitude": 0.3572519078947368,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.910907,
+            "amplitude": 0.1558405
+          },
+          {
+            "time": 3.930907,
+            "amplitude": 0.2468514,
+            "emphasis": {
+              "amplitude": 0.36382740789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 3.9789114,
+            "amplitude": 0.099239275
+          },
+          {
+            "time": 3.9889114,
+            "amplitude": 0.28277972,
+            "emphasis": {
+              "amplitude": 0.40873780789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.000907,
+            "amplitude": 0.19246917600000002,
+            "emphasis": {
+              "amplitude": 0.29584962789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.0019045,
+            "amplitude": 0.184737304,
+            "emphasis": {
+              "amplitude": 0.28618478789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.0199094,
+            "amplitude": 0.24003568,
+            "emphasis": {
+              "amplitude": 0.35530775789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.057891,
+            "amplitude": 0.11028696
+          },
+          {
+            "time": 4.070907,
+            "amplitude": 0.21204018400000002,
+            "emphasis": {
+              "amplitude": 0.32031338789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.0948977,
+            "amplitude": 0.223343064,
+            "emphasis": {
+              "amplitude": 0.33444198789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.1429024,
+            "amplitude": 0.12303459
+          },
+          {
+            "time": 4.1539,
+            "amplitude": 0.24455637600000002,
+            "emphasis": {
+              "amplitude": 0.36095862789473687,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.171882,
+            "amplitude": 0.18815382
+          },
+          {
+            "time": 4.201882,
+            "amplitude": 0.26266016,
+            "emphasis": {
+              "amplitude": 0.38358835789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.2238774,
+            "amplitude": 0.17031994
+          },
+          {
+            "time": 4.257891,
+            "amplitude": 0.112041846
+          },
+          {
+            "time": 4.274875,
+            "amplitude": 0.16480683200000001,
+            "emphasis": {
+              "amplitude": 0.2612716978947368,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.314875,
+            "amplitude": 0.09504453
+          },
+          {
+            "time": 4.3198867,
+            "amplitude": 0.21352636800000002,
+            "emphasis": {
+              "amplitude": 0.32217111789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.3448753,
+            "amplitude": 0.1407002
+          },
+          {
+            "time": 4.365873,
+            "amplitude": 0.25824801599999997,
+            "emphasis": {
+              "amplitude": 0.3780731778947368,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.3938775,
+            "amplitude": 0.12680414
+          },
+          {
+            "time": 4.415873,
+            "amplitude": 0.16884322400000001,
+            "emphasis": {
+              "amplitude": 0.26631718789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.4778686,
+            "amplitude": 0.11959785
+          },
+          {
+            "time": 4.502857,
+            "amplitude": 0.22849008,
+            "emphasis": {
+              "amplitude": 0.34087575789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.522857,
+            "amplitude": 0.15826693
+          },
+          {
+            "time": 4.5278683,
+            "amplitude": 0.23664552,
+            "emphasis": {
+              "amplitude": 0.35107005789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.5548525,
+            "amplitude": 0.15163219
+          },
+          {
+            "time": 4.5848527,
+            "amplitude": 0.14851065
+          },
+          {
+            "time": 4.5918593,
+            "amplitude": 0.228871464,
+            "emphasis": {
+              "amplitude": 0.3413524878947368,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.6098638,
+            "amplitude": 0.1581302
+          },
+          {
+            "time": 4.626848,
+            "amplitude": 0.18552580000000002,
+            "emphasis": {
+              "amplitude": 0.28717040789473686,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.6558504,
+            "amplitude": 0.1517146
+          },
+          {
+            "time": 4.6848526,
+            "amplitude": 0.24983949600000002,
+            "emphasis": {
+              "amplitude": 0.36756252789473687,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.72585,
+            "amplitude": 0.10307897
+          },
+          {
+            "time": 4.746848,
+            "amplitude": 0.155359152,
+            "emphasis": {
+              "amplitude": 0.24946209789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.789841,
+            "amplitude": 0.14468227
+          },
+          {
+            "time": 4.80585,
+            "amplitude": 0.180453464,
+            "emphasis": {
+              "amplitude": 0.28082998789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.8288436,
+            "amplitude": 0.11078241
+          },
+          {
+            "time": 4.8658504,
+            "amplitude": 0.11849093
+          },
+          {
+            "time": 4.88483,
+            "amplitude": 0.23361484799999999,
+            "emphasis": {
+              "amplitude": 0.34728171789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 4.906848,
+            "amplitude": 0.16859984
+          },
+          {
+            "time": 4.9578233,
+            "amplitude": 0.1267751
+          },
+          {
+            "time": 4.958843,
+            "amplitude": 0.211438296,
+            "emphasis": {
+              "amplitude": 0.31956102789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.0008388,
+            "amplitude": 0.16274679
+          },
+          {
+            "time": 5.001837,
+            "amplitude": 0.16055907
+          },
+          {
+            "time": 5.030839,
+            "amplitude": 0.13191117
+          },
+          {
+            "time": 5.0418367,
+            "amplitude": 0.24648976,
+            "emphasis": {
+              "amplitude": 0.36337535789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.0598183,
+            "amplitude": 0.16598701
+          },
+          {
+            "time": 5.091814,
+            "amplitude": 0.13389209
+          },
+          {
+            "time": 5.113832,
+            "amplitude": 0.19572370400000003,
+            "emphasis": {
+              "amplitude": 0.2999177878947369,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.1598186,
+            "amplitude": 0.114428535
+          },
+          {
+            "time": 5.1638093,
+            "amplitude": 0.19095561
+          },
+          {
+            "time": 5.2108164,
+            "amplitude": 0.0920799
+          },
+          {
+            "time": 5.225805,
+            "amplitude": 0.197610976,
+            "emphasis": {
+              "amplitude": 0.30227687789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.245805,
+            "amplitude": 0.13305047
+          },
+          {
+            "time": 5.2508163,
+            "amplitude": 0.22915248,
+            "emphasis": {
+              "amplitude": 0.34170375789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.2908163,
+            "amplitude": 0.109153405
+          },
+          {
+            "time": 5.3068027,
+            "amplitude": 0.18725186400000002,
+            "emphasis": {
+              "amplitude": 0.28932798789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.3707933,
+            "amplitude": 0.13355348
+          },
+          {
+            "time": 5.401791,
+            "amplitude": 0.2470726,
+            "emphasis": {
+              "amplitude": 0.36410390789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.432789,
+            "amplitude": 0.14256185
+          },
+          {
+            "time": 5.4497957,
+            "amplitude": 0.195753264,
+            "emphasis": {
+              "amplitude": 0.29995473789473687,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.488798,
+            "amplitude": 0.094281875
+          },
+          {
+            "time": 5.4897957,
+            "amplitude": 0.1640646,
+            "emphasis": {
+              "amplitude": 0.2603439078947368,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.5147843,
+            "amplitude": 0.13101725
+          },
+          {
+            "time": 5.5217915,
+            "amplitude": 0.21060616,
+            "emphasis": {
+              "amplitude": 0.31852085789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.5478005,
+            "amplitude": 0.13970159
+          },
+          {
+            "time": 5.56678,
+            "amplitude": 0.196630136,
+            "emphasis": {
+              "amplitude": 0.30105082789473686,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.5847845,
+            "amplitude": 0.15735617
+          },
+          {
+            "time": 5.58678,
+            "amplitude": 0.249100136,
+            "emphasis": {
+              "amplitude": 0.3666383278947368,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.6157823,
+            "amplitude": 0.13767181
+          },
+          {
+            "time": 5.6207933,
+            "amplitude": 0.18156173600000003,
+            "emphasis": {
+              "amplitude": 0.28221532789473686,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.680771,
+            "amplitude": 0.10507352
+          },
+          {
+            "time": 5.7057824,
+            "amplitude": 0.16157836000000003,
+            "emphasis": {
+              "amplitude": 0.25723610789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.773764,
+            "amplitude": 0.10115617
+          },
+          {
+            "time": 5.7747846,
+            "amplitude": 0.160345352,
+            "emphasis": {
+              "amplitude": 0.25569484789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.8087754,
+            "amplitude": 0.229034592,
+            "emphasis": {
+              "amplitude": 0.34155639789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.83678,
+            "amplitude": 0.15205385
+          },
+          {
+            "time": 5.844762,
+            "amplitude": 0.295464208,
+            "emphasis": {
+              "amplitude": 0.42459341789473687,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.867778,
+            "amplitude": 0.18523039
+          },
+          {
+            "time": 5.896757,
+            "amplitude": 0.19511124000000002,
+            "emphasis": {
+              "amplitude": 0.29915220789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 5.919773,
+            "amplitude": 0.14234099
+          },
+          {
+            "time": 5.928753,
+            "amplitude": 0.24253096,
+            "emphasis": {
+              "amplitude": 0.35842685789473683,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.000748,
+            "amplitude": 0.164266144,
+            "emphasis": {
+              "amplitude": 0.26059583789473684,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.0017686,
+            "amplitude": 0.15790863200000002,
+            "emphasis": {
+              "amplitude": 0.25264894789473685,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.0387526,
+            "amplitude": 0.23387566
+          },
+          {
+            "time": 6.067755,
+            "amplitude": 0.10469364
+          },
+          {
+            "time": 6.118753,
+            "amplitude": 0.10214257
+          },
+          {
+            "time": 6.1397505,
+            "amplitude": 0.2184151
+          },
+          {
+            "time": 6.140748,
+            "amplitude": 0.4189236
+          },
+          {
+            "time": 6.1687527,
+            "amplitude": 0.28682113
+          },
+          {
+            "time": 6.2027435,
+            "amplitude": 0.36923784
+          },
+          {
+            "time": 6.2037416,
+            "amplitude": 0.60037816
+          },
+          {
+            "time": 6.227732,
+            "amplitude": 0.4507792
+          },
+          {
+            "time": 6.2287526,
+            "amplitude": 0.6775522
+          },
+          {
+            "time": 6.255737,
+            "amplitude": 0.30793723
+          },
+          {
+            "time": 6.319728,
+            "amplitude": 0.14083809
+          },
+          {
+            "time": 6.4277325,
+            "amplitude": 0.064572394
+          },
+          {
+            "time": 6.4337187,
+            "amplitude": 0.13597801
+          },
+          {
+            "time": 6.5007253,
+            "amplitude": 0.027271103
+          },
+          {
+            "time": 6.526712,
+            "amplitude": 0.14608261
+          },
+          {
+            "time": 6.615714,
+            "amplitude": 0.060826696
+          },
+          {
+            "time": 6.6257143,
+            "amplitude": 0.15087625
+          },
+          {
+            "time": 6.6637187,
+            "amplitude": 0.07896644
+          },
+          {
+            "time": 6.684716,
+            "amplitude": 0.22969781
+          },
+          {
+            "time": 6.7087073,
+            "amplitude": 0.1295609
+          },
+          {
+            "time": 6.7126985,
+            "amplitude": 0.27776766
+          },
+          {
+            "time": 6.7407026,
+            "amplitude": 0.2857151
+          },
+          {
+            "time": 6.742698,
+            "amplitude": 0.36923594400000004,
+            "emphasis": {
+              "amplitude": 0.46154493,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.762698,
+            "amplitude": 0.24819463
+          },
+          {
+            "time": 6.7687073,
+            "amplitude": 0.353300928,
+            "emphasis": {
+              "amplitude": 0.44162616,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.7877097,
+            "amplitude": 0.26584098
+          },
+          {
+            "time": 6.803696,
+            "amplitude": 0.45009584,
+            "emphasis": {
+              "amplitude": 0.5626198,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.823696,
+            "amplitude": 0.3231288
+          },
+          {
+            "time": 6.8246937,
+            "amplitude": 0.42107820800000006,
+            "emphasis": {
+              "amplitude": 0.52634776,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.8526983,
+            "amplitude": 0.30052122
+          },
+          {
+            "time": 6.866689,
+            "amplitude": 0.325689288,
+            "emphasis": {
+              "amplitude": 0.40711161,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.8926983,
+            "amplitude": 0.20258707
+          },
+          {
+            "time": 6.9096823,
+            "amplitude": 0.41737947200000003,
+            "emphasis": {
+              "amplitude": 0.52172434,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.9256916,
+            "amplitude": 0.269793656,
+            "emphasis": {
+              "amplitude": 0.33724207,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.943696,
+            "amplitude": 0.33724336,
+            "emphasis": {
+              "amplitude": 0.4215542,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 6.9656916,
+            "amplitude": 0.27285174
+          },
+          {
+            "time": 6.97068,
+            "amplitude": 0.3886888,
+            "emphasis": {
+              "amplitude": 0.485861,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.00068,
+            "amplitude": 0.27193372,
+            "emphasis": {
+              "amplitude": 0.33991715,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.001678,
+            "amplitude": 0.31976916800000005,
+            "emphasis": {
+              "amplitude": 0.39971146,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.017687,
+            "amplitude": 0.43910000000000005,
+            "emphasis": {
+              "amplitude": 0.548875,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.044694,
+            "amplitude": 0.273006128,
+            "emphasis": {
+              "amplitude": 0.34125766,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.046689,
+            "amplitude": 0.438492344,
+            "emphasis": {
+              "amplitude": 0.54811543,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.0656915,
+            "amplitude": 0.29072052
+          },
+          {
+            "time": 7.093673,
+            "amplitude": 0.19824746
+          },
+          {
+            "time": 7.097687,
+            "amplitude": 0.33432584,
+            "emphasis": {
+              "amplitude": 0.4179073,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.1236734,
+            "amplitude": 0.32934436800000005,
+            "emphasis": {
+              "amplitude": 0.41168046,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.19068,
+            "amplitude": 0.16889049
+          },
+          {
+            "time": 7.2266665,
+            "amplitude": 0.21444437
+          },
+          {
+            "time": 7.23068,
+            "amplitude": 0.28825680000000004,
+            "emphasis": {
+              "amplitude": 0.360321,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.2506576,
+            "amplitude": 0.21234357
+          },
+          {
+            "time": 7.2676644,
+            "amplitude": 0.38374092800000004,
+            "emphasis": {
+              "amplitude": 0.47967616,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.3036733,
+            "amplitude": 0.16632561
+          },
+          {
+            "time": 7.3236732,
+            "amplitude": 0.29083118
+          },
+          {
+            "time": 7.3746486,
+            "amplitude": 0.13935007
+          },
+          {
+            "time": 7.377664,
+            "amplitude": 0.29676998
+          },
+          {
+            "time": 7.4036508,
+            "amplitude": 0.21288988
+          },
+          {
+            "time": 7.4146485,
+            "amplitude": 0.28243100800000004,
+            "emphasis": {
+              "amplitude": 0.35303876,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.4426527,
+            "amplitude": 0.15524475
+          },
+          {
+            "time": 7.4716554,
+            "amplitude": 0.28569657600000004,
+            "emphasis": {
+              "amplitude": 0.35712072,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.501655,
+            "amplitude": 0.164084
+          },
+          {
+            "time": 7.5436506,
+            "amplitude": 0.18228292
+          },
+          {
+            "time": 7.5666437,
+            "amplitude": 0.29076082400000003,
+            "emphasis": {
+              "amplitude": 0.36345103,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.599637,
+            "amplitude": 0.15358876
+          },
+          {
+            "time": 7.6236506,
+            "amplitude": 0.33648180800000005,
+            "emphasis": {
+              "amplitude": 0.42060226,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.6386395,
+            "amplitude": 0.27369243
+          },
+          {
+            "time": 7.673628,
+            "amplitude": 0.14214662
+          },
+          {
+            "time": 7.6956463,
+            "amplitude": 0.17434558
+          },
+          {
+            "time": 7.7016325,
+            "amplitude": 0.29726208000000004,
+            "emphasis": {
+              "amplitude": 0.3715776,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.754626,
+            "amplitude": 0.14778362
+          },
+          {
+            "time": 7.759637,
+            "amplitude": 0.32238898
+          },
+          {
+            "time": 7.779637,
+            "amplitude": 0.28893728,
+            "emphasis": {
+              "amplitude": 0.3611716,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.8046255,
+            "amplitude": 0.22036086
+          },
+          {
+            "time": 7.8486166,
+            "amplitude": 0.21452156
+          },
+          {
+            "time": 7.853628,
+            "amplitude": 0.36567130400000003,
+            "emphasis": {
+              "amplitude": 0.45708913,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.8746257,
+            "amplitude": 0.38256592,
+            "emphasis": {
+              "amplitude": 0.4782074,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 7.906621,
+            "amplitude": 0.19640513
+          },
+          {
+            "time": 7.933628,
+            "amplitude": 0.39897704,
+            "emphasis": {
+              "amplitude": 0.4987213,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 8.000612,
+            "amplitude": 0.21670282
+          },
+          {
+            "time": 8.00161,
+            "amplitude": 0.23071164
+          },
+          {
+            "time": 8.022631,
+            "amplitude": 0.42786508000000006,
+            "emphasis": {
+              "amplitude": 0.53483135,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 8.0566435,
+            "amplitude": 0.23248714
+          },
+          {
+            "time": 8.088639,
+            "amplitude": 0.32267332
+          },
+          {
+            "time": 8.090657,
+            "amplitude": 0.46824426399999997,
+            "emphasis": {
+              "amplitude": 0.58530533,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 8.117664,
+            "amplitude": 0.29192346
+          },
+          {
+            "time": 8.158685,
+            "amplitude": 0.23821677
+          },
+          {
+            "time": 8.186689,
+            "amplitude": 0.444118456,
+            "emphasis": {
+              "amplitude": 0.55514807,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 8.220703,
+            "amplitude": 0.24869749
+          },
+          {
+            "time": 8.253718,
+            "amplitude": 0.3232526
+          },
+          {
+            "time": 8.254717,
+            "amplitude": 0.42882768000000004,
+            "emphasis": {
+              "amplitude": 0.5360346,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 8.283719,
+            "amplitude": 0.28510308
+          },
+          {
+            "time": 8.305737,
+            "amplitude": 0.31839652,
+            "emphasis": {
+              "amplitude": 0.39799565,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 8.32975,
+            "amplitude": 0.2062391
+          },
+          {
+            "time": 8.353764,
+            "amplitude": 0.49433824000000004,
+            "emphasis": {
+              "amplitude": 0.6179228,
+              "frequency": 0.1
+            }
+          },
+          {
+            "time": 8.387777,
+            "amplitude": 0.2506057
+          },
+          {
+            "time": 8.419773,
+            "amplitude": 0.34407154
+          },
+          {
+            "time": 8.422789,
+            "amplitude": 0.6048344
+          },
+          {
+            "time": 8.455805,
+            "amplitude": 0.28923336
+          },
+          {
+            "time": 8.4778,
+            "amplitude": 0.5230274
+          },
+          {
+            "time": 8.502811,
+            "amplitude": 0.26520577
+          },
+          {
+            "time": 8.518821,
+            "amplitude": 0.54037714
+          },
+          {
+            "time": 8.542834,
+            "amplitude": 0.32582647
+          },
+          {
+            "time": 8.583855,
+            "amplitude": 0.3375412
+          },
+          {
+            "time": 8.590861,
+            "amplitude": 0.455218744,
+            "emphasis": {
+              "amplitude": 0.56902343,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 8.629864,
+            "amplitude": 0.27041307
+          },
+          {
+            "time": 8.639864,
+            "amplitude": 0.36576984,
+            "emphasis": {
+              "amplitude": 0.4572123,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 8.659886,
+            "amplitude": 0.24565387
+          },
+          {
+            "time": 8.681882,
+            "amplitude": 0.428670832,
+            "emphasis": {
+              "amplitude": 0.53583854,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 8.715896,
+            "amplitude": 0.2675479
+          },
+          {
+            "time": 8.749909,
+            "amplitude": 0.445659968,
+            "emphasis": {
+              "amplitude": 0.55707496,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 8.777936,
+            "amplitude": 0.3106079
+          },
+          {
+            "time": 8.800929,
+            "amplitude": 0.4142573600000001,
+            "emphasis": {
+              "amplitude": 0.5178217,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 8.83195,
+            "amplitude": 0.23262455
+          },
+          {
+            "time": 8.847959,
+            "amplitude": 0.45544109600000005,
+            "emphasis": {
+              "amplitude": 0.56930137,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 8.898979,
+            "amplitude": 0.25750443
+          },
+          {
+            "time": 8.916984,
+            "amplitude": 0.4863242160000001,
+            "emphasis": {
+              "amplitude": 0.60790527,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 8.949002,
+            "amplitude": 0.28675726
+          },
+          {
+            "time": 8.971995,
+            "amplitude": 0.360898832,
+            "emphasis": {
+              "amplitude": 0.45112354,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.000023,
+            "amplitude": 0.3712902
+          },
+          {
+            "time": 9.00102,
+            "amplitude": 0.36813134
+          },
+          {
+            "time": 9.014013,
+            "amplitude": 0.4752430000000001,
+            "emphasis": {
+              "amplitude": 0.59405375,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.05703,
+            "amplitude": 0.29185715
+          },
+          {
+            "time": 9.082041,
+            "amplitude": 0.45320348800000004,
+            "emphasis": {
+              "amplitude": 0.56650436,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.115057,
+            "amplitude": 0.31654233
+          },
+          {
+            "time": 9.137074,
+            "amplitude": 0.363339232,
+            "emphasis": {
+              "amplitude": 0.45417404,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.156077,
+            "amplitude": 0.25360054
+          },
+          {
+            "time": 9.181088,
+            "amplitude": 0.47438224,
+            "emphasis": {
+              "amplitude": 0.5929778,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.203107,
+            "amplitude": 0.34228623
+          },
+          {
+            "time": 9.2291155,
+            "amplitude": 0.2712076
+          },
+          {
+            "time": 9.24712,
+            "amplitude": 0.46994643199999997,
+            "emphasis": {
+              "amplitude": 0.58743304,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.292131,
+            "amplitude": 0.31730574
+          },
+          {
+            "time": 9.302132,
+            "amplitude": 0.37455811200000005,
+            "emphasis": {
+              "amplitude": 0.46819764,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.320136,
+            "amplitude": 0.25729793
+          },
+          {
+            "time": 9.34415,
+            "amplitude": 0.47804388800000003,
+            "emphasis": {
+              "amplitude": 0.59755486,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.39517,
+            "amplitude": 0.25861254
+          },
+          {
+            "time": 9.412177,
+            "amplitude": 0.50119888,
+            "emphasis": {
+              "amplitude": 0.6264986,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.44619,
+            "amplitude": 0.3198481
+          },
+          {
+            "time": 9.468208,
+            "amplitude": 0.400430104,
+            "emphasis": {
+              "amplitude": 0.50053763,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.495215,
+            "amplitude": 0.24197039
+          },
+          {
+            "time": 9.510226,
+            "amplitude": 0.54553224,
+            "emphasis": {
+              "amplitude": 0.6819153,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.539228,
+            "amplitude": 0.3332842
+          },
+          {
+            "time": 9.561247,
+            "amplitude": 0.31369716
+          },
+          {
+            "time": 9.579251,
+            "amplitude": 0.52249632,
+            "emphasis": {
+              "amplitude": 0.6531204,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.6122675,
+            "amplitude": 0.31140202
+          },
+          {
+            "time": 9.634263,
+            "amplitude": 0.433278512,
+            "emphasis": {
+              "amplitude": 0.54159814,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.661292,
+            "amplitude": 0.2550544
+          },
+          {
+            "time": 9.677301,
+            "amplitude": 0.49208531200000005,
+            "emphasis": {
+              "amplitude": 0.61510664,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.712313,
+            "amplitude": 0.28082722
+          },
+          {
+            "time": 9.728322,
+            "amplitude": 0.29712605
+          },
+          {
+            "time": 9.746326,
+            "amplitude": 0.52068596,
+            "emphasis": {
+              "amplitude": 0.65085745,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.797347,
+            "amplitude": 0.2840627
+          },
+          {
+            "time": 9.805351,
+            "amplitude": 0.439779568,
+            "emphasis": {
+              "amplitude": 0.54972446,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.830362,
+            "amplitude": 0.24498594
+          },
+          {
+            "time": 9.848367,
+            "amplitude": 0.4933012,
+            "emphasis": {
+              "amplitude": 0.6166265,
+              "frequency": 0.5
+            }
+          },
+          {
+            "time": 9.883378,
+            "amplitude": 0.2511896
+          },
+          {
+            "time": 9.899387,
+            "amplitude": 0.23290746
+          },
+          {
+            "time": 9.92238,
+            "amplitude": 0.75131166
+          },
+          {
+            "time": 9.968412,
+            "amplitude": 0.25871935
+          },
+          {
+            "time": 10.000431,
+            "amplitude": 0.22507955
+          },
+          {
+            "time": 10.001429,
+            "amplitude": 0.21771073
+          },
+          {
+            "time": 10.012426,
+            "amplitude": 0.6630631
+          },
+          {
+            "time": 10.053447,
+            "amplitude": 0.68577474
+          },
+          {
+            "time": 10.0854645,
+            "amplitude": 0.3327846
+          },
+          {
+            "time": 10.112472,
+            "amplitude": 0.6420041
+          },
+          {
+            "time": 10.135488,
+            "amplitude": 0.44055992
+          },
+          {
+            "time": 10.137483,
+            "amplitude": 0.7572745
+          },
+          {
+            "time": 10.171496,
+            "amplitude": 0.29001233
+          },
+          {
+            "time": 10.203514,
+            "amplitude": 0.48840544
+          },
+          {
+            "time": 10.20551,
+            "amplitude": 0.80868816
+          },
+          {
+            "time": 10.238526,
+            "amplitude": 0.32146987
+          },
+          {
+            "time": 10.282539,
+            "amplitude": 0.21799137
+          },
+          {
+            "time": 10.30254,
+            "amplitude": 0.53118026
+          },
+          {
+            "time": 10.336554,
+            "amplitude": 0.24129903
+          },
+          {
+            "time": 10.368571,
+            "amplitude": 0.31740576
+          },
+          {
+            "time": 10.370566,
+            "amplitude": 0.5641645
+          },
+          {
+            "time": 10.398594,
+            "amplitude": 0.28684586
+          },
+          {
+            "time": 10.420589,
+            "amplitude": 0.39801058
+          },
+          {
+            "time": 10.4456005,
+            "amplitude": 0.2049935
+          },
+          {
+            "time": 10.4686165,
+            "amplitude": 0.494346192,
+            "emphasis": {
+              "amplitude": 0.61793274,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 10.487618,
+            "amplitude": 0.3733186
+          },
+          {
+            "time": 10.524626,
+            "amplitude": 0.27426207
+          },
+          {
+            "time": 10.537642,
+            "amplitude": 0.48387308000000007,
+            "emphasis": {
+              "amplitude": 0.60484135,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 10.571655,
+            "amplitude": 0.28863677
+          },
+          {
+            "time": 10.588662,
+            "amplitude": 0.41286492,
+            "emphasis": {
+              "amplitude": 0.51608115,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 10.618662,
+            "amplitude": 0.26302707
+          },
+          {
+            "time": 10.633674,
+            "amplitude": 0.42821928,
+            "emphasis": {
+              "amplitude": 0.5352741,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 10.657687,
+            "amplitude": 0.32918155
+          },
+          {
+            "time": 10.699705,
+            "amplitude": 0.33639103
+          },
+          {
+            "time": 10.705714,
+            "amplitude": 0.45520248,
+            "emphasis": {
+              "amplitude": 0.5690031,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 10.745714,
+            "amplitude": 0.2683024
+          },
+          {
+            "time": 10.774739,
+            "amplitude": 0.24672809
+          },
+          {
+            "time": 10.798753,
+            "amplitude": 0.427365496,
+            "emphasis": {
+              "amplitude": 0.53420687,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 10.831768,
+            "amplitude": 0.2669759
+          },
+          {
+            "time": 10.865782,
+            "amplitude": 0.44566516800000006,
+            "emphasis": {
+              "amplitude": 0.55708146,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 10.898775,
+            "amplitude": 0.31042057
+          },
+          {
+            "time": 10.915782,
+            "amplitude": 0.414272832,
+            "emphasis": {
+              "amplitude": 0.51784104,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 10.946802,
+            "amplitude": 0.23426011
+          },
+          {
+            "time": 10.962811,
+            "amplitude": 0.45272088000000005,
+            "emphasis": {
+              "amplitude": 0.5659011,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.000816,
+            "amplitude": 0.33433664
+          },
+          {
+            "time": 11.001837,
+            "amplitude": 0.3291025
+          },
+          {
+            "time": 11.029841,
+            "amplitude": 0.39132378
+          },
+          {
+            "time": 11.0318365,
+            "amplitude": 0.486331416,
+            "emphasis": {
+              "amplitude": 0.60791427,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.064853,
+            "amplitude": 0.28283936
+          },
+          {
+            "time": 11.087869,
+            "amplitude": 0.44988766
+          },
+          {
+            "time": 11.105873,
+            "amplitude": 0.25346398
+          },
+          {
+            "time": 11.128889,
+            "amplitude": 0.47524864000000006,
+            "emphasis": {
+              "amplitude": 0.5940608,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.157891,
+            "amplitude": 0.29969382
+          },
+          {
+            "time": 11.194898,
+            "amplitude": 0.4046535
+          },
+          {
+            "time": 11.196916,
+            "amplitude": 0.44789476,
+            "emphasis": {
+              "amplitude": 0.55986845,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.230929,
+            "amplitude": 0.31474334
+          },
+          {
+            "time": 11.252925,
+            "amplitude": 0.45416895
+          },
+          {
+            "time": 11.2789345,
+            "amplitude": 0.25917026
+          },
+          {
+            "time": 11.294943,
+            "amplitude": 0.47609184000000004,
+            "emphasis": {
+              "amplitude": 0.5951148,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.344966,
+            "amplitude": 0.2688361
+          },
+          {
+            "time": 11.361973,
+            "amplitude": 0.46993864,
+            "emphasis": {
+              "amplitude": 0.5874233,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.436008,
+            "amplitude": 0.25444236
+          },
+          {
+            "time": 11.460023,
+            "amplitude": 0.47803824,
+            "emphasis": {
+              "amplitude": 0.5975478,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.510022,
+            "amplitude": 0.2592828
+          },
+          {
+            "time": 11.528049,
+            "amplitude": 0.5011968800000001,
+            "emphasis": {
+              "amplitude": 0.6264961,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.561043,
+            "amplitude": 0.3228003
+          },
+          {
+            "time": 11.583061,
+            "amplitude": 0.40042736000000007,
+            "emphasis": {
+              "amplitude": 0.5005342,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.610067,
+            "amplitude": 0.24272123
+          },
+          {
+            "time": 11.626077,
+            "amplitude": 0.5455409999999999,
+            "emphasis": {
+              "amplitude": 0.68192625,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.655102,
+            "amplitude": 0.3288681
+          },
+          {
+            "time": 11.692108,
+            "amplitude": 0.43868762
+          },
+          {
+            "time": 11.694104,
+            "amplitude": 0.522493168,
+            "emphasis": {
+              "amplitude": 0.65311646,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.728118,
+            "amplitude": 0.30965504
+          },
+          {
+            "time": 11.750135,
+            "amplitude": 0.43326411200000003,
+            "emphasis": {
+              "amplitude": 0.54158014,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.777143,
+            "amplitude": 0.25387052
+          },
+          {
+            "time": 11.792154,
+            "amplitude": 0.48082104000000003,
+            "emphasis": {
+              "amplitude": 0.6010263,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.828163,
+            "amplitude": 0.27899235
+          },
+          {
+            "time": 11.849161,
+            "amplitude": 0.3053782
+          },
+          {
+            "time": 11.866168,
+            "amplitude": 0.5527024,
+            "emphasis": {
+              "amplitude": 0.690878,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.897188,
+            "amplitude": 0.333265
+          },
+          {
+            "time": 11.915193,
+            "amplitude": 0.4081725600000001,
+            "emphasis": {
+              "amplitude": 0.5102157,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.945215,
+            "amplitude": 0.2386522
+          },
+          {
+            "time": 11.968208,
+            "amplitude": 0.47885332,
+            "emphasis": {
+              "amplitude": 0.59856665,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 11.998231,
+            "amplitude": 0.28346846
+          },
+          {
+            "time": 12.000227,
+            "amplitude": 0.43232438
+          },
+          {
+            "time": 12.0012245,
+            "amplitude": 0.42851648
+          },
+          {
+            "time": 12.015238,
+            "amplitude": 0.30089873
+          },
+          {
+            "time": 12.021247,
+            "amplitude": 0.380597544,
+            "emphasis": {
+              "amplitude": 0.47574693,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 12.031247,
+            "amplitude": 0.38731122
+          },
+          {
+            "time": 12.033242,
+            "amplitude": 0.54229808,
+            "emphasis": {
+              "amplitude": 0.6778726,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 12.046258,
+            "amplitude": 0.41089587200000005,
+            "emphasis": {
+              "amplitude": 0.51361984,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 12.067256,
+            "amplitude": 0.3312845
+          },
+          {
+            "time": 12.069251,
+            "amplitude": 0.4305616
+          },
+          {
+            "time": 12.083265,
+            "amplitude": 0.3099676
+          },
+          {
+            "time": 12.089274,
+            "amplitude": 0.461521152,
+            "emphasis": {
+              "amplitude": 0.57690144,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 12.103265,
+            "amplitude": 0.36019632
+          },
+          {
+            "time": 12.116281,
+            "amplitude": 0.26637077
+          },
+          {
+            "time": 12.120272,
+            "amplitude": 0.41022456
+          },
+          {
+            "time": 12.126281,
+            "amplitude": 0.3571024
+          },
+          {
+            "time": 12.13229,
+            "amplitude": 0.48724264000000006,
+            "emphasis": {
+              "amplitude": 0.6090533,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 12.151292,
+            "amplitude": 0.38718545
+          },
+          {
+            "time": 12.168299,
+            "amplitude": 0.29219446
+          },
+          {
+            "time": 12.169297,
+            "amplitude": 0.43117234
+          },
+          {
+            "time": 12.184308,
+            "amplitude": 0.30006033
+          },
+          {
+            "time": 12.191315,
+            "amplitude": 0.37339568,
+            "emphasis": {
+              "amplitude": 0.4667446,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 12.201315,
+            "amplitude": 0.45109028
+          },
+          {
+            "time": 12.202312,
+            "amplitude": 0.5507596,
+            "emphasis": {
+              "amplitude": 0.6884495,
+              "frequency": 0.9
+            }
+          },
+          {
+            "time": 12.226326,
+            "amplitude": 0.43857706
+          },
+          {
+            "time": 12.23932,
+            "amplitude": 0.42355603
+          },
+          {
+            "time": 12.254331,
+            "amplitude": 0.3072234
+          },
+          {
+            "time": 12.256327,
+            "amplitude": 0.52776814
+          },
+          {
+            "time": 12.287347,
+            "amplitude": 0.23422825
+          },
+          {
+            "time": 12.292358,
+            "amplitude": 0.39238554
+          },
+          {
+            "time": 12.319365,
+            "amplitude": 0.2708821
+          },
+          {
+            "time": 12.325352,
+            "amplitude": 0.41556507
+          },
+          {
+            "time": 12.352381,
+            "amplitude": 0.18959637
+          },
+          {
+            "time": 12.366372,
+            "amplitude": 0.12343487
+          },
+          {
+            "time": 12.381383,
+            "amplitude": 0.16933733
+          },
+          {
+            "time": 12.394399,
+            "amplitude": 0.11697081
+          },
+          {
+            "time": 12.427392,
+            "amplitude": 0.1464617
+          },
+          {
+            "time": 12.433401,
+            "amplitude": 0.21579954
+          },
+          {
+            "time": 12.468412,
+            "amplitude": 0.07529813
+          },
+          {
+            "time": 12.520431,
+            "amplitude": 0.0299637
+          },
+          {
+            "time": 12.559456,
+            "amplitude": 0.025649622
+          },
+          {
+            "time": 12.631496,
+            "amplitude": 0.013015568
+          },
+          {
+            "time": 12.632154,
+            "amplitude": 0.013015568
+          },
+          {
+            "time": 12.632154,
+            "amplitude": 0.013015568
+          }
+        ],
+        "frequency": [
+          {
+            "time": 0,
+            "frequency": 0.36628503
+          },
+          {
+            "time": 0.023219952,
+            "frequency": 0.21865611
+          },
+          {
+            "time": 0.0493424,
+            "frequency": 0.22021881
+          },
+          {
+            "time": 0.089977324,
+            "frequency": 0.31904912
+          },
+          {
+            "time": 0.11029478,
+            "frequency": 0.25169465
+          },
+          {
+            "time": 0.12770975,
+            "frequency": 0.3596581
+          },
+          {
+            "time": 0.1538322,
+            "frequency": 0.23608138
+          },
+          {
+            "time": 0.19446713,
+            "frequency": 0.3185801
+          },
+          {
+            "time": 0.22639456,
+            "frequency": 0.2128974
+          },
+          {
+            "time": 0.28734693,
+            "frequency": 0.2813325
+          },
+          {
+            "time": 0.3076644,
+            "frequency": 0.22678949
+          },
+          {
+            "time": 0.3686168,
+            "frequency": 0.31111324
+          },
+          {
+            "time": 0.40054423,
+            "frequency": 0.28079653
+          },
+          {
+            "time": 0.42376417,
+            "frequency": 0.15547872
+          },
+          {
+            "time": 0.4469841,
+            "frequency": 0.25198898
+          },
+          {
+            "time": 0.5021315,
+            "frequency": 0.1842495
+          },
+          {
+            "time": 0.5456689,
+            "frequency": 0.1909822915789474
+          },
+          {
+            "time": 0.5601814,
+            "frequency": 0.08906788157894736
+          },
+          {
+            "time": 0.64725626,
+            "frequency": 0.057604571578947356
+          },
+          {
+            "time": 0.6849887,
+            "frequency": 0.14240313157894738
+          },
+          {
+            "time": 0.7227211,
+            "frequency": 0.10554228157894739
+          },
+          {
+            "time": 0.7604535,
+            "frequency": 0.21597953157894736
+          },
+          {
+            "time": 0.8097959,
+            "frequency": 0.09535179157894737
+          },
+          {
+            "time": 0.8417233,
+            "frequency": 0.22639621157894738
+          },
+          {
+            "time": 0.8533333,
+            "frequency": 0.13783913157894737
+          },
+          {
+            "time": 0.8765533,
+            "frequency": 0.23555825157894736
+          },
+          {
+            "time": 0.9084807,
+            "frequency": 0.07037031157894735
+          },
+          {
+            "time": 0.9462131,
+            "frequency": 0.16001645157894737
+          },
+          {
+            "time": 0.9578231,
+            "frequency": 0.035119511578947354
+          },
+          {
+            "time": 0.9984581,
+            "frequency": 0.1395763815789474
+          },
+          {
+            "time": 1.0013604,
+            "frequency": 0.13685841157894738
+          },
+          {
+            "time": 1.0419954,
+            "frequency": 0.05919861157894735
+          },
+          {
+            "time": 1.0507029,
+            "frequency": 0.18282730157894742
+          },
+          {
+            "time": 1.0855328,
+            "frequency": 0.052198551578947344
+          },
+          {
+            "time": 1.1319727,
+            "frequency": 0.2435581815789474
+          },
+          {
+            "time": 1.1609976,
+            "frequency": 0.06129181157894735
+          },
+          {
+            "time": 1.1697052,
+            "frequency": 0.17959661157894738
+          },
+          {
+            "time": 1.2045351,
+            "frequency": 0.04607705157894737
+          },
+          {
+            "time": 1.2538775,
+            "frequency": 0.2226430515789474
+          },
+          {
+            "time": 1.2770975,
+            "frequency": 0.05697043157894735
+          },
+          {
+            "time": 1.3061224,
+            "frequency": 0.16471917157894736
+          },
+          {
+            "time": 1.3206348,
+            "frequency": 0.06714412157894736
+          },
+          {
+            "time": 1.3699772,
+            "frequency": 0.25561333157894733
+          },
+          {
+            "time": 1.3960997,
+            "frequency": 0.03388896157894736
+          },
+          {
+            "time": 1.4251246,
+            "frequency": 0.1340689715789474
+          },
+          {
+            "time": 1.4454421,
+            "frequency": 0.04661145157894736
+          },
+          {
+            "time": 1.4860771,
+            "frequency": 0.22739843157894737
+          },
+          {
+            "time": 1.5063945,
+            "frequency": 0.07726226157894736
+          },
+          {
+            "time": 1.5615419,
+            "frequency": 0.07308187157894735
+          },
+          {
+            "time": 1.6021768,
+            "frequency": 0.2250178815789474
+          },
+          {
+            "time": 1.6282992,
+            "frequency": 0.061892401578947334
+          },
+          {
+            "time": 1.6544217,
+            "frequency": 0.1435455515789474
+          },
+          {
+            "time": 1.7037641,
+            "frequency": 0.09310656157894738
+          },
+          {
+            "time": 1.7182765,
+            "frequency": 0.2190902915789474
+          },
+          {
+            "time": 1.7414966,
+            "frequency": 0.04808215157894735
+          },
+          {
+            "time": 1.7763264,
+            "frequency": 0.13043679157894736
+          },
+          {
+            "time": 1.9098412,
+            "frequency": 0.06285021157894734
+          },
+          {
+            "time": 1.9475737,
+            "frequency": 0.2081782615789474
+          },
+          {
+            "time": 1.9736961,
+            "frequency": 0.06391815157894735
+          },
+          {
+            "time": 1.9998186,
+            "frequency": 0.1155179215789474
+          },
+          {
+            "time": 2.002721,
+            "frequency": 0.13205869157894737
+          },
+          {
+            "time": 2.037551,
+            "frequency": 0.057803211578947356
+          },
+          {
+            "time": 2.0636735,
+            "frequency": 0.2020611815789474
+          },
+          {
+            "time": 2.0868933,
+            "frequency": 0.061553951578947344
+          },
+          {
+            "time": 2.1188207,
+            "frequency": 0.14165128157894738
+          },
+          {
+            "time": 2.1623583,
+            "frequency": 0.12058141157894739
+          },
+          {
+            "time": 2.1768706,
+            "frequency": 0.21721176157894737
+          },
+          {
+            "time": 2.2029932,
+            "frequency": 0.06626516157894735
+          },
+          {
+            "time": 2.2465305,
+            "frequency": 0.18685235
+          },
+          {
+            "time": 2.2871654,
+            "frequency": 0.34271452
+          },
+          {
+            "time": 2.3161905,
+            "frequency": 0.19152875
+          },
+          {
+            "time": 2.3452153,
+            "frequency": 0.28902808
+          },
+          {
+            "time": 2.3713377,
+            "frequency": 0.18630095
+          },
+          {
+            "time": 2.4003627,
+            "frequency": 0.33411124
+          },
+          {
+            "time": 2.4235826,
+            "frequency": 0.19037835
+          },
+          {
+            "time": 2.4439,
+            "frequency": 0.287344
+          },
+          {
+            "time": 2.4700227,
+            "frequency": 0.17577314
+          },
+          {
+            "time": 2.5164626,
+            "frequency": 0.35822335
+          },
+          {
+            "time": 2.5367799,
+            "frequency": 0.17870304
+          },
+          {
+            "time": 2.5512924,
+            "frequency": 0.30452976
+          },
+          {
+            "time": 2.5745125,
+            "frequency": 0.1834136
+          },
+          {
+            "time": 2.6441722,
+            "frequency": 0.2730383
+          },
+          {
+            "time": 2.6702948,
+            "frequency": 0.1870889
+          },
+          {
+            "time": 2.6877096,
+            "frequency": 0.3491878
+          },
+          {
+            "time": 2.7225397,
+            "frequency": 0.22581905
+          },
+          {
+            "time": 2.7631745,
+            "frequency": 0.30875006
+          },
+          {
+            "time": 2.812517,
+            "frequency": 0.19340809
+          },
+          {
+            "time": 2.9112017,
+            "frequency": 0.24421728
+          },
+          {
+            "time": 2.9402266,
+            "frequency": 0.35540995
+          },
+          {
+            "time": 2.9982765,
+            "frequency": 0.25089294
+          },
+          {
+            "time": 3.001179,
+            "frequency": 0.24601826
+          },
+          {
+            "time": 3.0621314,
+            "frequency": 0.2168543
+          },
+          {
+            "time": 3.0853515,
+            "frequency": 0.27925816
+          },
+          {
+            "time": 3.1143763,
+            "frequency": 0.025675790000000004
+          },
+          {
+            "time": 3.1782312,
+            "frequency": 0.04335469
+          },
+          {
+            "time": 3.201451,
+            "frequency": 0.17882342999999992
+          },
+          {
+            "time": 3.2449884,
+            "frequency": 0.02638607000000001
+          },
+          {
+            "time": 3.265306,
+            "frequency": 0.09472634
+          },
+          {
+            "time": 3.2972333,
+            "frequency": 0
+          },
+          {
+            "time": 3.3756008,
+            "frequency": 0.1772997499999999
+          },
+          {
+            "time": 3.3959184,
+            "frequency": 0.008477270000000009
+          },
+          {
+            "time": 3.4626756,
+            "frequency": 0.12316738999999992
+          },
+          {
+            "time": 3.477188,
+            "frequency": 0.019008710000000012
+          },
+          {
+            "time": 3.500408,
+            "frequency": 0.11451951999999992
+          },
+          {
+            "time": 3.5207255,
+            "frequency": 0.05201536000000001
+          },
+          {
+            "time": 3.5787754,
+            "frequency": 0.11102123999999995
+          },
+          {
+            "time": 3.6136053,
+            "frequency": 0.07548978999999997
+          },
+          {
+            "time": 3.6194103,
+            "frequency": 0.1818214899999999
+          },
+          {
+            "time": 3.6571426,
+            "frequency": 0.036624569999999995
+          },
+          {
+            "time": 3.706485,
+            "frequency": 0.09248478999999997
+          },
+          {
+            "time": 3.71229,
+            "frequency": 0.19041950999999993
+          },
+          {
+            "time": 3.73551,
+            "frequency": 0.030602109999999988
+          },
+          {
+            "time": 3.7848525,
+            "frequency": 0.13579948999999997
+          },
+          {
+            "time": 3.8022676,
+            "frequency": 0.03055257
+          },
+          {
+            "time": 3.8719273,
+            "frequency": 0.13092882999999994
+          },
+          {
+            "time": 3.9038548,
+            "frequency": 0.04573357
+          },
+          {
+            "time": 3.9154646,
+            "frequency": 0.12416131999999995
+          },
+          {
+            "time": 3.9560997,
+            "frequency": 0.05831555999999999
+          },
+          {
+            "time": 3.970612,
+            "frequency": 0.15521118999999992
+          },
+          {
+            "time": 3.9996371,
+            "frequency": 0.09378053000000001
+          },
+          {
+            "time": 4.0025396,
+            "frequency": 0.07239358999999998
+          },
+          {
+            "time": 4.0431743,
+            "frequency": 0.10183692999999998
+          },
+          {
+            "time": 4.051882,
+            "frequency": 0.24994028999999993
+          },
+          {
+            "time": 4.0721993,
+            "frequency": 0.08238538999999999
+          },
+          {
+            "time": 4.1244445,
+            "frequency": 0.07178508999999997
+          },
+          {
+            "time": 4.1360545,
+            "frequency": 0.16764781999999992
+          },
+          {
+            "time": 4.1563716,
+            "frequency": 0.009186250000000007
+          },
+          {
+            "time": 4.165079,
+            "frequency": 0.07609918999999996
+          },
+          {
+            "time": 4.205714,
+            "frequency": 0.07037003
+          },
+          {
+            "time": 4.2550564,
+            "frequency": 0.1549860699999999
+          },
+          {
+            "time": 4.281179,
+            "frequency": 0.05892644999999999
+          },
+          {
+            "time": 4.365351,
+            "frequency": 0.06182519
+          },
+          {
+            "time": 4.403084,
+            "frequency": 0.14237948999999994
+          },
+          {
+            "time": 4.420499,
+            "frequency": 0.002145360000000013
+          },
+          {
+            "time": 4.4669385,
+            "frequency": 0.11816248999999994
+          },
+          {
+            "time": 4.4843535,
+            "frequency": 0.04938118
+          },
+          {
+            "time": 4.516281,
+            "frequency": 0.08390813000000001
+          },
+          {
+            "time": 4.5540133,
+            "frequency": 0.007237209999999994
+          },
+          {
+            "time": 4.568526,
+            "frequency": 0.11433074999999991
+          },
+          {
+            "time": 4.6062584,
+            "frequency": 0.024402570000000012
+          },
+          {
+            "time": 4.649796,
+            "frequency": 0.11560146999999991
+          },
+          {
+            "time": 4.681723,
+            "frequency": 0.026954900000000004
+          },
+          {
+            "time": 4.722358,
+            "frequency": 0.12262112999999995
+          },
+          {
+            "time": 4.748481,
+            "frequency": 0.05707719
+          },
+          {
+            "time": 4.815238,
+            "frequency": 0.14654446999999993
+          },
+          {
+            "time": 4.8674827,
+            "frequency": 0.05428693000000001
+          },
+          {
+            "time": 4.925533,
+            "frequency": 0.10524306999999998
+          },
+          {
+            "time": 4.9400454,
+            "frequency": 0.18911103999999992
+          },
+          {
+            "time": 4.963265,
+            "frequency": 0.05256881999999999
+          },
+          {
+            "time": 4.998095,
+            "frequency": 0.12214828999999992
+          },
+          {
+            "time": 5.0009975,
+            "frequency": 0.13302836999999995
+          },
+          {
+            "time": 5.02712,
+            "frequency": 0.05161059000000001
+          },
+          {
+            "time": 5.0764623,
+            "frequency": 0.04336959000000001
+          },
+          {
+            "time": 5.0880723,
+            "frequency": 0.23492974578947357
+          },
+          {
+            "time": 5.114195,
+            "frequency": 0.16255698578947367
+          },
+          {
+            "time": 5.1519275,
+            "frequency": 0.24670849578947357
+          },
+          {
+            "time": 5.1954646,
+            "frequency": 0.18560311578947364
+          },
+          {
+            "time": 5.204172,
+            "frequency": 0.26142875578947355
+          },
+          {
+            "time": 5.233197,
+            "frequency": 0.2249304
+          },
+          {
+            "time": 5.2419047,
+            "frequency": 0.2276962457894736
+          },
+          {
+            "time": 5.265125,
+            "frequency": 0.2440343
+          },
+          {
+            "time": 5.297052,
+            "frequency": 0.23159993578947358
+          },
+          {
+            "time": 5.326077,
+            "frequency": 0.21303791
+          },
+          {
+            "time": 5.3841267,
+            "frequency": 0.1801601157894736
+          },
+          {
+            "time": 5.4334693,
+            "frequency": 0.24299246
+          },
+          {
+            "time": 5.4828115,
+            "frequency": 0.24149949578947355
+          },
+          {
+            "time": 5.5350566,
+            "frequency": 0.21195507
+          },
+          {
+            "time": 5.5582767,
+            "frequency": 0.19209734578947363
+          },
+          {
+            "time": 5.590204,
+            "frequency": 0.20017801
+          },
+          {
+            "time": 5.607619,
+            "frequency": 0.21838278578947362
+          },
+          {
+            "time": 5.6453514,
+            "frequency": 0.22328473578947358
+          },
+          {
+            "time": 5.6627665,
+            "frequency": 0.24021831
+          },
+          {
+            "time": 5.7672563,
+            "frequency": 0.36104733
+          },
+          {
+            "time": 5.807891,
+            "frequency": 0.28157806
+          },
+          {
+            "time": 5.825306,
+            "frequency": 0.41281676
+          },
+          {
+            "time": 5.8514285,
+            "frequency": 0.2564014
+          },
+          {
+            "time": 5.8833556,
+            "frequency": 0.36188826
+          },
+          {
+            "time": 5.9443083,
+            "frequency": 0.23946738
+          },
+          {
+            "time": 5.9501133,
+            "frequency": 0.29846185
+          },
+          {
+            "time": 5.9994555,
+            "frequency": 0.30950978
+          },
+          {
+            "time": 6.002358,
+            "frequency": 0.29254395
+          },
+          {
+            "time": 6.0517006,
+            "frequency": 0.26382223
+          },
+          {
+            "time": 6.060408,
+            "frequency": 0.44208494
+          },
+          {
+            "time": 6.1010427,
+            "frequency": 0.29997817
+          },
+          {
+            "time": 6.1097503,
+            "frequency": 0.43906894
+          },
+          {
+            "time": 6.170703,
+            "frequency": 0.2311851
+          },
+          {
+            "time": 6.1997275,
+            "frequency": 0.36359808
+          },
+          {
+            "time": 6.23746,
+            "frequency": 0.2191793
+          },
+          {
+            "time": 6.2577777,
+            "frequency": 0.31431857
+          },
+          {
+            "time": 6.2780952,
+            "frequency": 0.23709829
+          },
+          {
+            "time": 6.301315,
+            "frequency": 0.32600752
+          },
+          {
+            "time": 6.336145,
+            "frequency": 0.20662837
+          },
+          {
+            "time": 6.36517,
+            "frequency": 0.30984697
+          },
+          {
+            "time": 6.4609523,
+            "frequency": 0.21193331
+          },
+          {
+            "time": 6.4899774,
+            "frequency": 0.34713516
+          },
+          {
+            "time": 6.513197,
+            "frequency": 0.18006271
+          },
+          {
+            "time": 6.548027,
+            "frequency": 0.27479362
+          },
+          {
+            "time": 6.582857,
+            "frequency": 0.20759967
+          },
+          {
+            "time": 6.603174,
+            "frequency": 0.3577498
+          },
+          {
+            "time": 6.6670294,
+            "frequency": 0.37590942
+          },
+          {
+            "time": 6.7047615,
+            "frequency": 0.35381946
+          },
+          {
+            "time": 6.7105665,
+            "frequency": 0.2651313
+          },
+          {
+            "time": 6.7686167,
+            "frequency": 0.25740144
+          },
+          {
+            "time": 6.7802267,
+            "frequency": 0.32864285
+          },
+          {
+            "time": 6.846984,
+            "frequency": 0.23549514
+          },
+          {
+            "time": 6.881814,
+            "frequency": 0.39993203
+          },
+          {
+            "time": 6.907936,
+            "frequency": 0.25372142
+          },
+          {
+            "time": 6.942766,
+            "frequency": 0.4293708
+          },
+          {
+            "time": 6.9688888,
+            "frequency": 0.2936446
+          },
+          {
+            "time": 6.997914,
+            "frequency": 0.3051777
+          },
+          {
+            "time": 7.0008163,
+            "frequency": 0.30259886
+          },
+          {
+            "time": 7.041451,
+            "frequency": 0.23971431
+          },
+          {
+            "time": 7.0675735,
+            "frequency": 0.34661055
+          },
+          {
+            "time": 7.105306,
+            "frequency": 0.23623039
+          },
+          {
+            "time": 7.1488433,
+            "frequency": 0.21868579
+          },
+          {
+            "time": 7.186576,
+            "frequency": 0.3396961
+          },
+          {
+            "time": 7.209796,
+            "frequency": 0.2366171
+          },
+          {
+            "time": 7.2214055,
+            "frequency": 0.32937855
+          },
+          {
+            "time": 7.2736506,
+            "frequency": 0.10535271789473682
+          },
+          {
+            "time": 7.2968707,
+            "frequency": 0.2543720278947369
+          },
+          {
+            "time": 7.328798,
+            "frequency": 0.12710639789473682
+          },
+          {
+            "time": 7.3665304,
+            "frequency": 0.2658690878947369
+          },
+          {
+            "time": 7.4013605,
+            "frequency": 0.12063965789473685
+          },
+          {
+            "time": 7.43619,
+            "frequency": 0.2532721778947369
+          },
+          {
+            "time": 7.47102,
+            "frequency": 0.09502413789473683
+          },
+          {
+            "time": 7.4826303,
+            "frequency": 0.21771040789473683
+          },
+          {
+            "time": 7.523265,
+            "frequency": 0.24153755789473683
+          },
+          {
+            "time": 7.5435824,
+            "frequency": 0.14050562789473686
+          },
+          {
+            "time": 7.6509748,
+            "frequency": 0.15413425789473684
+          },
+          {
+            "time": 7.66839,
+            "frequency": 0.24571665789473687
+          },
+          {
+            "time": 7.7177324,
+            "frequency": 0.13124732789473686
+          },
+          {
+            "time": 7.740952,
+            "frequency": 0.25437673789473686
+          },
+          {
+            "time": 7.775782,
+            "frequency": 0.11203229789473684
+          },
+          {
+            "time": 7.833832,
+            "frequency": 0.2252659578947368
+          },
+          {
+            "time": 7.8657594,
+            "frequency": 0.12337301789473681
+          },
+          {
+            "time": 7.891882,
+            "frequency": 0.2633768978947369
+          },
+          {
+            "time": 7.9121995,
+            "frequency": 0.11822749789473685
+          },
+          {
+            "time": 7.952834,
+            "frequency": 0.22219205789473684
+          },
+          {
+            "time": 7.970249,
+            "frequency": 0.12113819789473684
+          },
+          {
+            "time": 7.9992743,
+            "frequency": 0.1933846578947368
+          },
+          {
+            "time": 8.002176,
+            "frequency": 0.15344129789473682
+          },
+          {
+            "time": 8.013786,
+            "frequency": 0.08884712789473687
+          },
+          {
+            "time": 8.054421,
+            "frequency": 0.19104713789473682
+          },
+          {
+            "time": 8.0892515,
+            "frequency": 0.11258026789473685
+          },
+          {
+            "time": 8.100862,
+            "frequency": 0.17815045789473682
+          },
+          {
+            "time": 8.141497,
+            "frequency": 0.09728151789473684
+          },
+          {
+            "time": 8.161814,
+            "frequency": 0.16820345789473684
+          },
+          {
+            "time": 8.196644,
+            "frequency": 0.09087684789473684
+          },
+          {
+            "time": 8.205351,
+            "frequency": 0.18030449789473685
+          },
+          {
+            "time": 8.234376,
+            "frequency": 0.11694791789473685
+          },
+          {
+            "time": 8.327256,
+            "frequency": 0.15278866789473683
+          },
+          {
+            "time": 8.362086,
+            "frequency": 0.09775215789473683
+          },
+          {
+            "time": 8.373696,
+            "frequency": 0.18890690789473685
+          },
+          {
+            "time": 8.472381,
+            "frequency": 0.11961696789473686
+          },
+          {
+            "time": 8.486894,
+            "frequency": 0.2213593778947368
+          },
+          {
+            "time": 8.513016,
+            "frequency": 0.08340582789473686
+          },
+          {
+            "time": 8.544943,
+            "frequency": 0.19651675789473683
+          },
+          {
+            "time": 8.553651,
+            "frequency": 0.12009383789473682
+          },
+          {
+            "time": 8.597188,
+            "frequency": 0.15988093789473684
+          },
+          {
+            "time": 8.637823,
+            "frequency": 0.11016165789473686
+          },
+          {
+            "time": 8.663945,
+            "frequency": 0.11475905789473684
+          },
+          {
+            "time": 8.713287,
+            "frequency": 0.2591425
+          },
+          {
+            "time": 8.733605,
+            "frequency": 0.19498108
+          },
+          {
+            "time": 8.80907,
+            "frequency": 0.21159461
+          },
+          {
+            "time": 8.814875,
+            "frequency": 0.2953294
+          },
+          {
+            "time": 8.85551,
+            "frequency": 0.1735399
+          },
+          {
+            "time": 8.87873,
+            "frequency": 0.35102252631578956
+          },
+          {
+            "time": 8.916462,
+            "frequency": 0.17820218
+          },
+          {
+            "time": 8.928072,
+            "frequency": 0.3295746663157896
+          },
+          {
+            "time": 8.997732,
+            "frequency": 0.31156216631578953
+          },
+          {
+            "time": 9.000635,
+            "frequency": 0.30775895631578953
+          },
+          {
+            "time": 9.020952,
+            "frequency": 0.17194651
+          },
+          {
+            "time": 9.047074,
+            "frequency": 0.3216281263157896
+          },
+          {
+            "time": 9.13415,
+            "frequency": 0.1910417
+          },
+          {
+            "time": 9.148662,
+            "frequency": 0.3856893863157896
+          },
+          {
+            "time": 9.174785,
+            "frequency": 0.17247428
+          },
+          {
+            "time": 9.206712,
+            "frequency": 0.32659837631578953
+          },
+          {
+            "time": 9.247347,
+            "frequency": 0.18003552
+          },
+          {
+            "time": 9.258957,
+            "frequency": 0.32381232631578954
+          },
+          {
+            "time": 9.302494,
+            "frequency": 0.20386273
+          },
+          {
+            "time": 9.314104,
+            "frequency": 0.4154063563157896
+          },
+          {
+            "time": 9.322811,
+            "frequency": 0.20667863
+          },
+          {
+            "time": 9.351836,
+            "frequency": 0.15830669
+          },
+          {
+            "time": 9.360544,
+            "frequency": 0.20962176
+          },
+          {
+            "time": 9.4679365,
+            "frequency": 0.18838899
+          },
+          {
+            "time": 9.485352,
+            "frequency": 0.31212612631578956
+          },
+          {
+            "time": 9.517279,
+            "frequency": 0.1678899
+          },
+          {
+            "time": 9.537596,
+            "frequency": 0.34711862631578955
+          },
+          {
+            "time": 9.578231,
+            "frequency": 0.18520823
+          },
+          {
+            "time": 9.636281,
+            "frequency": 0.19504032
+          },
+          {
+            "time": 9.644988,
+            "frequency": 0.3741463263157896
+          },
+          {
+            "time": 9.685623,
+            "frequency": 0.17018996
+          },
+          {
+            "time": 9.700136,
+            "frequency": 0.32649453631578956
+          },
+          {
+            "time": 9.7756,
+            "frequency": 0.19449723
+          },
+          {
+            "time": 9.7930155,
+            "frequency": 0.31934229631578953
+          },
+          {
+            "time": 9.856871,
+            "frequency": 0.16638751
+          },
+          {
+            "time": 9.874286,
+            "frequency": 0.37803448631578956
+          },
+          {
+            "time": 9.917823,
+            "frequency": 0.17419715
+          },
+          {
+            "time": 9.93814,
+            "frequency": 0.31612006631578954
+          },
+          {
+            "time": 9.999093,
+            "frequency": 0.27017
+          },
+          {
+            "time": 10.001995,
+            "frequency": 0.28219613
+          },
+          {
+            "time": 10.025215,
+            "frequency": 0.16759944
+          },
+          {
+            "time": 10.068752,
+            "frequency": 0.28931966
+          },
+          {
+            "time": 10.1500225,
+            "frequency": 0.21454264
+          },
+          {
+            "time": 10.164535,
+            "frequency": 0.29304862
+          },
+          {
+            "time": 10.179048,
+            "frequency": 0.19038384
+          },
+          {
+            "time": 10.257415,
+            "frequency": 0.1891973
+          },
+          {
+            "time": 10.277732,
+            "frequency": 0.26158553
+          },
+          {
+            "time": 10.312562,
+            "frequency": 0.19825241
+          },
+          {
+            "time": 10.32127,
+            "frequency": 0.29654065
+          },
+          {
+            "time": 10.350294,
+            "frequency": 0.21077529
+          },
+          {
+            "time": 10.405442,
+            "frequency": 0.14940925578947364
+          },
+          {
+            "time": 10.422857,
+            "frequency": 0.18587726
+          },
+          {
+            "time": 10.437369,
+            "frequency": 0.2116910157894735
+          },
+          {
+            "time": 10.475101,
+            "frequency": 0.19285597
+          },
+          {
+            "time": 10.4954195,
+            "frequency": 0.2125071657894735
+          },
+          {
+            "time": 10.536055,
+            "frequency": 0.19600877
+          },
+          {
+            "time": 10.547664,
+            "frequency": 0.17099148578947365
+          },
+          {
+            "time": 10.588299,
+            "frequency": 0.21505512
+          },
+          {
+            "time": 10.602812,
+            "frequency": 0.23274193578947344
+          },
+          {
+            "time": 10.628934,
+            "frequency": 0.17991067
+          },
+          {
+            "time": 10.660861,
+            "frequency": 0.19989828578947352
+          },
+          {
+            "time": 10.701496,
+            "frequency": 0.19390422
+          },
+          {
+            "time": 10.713106,
+            "frequency": 0.16705091578947365
+          },
+          {
+            "time": 10.805986,
+            "frequency": 0.19211629
+          },
+          {
+            "time": 10.829206,
+            "frequency": 0.17094091578947362
+          },
+          {
+            "time": 10.907574,
+            "frequency": 0.1882157
+          },
+          {
+            "time": 10.930794,
+            "frequency": 0.21344796578947348
+          },
+          {
+            "time": 10.971428,
+            "frequency": 0.17713332
+          },
+          {
+            "time": 10.997551,
+            "frequency": 0.15643571578947366
+          },
+          {
+            "time": 11.000453,
+            "frequency": 0.22558193
+          },
+          {
+            "time": 11.032381,
+            "frequency": 0.18014443
+          },
+          {
+            "time": 11.043991,
+            "frequency": 0.15524574578947364
+          },
+          {
+            "time": 11.087528,
+            "frequency": 0.20179416
+          },
+          {
+            "time": 11.099138,
+            "frequency": 0.33712736684210504
+          },
+          {
+            "time": 11.107845,
+            "frequency": 0.3230475010526316
+          },
+          {
+            "time": 11.13687,
+            "frequency": 0.1754058
+          },
+          {
+            "time": 11.151383,
+            "frequency": 0.14561412578947366
+          },
+          {
+            "time": 11.1775055,
+            "frequency": 0.18623681
+          },
+          {
+            "time": 11.203628,
+            "frequency": 0.32512219105263157
+          },
+          {
+            "time": 11.250068,
+            "frequency": 0.19427001
+          },
+          {
+            "time": 11.26458,
+            "frequency": 0.20397014578947353
+          },
+          {
+            "time": 11.290703,
+            "frequency": 0.17359759
+          },
+          {
+            "time": 11.325533,
+            "frequency": 0.14755798578947366
+          },
+          {
+            "time": 11.41551,
+            "frequency": 0.2024359
+          },
+          {
+            "time": 11.42712,
+            "frequency": 0.41885394105263163
+          },
+          {
+            "time": 11.43873,
+            "frequency": 0.20404246
+          },
+          {
+            "time": 11.464852,
+            "frequency": 0.15590423
+          },
+          {
+            "time": 11.476462,
+            "frequency": 0.21321246
+          },
+          {
+            "time": 11.583855,
+            "frequency": 0.18774547
+          },
+          {
+            "time": 11.60127,
+            "frequency": 0.3222712310526316
+          },
+          {
+            "time": 11.633197,
+            "frequency": 0.1674955
+          },
+          {
+            "time": 11.662222,
+            "frequency": 0.21448222
+          },
+          {
+            "time": 11.752199,
+            "frequency": 0.19673541
+          },
+          {
+            "time": 11.760907,
+            "frequency": 0.3969428810526316
+          },
+          {
+            "time": 11.801541,
+            "frequency": 0.1721483
+          },
+          {
+            "time": 11.816054,
+            "frequency": 0.3399856810526316
+          },
+          {
+            "time": 11.891519,
+            "frequency": 0.18555057
+          },
+          {
+            "time": 11.955374,
+            "frequency": 0.3202616410526316
+          },
+          {
+            "time": 11.998911,
+            "frequency": 0.20252049
+          },
+          {
+            "time": 12.001814,
+            "frequency": 0.19231153
+          },
+          {
+            "time": 12.027936,
+            "frequency": 0.16901511
+          },
+          {
+            "time": 12.039546,
+            "frequency": 0.2139403
+          },
+          {
+            "time": 12.091791,
+            "frequency": 0.20437211
+          },
+          {
+            "time": 12.100498,
+            "frequency": 0.38587782105263163
+          },
+          {
+            "time": 12.126621,
+            "frequency": 0.18718725
+          },
+          {
+            "time": 12.149841,
+            "frequency": 0.20369412
+          },
+          {
+            "time": 12.158548,
+            "frequency": 0.3658334910526316
+          },
+          {
+            "time": 12.173061,
+            "frequency": 0.18686175
+          },
+          {
+            "time": 12.199183,
+            "frequency": 0.1661302
+          },
+          {
+            "time": 12.251429,
+            "frequency": 0.31697717105263157
+          },
+          {
+            "time": 12.263039,
+            "frequency": 0.20296031
+          },
+          {
+            "time": 12.271746,
+            "frequency": 0.3939548210526316
+          },
+          {
+            "time": 12.286259,
+            "frequency": 0.19416909
+          },
+          {
+            "time": 12.344308,
+            "frequency": 0.17184986
+          },
+          {
+            "time": 12.355918,
+            "frequency": 0.3292268710526316
+          },
+          {
+            "time": 12.376236,
+            "frequency": 0.17228687
+          },
+          {
+            "time": 12.39365,
+            "frequency": 0.3186567310526316
+          },
+          {
+            "time": 12.40526,
+            "frequency": 0.17544349
+          },
+          {
+            "time": 12.4517,
+            "frequency": 0.1733634
+          },
+          {
+            "time": 12.46331,
+            "frequency": 0.3771946710526316
+          },
+          {
+            "time": 12.501042,
+            "frequency": 0.3241085
+          },
+          {
+            "time": 12.52136,
+            "frequency": 0.21377994
+          },
+          {
+            "time": 12.53297,
+            "frequency": 0.28864267
+          },
+          {
+            "time": 12.5619955,
+            "frequency": 0.27363658
+          },
+          {
+            "time": 12.5678005,
+            "frequency": 0.38603535
+          },
+          {
+            "time": 12.593923,
+            "frequency": 0.41242352
+          },
+          {
+            "time": 12.608435,
+            "frequency": 0.3721612
+          },
+          {
+            "time": 12.61424,
+            "frequency": 0.52642065
+          },
+          {
+            "time": 12.620045,
+            "frequency": 0.42814785
+          }
+        ]
+      }
+    }
+  }
+}

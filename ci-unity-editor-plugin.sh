@@ -6,7 +6,7 @@ exit_with_failure()
 }
 
 echo "➡️ Building and copying artifacts"
-./build.sh unity-editor-plugin-host || exit_with_failure "Building failed"
+./build-sdk.sh unity-editor-plugin-host || exit_with_failure "Building failed"
 
 echo "➡️ Running tests"
 cd unity-editor-plugin

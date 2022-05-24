@@ -27,12 +27,6 @@ if [[ -z "$CI" ]] ; then
     echo "⚠️ this directory with 'git clean -dxf --dry-run .'."
 fi
 
-echo "➡️ Fetching haptic samples"
-./fetch-haptic-samples.sh || exit_with_failure "Unable to fetch the haptic samples"
-
-echo "➡️ Copying haptic samples"
-./copy-haptic-samples.sh || exit_with_failure "Unable to copy the haptic samples"
-
 echo "➡️ Copying license file"
 cp ../../licenses/3RD-PARTY-LICENSES.md NiceVibrations/Assets/NiceVibrations/ || exit_with_failure "Unable to copy the license file"
 

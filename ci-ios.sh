@@ -6,7 +6,7 @@ exit_with_failure()
 }
 
 echo "➡️ Building"
-./build.sh ios || exit_with_failure "Building failed"
+./build-sdk.sh ios || exit_with_failure "Building failed"
 
 cd interfaces/ios/LofeltHaptics
 echo "➡️ Running tests"

@@ -41,7 +41,7 @@ Besides the iOS setup, it is also necessary to install the Rust target for Apple
 
 ## Building
 
-Run `sh build.sh unity-editor-plugin-host` on a terminal to build a dynamic library that Unity will load.
+Run `sh build-sdk.sh unity-editor-plugin-host` on a terminal to build a dynamic library that Unity will load.
 The dynamic library supports both Intel (x86_64) and Apple Silicon (arm64) architectures.
 
 This script will also make sure to copy the appropriate file per platform to the respective folder in the Unity Asset plugin's folder.
@@ -64,10 +64,10 @@ You can double-check that there's a `libnice_vibrations_editor_plugin.dylib` in 
 
 ## Building
 
-Using Git Bash, run `sh build.sh unity-editor-plugin-host` to build a dynamic library that Unity will load.
+Using Git Bash, run `sh build-sdk.sh unity-editor-plugin-host` to build a dynamic library that Unity will load.
 This script will also make sure to copy the appropriate file per platform to the respective folder in the Unity Asset plugin's folder.
 
-> ⚠️ Make sure to Use Git Bash otherwise the `build.sh` script won't run on Windows.
+> ⚠️ Make sure to Use Git Bash otherwise the `build-sdk.sh` script won't run on Windows.
 
 You can double-check that there's a `nice_vibrations_editor_plugin.dll` in `interfaces/unity/NiceVibrations/Assets/NiceVibrations/Plugins/Windows/x64`
 
