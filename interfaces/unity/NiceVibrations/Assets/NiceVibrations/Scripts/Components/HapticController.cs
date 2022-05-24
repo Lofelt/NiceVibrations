@@ -32,7 +32,8 @@ namespace Lofelt.NiceVibrations
     /// will have no effect on gamepads.
     ///
     /// None of the methods here are thread-safe and should only be called from
-    /// the main (Unity) thread.
+    /// the main (Unity) thread. Calling these methods from a secondary thread can
+    /// cause undefined behaviour and memory leaks.
     public static class HapticController
     {
         static bool lofeltHapticsInitalized = false;

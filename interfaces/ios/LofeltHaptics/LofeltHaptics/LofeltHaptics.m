@@ -292,15 +292,17 @@ NSString *const LofeltErrorDomain = @"com.lofelt.LofeltSDK";
     @param event    The amplitude event that should be played back
 */
 void handleStreamingAmplitudeEvent(void *nativeDriverPassedBack, AmplitudeEvent event) {
-    if (nativeDriverPassedBack == nil) {
-        NSLog(@"LofeltHaptics handleStreamingAmplitudeEvent: nativeDriverPassedBack is nil");
-        return;
-    }
+    @autoreleasepool {
+        if (nativeDriverPassedBack == nil) {
+            NSLog(@"LofeltHaptics handleStreamingAmplitudeEvent: nativeDriverPassedBack is nil");
+            return;
+        }
 
-    NSObject<NativeDriver> * nativeDriver = (__bridge NSObject<NativeDriver> *)nativeDriverPassedBack;
-    NSError* error = nil;
-    if (![nativeDriver handleStreamingAmplitudeEvent:event error:&error]) {
-        NSLog(@"LofeltHaptics: Could not play amplitude event: %@", [error localizedDescription]);
+        NSObject<NativeDriver> * nativeDriver = (__bridge NSObject<NativeDriver> *)nativeDriverPassedBack;
+        NSError* error = nil;
+        if (![nativeDriver handleStreamingAmplitudeEvent:event error:&error]) {
+            NSLog(@"LofeltHaptics: Could not play amplitude event: %@", [error localizedDescription]);
+        }
     }
 }
 
@@ -314,10 +316,11 @@ void handleStreamingAmplitudeEvent(void *nativeDriverPassedBack, AmplitudeEvent 
     @param event    The frequency event that should be played back
 */
 void handleStreamingFrequencyEvent(void *nativeDriverPassedBack, FrequencyEvent event) {
-    if (nativeDriverPassedBack == nil) {
-        NSLog(@"LofeltHaptics handleStreamingFrequencyEvent: nativeDriverPassedBack is nil");
-        return;
-    }
+    @autoreleasepool {
+        if (nativeDriverPassedBack == nil) {
+            NSLog(@"LofeltHaptics handleStreamingFrequencyEvent: nativeDriverPassedBack is nil");
+            return;
+        }
 
     NSObject<NativeDriver> * nativeDriver = (__bridge NSObject<NativeDriver> *)nativeDriverPassedBack;
     NSError * error = nil;
@@ -325,52 +328,55 @@ void handleStreamingFrequencyEvent(void *nativeDriverPassedBack, FrequencyEvent 
         NSLog(@"LofeltHaptics: Could not play frequency event: %@", [error localizedDescription]);
     }
 }
+}
 
 /*! @brief          handleInitThread()
                     Callback for initializing the streaming thread, in particular for
                     increasing the thread priority
 */
 void handleInitThread(void) {
-    // Move the thread to the realtime priority band using thread_policy_set(). This will cause the
-    // kernel to run our thread with much less wakeup latency after a timeout compared to the normal
-    // priority band. This ensures each breakpoint is played close to the designed time.
-    //
-    // We need to give thread_policy_set() some numbers on how long the computations
-    // in this thread take, and how often they happen. The kernel will then do the best
-    // to schdedule this thread to meet these requirements. These numbers need to be
-    // reasonably accurate, as the kernel will demote the thread if we lie blatently about
-    // the requirements. The numbers themselves don't seem to have any influence on the jitter.
-    //
-    // One has measured how long the commands in the thread's main loop took to execute,
-    // on an iPhone SE (2nd generation), in release mode, playing the "Achievement" clip:
-    // - Playing an event (after timeout): ~500µs
-    // - Loading a clip: ~1000ns
-    // - Playing a clip: ~1000ns
-    // Lofelt Studio's maximum setting for converting audio to haptics is 60 breakpoints per
-    // second, which is ~17ms per breakpoint. Manual editing allows for breakpoints to be less
-    // than 1ms apart though.
-    //
-    // We could say that every 17 milliseconds, we need 500µs of computation time. That would be
-    // a CPU load of ~3%. To be a bit on the safe side, we instead say that every 10ms, we need
-    // 1ms of computation time, which is a CPU load of 10%.
-    //
-    // See https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/scheduler/scheduler.html
-    // for more information.
-    mach_timebase_info_data_t timebase;
-    if (mach_timebase_info(&timebase) != KERN_SUCCESS) {
-        NSLog(@"LofeltHaptics: Unable to set realtime policy for the streaming thread, unable to query timing.");
-        return;
-    }
-    double milliseconds_to_absolute_time = timebase.denom / (double)timebase.numer * 1000.0 * 1000.0;
-    struct thread_time_constraint_policy policy;
-    policy.period = 10 * milliseconds_to_absolute_time; // One event every 10ms
-    policy.computation = milliseconds_to_absolute_time; // One event takes 1ms of computation time
-    policy.constraint = 2.5 * milliseconds_to_absolute_time; // Max limit on how long our computation should take, 2.5ms
-    policy.preemptible = FALSE; // We don't want to get interrupted while playing an event
-    thread_port_t port = pthread_mach_thread_np(pthread_self());
-    if (thread_policy_set(port, THREAD_TIME_CONSTRAINT_POLICY, (thread_policy_t)&policy, THREAD_TIME_CONSTRAINT_POLICY_COUNT) != KERN_SUCCESS) {
-        NSLog(@"LofeltHaptics: Unable to set realtime policy for the streaming thread.");
-        return;
+    @autoreleasepool {
+        // Move the thread to the realtime priority band using thread_policy_set(). This will cause the
+        // kernel to run our thread with much less wakeup latency after a timeout compared to the normal
+        // priority band. This ensures each breakpoint is played close to the designed time.
+        //
+        // We need to give thread_policy_set() some numbers on how long the computations
+        // in this thread take, and how often they happen. The kernel will then do the best
+        // to schdedule this thread to meet these requirements. These numbers need to be
+        // reasonably accurate, as the kernel will demote the thread if we lie blatently about
+        // the requirements. The numbers themselves don't seem to have any influence on the jitter.
+        //
+        // One has measured how long the commands in the thread's main loop took to execute,
+        // on an iPhone SE (2nd generation), in release mode, playing the "Achievement" clip:
+        // - Playing an event (after timeout): ~500µs
+        // - Loading a clip: ~1000ns
+        // - Playing a clip: ~1000ns
+        // Lofelt Studio's maximum setting for converting audio to haptics is 60 breakpoints per
+        // second, which is ~17ms per breakpoint. Manual editing allows for breakpoints to be less
+        // than 1ms apart though.
+        //
+        // We could say that every 17 milliseconds, we need 500µs of computation time. That would be
+        // a CPU load of ~3%. To be a bit on the safe side, we instead say that every 10ms, we need
+        // 1ms of computation time, which is a CPU load of 10%.
+        //
+        // See https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/scheduler/scheduler.html
+        // for more information.
+        mach_timebase_info_data_t timebase;
+        if (mach_timebase_info(&timebase) != KERN_SUCCESS) {
+            NSLog(@"LofeltHaptics: Unable to set realtime policy for the streaming thread, unable to query timing.");
+            return;
+        }
+        double milliseconds_to_absolute_time = timebase.denom / (double)timebase.numer * 1000.0 * 1000.0;
+        struct thread_time_constraint_policy policy;
+        policy.period = 10 * milliseconds_to_absolute_time; // One event every 10ms
+        policy.computation = milliseconds_to_absolute_time; // One event takes 1ms of computation time
+        policy.constraint = 2.5 * milliseconds_to_absolute_time; // Max limit on how long our computation should take, 2.5ms
+        policy.preemptible = FALSE; // We don't want to get interrupted while playing an event
+        thread_port_t port = pthread_mach_thread_np(pthread_self());
+        if (thread_policy_set(port, THREAD_TIME_CONSTRAINT_POLICY, (thread_policy_t)&policy, THREAD_TIME_CONSTRAINT_POLICY_COUNT) != KERN_SUCCESS) {
+            NSLog(@"LofeltHaptics: Unable to set realtime policy for the streaming thread.");
+            return;
+        }
     }
 }
 

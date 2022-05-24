@@ -11,6 +11,10 @@ namespace Lofelt.NiceVibrations
     /// Each of the methods here load and play a simple haptic clip or a
     /// haptic pattern, depending on the device capabilities.
     ///
+    /// None of the methods here are thread-safe and should only be called from
+    /// the main (Unity) thread. Calling these methods from a secondary thread can
+    /// cause undefined behaviour and memory leaks.
+    ///
     /// After playback has finished, the loaded clips in this class will remain
     /// loaded in HapticController.
 
