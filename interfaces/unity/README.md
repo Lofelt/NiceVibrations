@@ -24,7 +24,7 @@ This folder contains our Unity plugin. It consists of:
 Neither the iOS and Android plugins nor the audio/haptic example files are part of this
 repository, they need to be copied from other locations.
 
-For the iOS and Android plugins, `build.sh android` and `build.sh ios` in the root of the
+For the iOS and Android plugins, `build-sdk.sh android` and `build-sdk.sh ios` in the root of the
 repository copy them into the right location.
 
 For the audio/haptic example files, `copy-audio-haptic-examples.sh` copies them into

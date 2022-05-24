@@ -12,6 +12,7 @@
   - [Build and Test Lofelt SDK for iOS](#build-and-test-lofelt-sdk-for-ios)
   - [Build and Test Lofelt SDK for Android](#build-and-test-lofelt-sdk-for-android)
   - [Build and Test Lofelt Unity Plugin](#build-and-test-lofelt-unity-plugin)
+  - [Build and Test Lofelt Wasm Package](#build-and-test-lofelt-wasm-package)
   - [Git rules](#git-rules)
 - [Structure](#structure)
 
@@ -43,12 +44,12 @@ can be run, so it can make sense to work on it without any interfaces.
 
 To build for iOS (after doing the [setup for iOS](./interfaces/ios/README.md)):
 ```
-sh build.sh ios
+sh build-sdk.sh ios
 ```
 
 To build for Android (after doing the [setup for Android](./interfaces/android/README.md)):
 ```
-sh build.sh android
+sh build-sdk.sh android
 ```
 
 To build the SDK for iOS and Android for distribution:
