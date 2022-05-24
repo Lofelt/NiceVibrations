@@ -32,13 +32,6 @@ jobs:
     - name: Install rustup components
       run: rustup component add clippy rustfmt
 
-    - name: Install wasm-pack
-      uses: jetli/wasm-pack-action@v0.3.0
-      # Don't use v0.10.2 due to https://github.com/rustwasm/wasm-pack/issues/1097,
-      # which makes wasm-pack fail on Windows
-      with:
-        version: 'v0.10.1'
-
     - name: Run CI script
       run: sh ci-rust-core.sh
 
