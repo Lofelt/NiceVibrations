@@ -4,9 +4,7 @@
 //!
 //! It is the "home" for data model, error handling enums, traits, etc.
 
-use {
-    clip_players::PreAuthoredClipPlayback,
-};
+use clip_players::PreAuthoredClipPlayback;
 
 pub use clip_players;
 pub use datamodel::VersionSupport;

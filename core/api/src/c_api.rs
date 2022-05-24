@@ -330,7 +330,7 @@ mod tests {
 
     #[no_mangle]
     pub extern "C" fn init_thread_dummy() {}
-    
+
     #[test]
     fn check_errors_play() {
         let callbacks = Callbacks {
