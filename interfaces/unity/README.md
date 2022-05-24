@@ -1,6 +1,4 @@
 - [Overview](#overview)
-- [Copying of Plugins and Audio/Haptic Example Files](#copying-of-plugins-and-audiohaptic-example-files)
-- [Releasing the Unity Plugin to the Unity Asset Store](#releasing-the-unity-plugin-to-the-unity-asset-store)
 - [Developing the Unity plugin](#developing-the-unity-plugin)
 - [Profiling the Unity plugin](#profiling-the-unity-plugin)
 - [API Documentation](#api-documentation)
@@ -18,35 +16,6 @@ This folder contains our Unity plugin. It consists of:
   code (in `Assets/NiceVibrations/Plugins`)
 - Audio and haptic example files (in `Assets/NiceVibrations/HapticSamples/`)
 - Example scene (in `Assets/NiceVibrations/Demo/`)
-
-# Copying of Plugins and Audio/Haptic Example Files
-
-Neither the iOS and Android plugins nor the audio/haptic example files are part of this
-repository, they need to be copied from other locations.
-
-For the iOS and Android plugins, `build-sdk.sh android` and `build-sdk.sh ios` in the root of the
-repository copy them into the right location.
-
-For the audio/haptic example files, `copy-audio-haptic-examples.sh` copies them into
-the right location. For this to work, the `studio-content` repository needs to exist as a
-subfolder here. This can be achieved in two ways:
-- If you have an existing checkout of that repository somewhere else on your machine, you
-  can create a symlink
-- You can run `fetch-audio-haptic-examples.sh`, which will clone the relevant parts of the
-  repository into the `studio-content` subfolder
-
-# Releasing the Unity Plugin to the Unity Asset Store
-
-Before releasing the Unity plugin, some files need to be copied, as described in
-the previous section. `create-release-zip.sh` copies all files and creates a zipped
-version of our Unity plugin that is ready to be uploaded to the Asset Store. That
-script is run by a [GitHub Actions workflow for releasing the SDK and Unity](../../.github/workflows/release-sdk-and-unity.yml),
-which then attaches the Unity ZIP file to the GitHub release.
-
-From that ZIP file, the Unity plugin can be uploaded to the Asset store as described
-in [this Confluence page](https://lofelt.atlassian.net/wiki/spaces/PD/pages/1348108415/Release+Unity+Plugin+package).
-
-Everything inside `interfaces/unity/NiceVibrations/Assets/NiceVibrations/` goes to the Asset Store. Everything outside doesn't go.
 
 # Developing the Unity plugin
 
