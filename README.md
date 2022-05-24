@@ -18,7 +18,6 @@
   - [Build and Test Lofelt SDK for Android](#build-and-test-lofelt-sdk-for-android)
   - [Build and Test Lofelt Unity Editor plugin host](#build-and-test-lofelt-unity-editor-plugin-host)
   - [Git rules](#git-rules)
-- [Structure](#structure)
 
 # What is Nice Vibrations?
 
@@ -193,13 +192,3 @@ The source code for Unity Editor plugin is available in `unity-editor-plugin`. C
 ## Git rules
 
 We ensure code quality by using git hooks provided by [`rusty-hooks`](https://github.com/swellaby/rusty-hook) for cargo. The git hook setup can be seen in `.rusty-hook.toml` file.
-
-# Structure
-
-- [interfaces](./interfaces/README.md) provides native frameworks for the SDK.
-- [apps](./apps/README.md) contains applications using the features SDK, using the native frameworks from [Interfaces](./interfaces/README.md).
-- [examples](./examples/README.md) contains example code and snippets for applications using SDK features.
-- [licenses](./licenses/) contains the licence files to be included in the release package.
-- [core](./core/README.md) routes haptic data and commands to clip-players
-- [clip-players](./clip-players/README.md) Playback of pre-authored clips with various different implementations.
-- [unity-editor-plugin](./unity-editor-plugin/README.md) A plugin for the Unity editor to convert haptic clips
