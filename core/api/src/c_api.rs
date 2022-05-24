@@ -136,7 +136,7 @@ pub extern "C" fn lofelt_sdk_controller_create(
         }
     };
 
-    let mut haptics_controller = HapticsController::new(Box::new(player));
+    let haptics_controller = HapticsController::new(Box::new(player));
     Box::into_raw(Box::new(LofeltSdkController(haptics_controller)))
 }
 
