@@ -34,7 +34,7 @@ namespace Lofelt.NiceVibrations
         public void Start()
         {
             Screen.orientation = ScreenOrientation.LandscapeLeft;
-            
+
             // Default to Achievement_1
             hapticA.clip = Achievement_1;
             AchieveButton1.color = new Color32(255, 67, 56, 255);
@@ -51,7 +51,7 @@ namespace Lofelt.NiceVibrations
             // Show Device Capabilities
             deviceCapabilitiesText.text = "Platform: " + DeviceCapabilities.platform.ToString() + "\n";
             deviceCapabilitiesText.text += "Platform Version: " + DeviceCapabilities.platformVersion.ToString() + "\n";
-            deviceCapabilitiesText.text += "Version Supported: " + DeviceCapabilities.isVersionSupported.ToString() + "\n"; 
+            deviceCapabilitiesText.text += "Version Supported: " + DeviceCapabilities.isVersionSupported.ToString() + "\n";
             deviceCapabilitiesText.text += "Advanced Requirements: " + DeviceCapabilities.meetsAdvancedRequirements.ToString() + "\n";
             deviceCapabilitiesText.text += "Amplitude Control: " + DeviceCapabilities.hasAmplitudeControl.ToString() + "\n";
             deviceCapabilitiesText.text += "Frequency Control: " + DeviceCapabilities.hasFrequencyControl.ToString() + "\n";
