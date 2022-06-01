@@ -27,7 +27,3 @@ core/api/lofelt-sdk.h
 # Rust code coverage files
 default.profdata
 default.profraw
-
-# Windows specific OATH dependencies
-offline-audio-to-haptics/oath-cli/sndfile.dll
-sndfile.lib

@@ -1,4 +1,4 @@
-# This script releases internal apps like haptic2ahap and offline audio to haptics.
+# This script releases the haptic2ahap app.
 
 exit_with_failure()
 {

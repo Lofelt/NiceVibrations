@@ -30,10 +30,6 @@
 		6D92329724F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92329624F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift */; platformFilter = ios; };
 		6D9232A624F00D1B00DF80D6 /* LofeltHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */; };
 		6D9232A724F00D1B00DF80D6 /* LofeltHaptics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6D9232AE24F00DB000DF80D6 /* drive-drums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AB24F00DB000DF80D6 /* drive-drums.wav */; };
-		6D9232AF24F00DB000DF80D6 /* drive-drums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AB24F00DB000DF80D6 /* drive-drums.wav */; };
-		6D9232B024F00DB000DF80D6 /* drive-drums-pre-post-roll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AC24F00DB000DF80D6 /* drive-drums-pre-post-roll.wav */; };
-		6D9232B124F00DB000DF80D6 /* drive-drums-pre-post-roll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AC24F00DB000DF80D6 /* drive-drums-pre-post-roll.wav */; };
 		6D9232B224F00DB000DF80D6 /* 30s-limit-test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */; };
 		6D9232B324F00DB000DF80D6 /* 30s-limit-test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */; };
 		6D9232B424F00F7E00DF80D6 /* test-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDBE85248FBBFE00976026 /* test-sound.wav */; };
@@ -118,8 +114,6 @@
 		6D92329224F00ADD00DF80D6 /* LofeltHapticsTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LofeltHapticsTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D92329624F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LofeltHapticsTestAppTests.swift; sourceTree = "<group>"; };
 		6D92329824F00ADD00DF80D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D9232AB24F00DB000DF80D6 /* drive-drums.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drive-drums.wav"; sourceTree = "<group>"; };
-		6D9232AC24F00DB000DF80D6 /* drive-drums-pre-post-roll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drive-drums-pre-post-roll.wav"; sourceTree = "<group>"; };
 		6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "30s-limit-test.wav"; sourceTree = "<group>"; };
 		6DD485312428FFBD00D3BDD8 /* LofeltHaptics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LofeltHaptics.m; sourceTree = "<group>"; };
 		73ECE2DC256EB3FC00633770 /* LofeltHapticsCbinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LofeltHapticsCbinding.m; sourceTree = "<group>"; };
@@ -171,8 +165,6 @@
 			children = (
 				4AFDBE85248FBBFE00976026 /* test-sound.wav */,
 				6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */,
-				6D9232AC24F00DB000DF80D6 /* drive-drums-pre-post-roll.wav */,
-				6D9232AB24F00DB000DF80D6 /* drive-drums.wav */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -438,12 +430,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D92328C24F00ADD00DF80D6 /* LaunchScreen.storyboard in Resources */,
-				6D9232AE24F00DB000DF80D6 /* drive-drums.wav in Resources */,
 				6D9232B424F00F7E00DF80D6 /* test-sound.wav in Resources */,
 				6D92328924F00ADD00DF80D6 /* Preview Assets.xcassets in Resources */,
 				6D9232B224F00DB000DF80D6 /* 30s-limit-test.wav in Resources */,
 				6D92328624F00ADD00DF80D6 /* Assets.xcassets in Resources */,
-				6D9232B024F00DB000DF80D6 /* drive-drums-pre-post-roll.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,8 +442,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D9232B324F00DB000DF80D6 /* 30s-limit-test.wav in Resources */,
-				6D9232B124F00DB000DF80D6 /* drive-drums-pre-post-roll.wav in Resources */,
-				6D9232AF24F00DB000DF80D6 /* drive-drums.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
