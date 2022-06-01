@@ -5,6 +5,5 @@ members = [
     "core/lib",
     "core/datamodel",
     "apps/internal/haptic2ahap",
-    "third-party/typescript-definitions",
     "unity-editor-plugin",
 ]
