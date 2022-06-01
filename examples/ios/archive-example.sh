@@ -8,7 +8,7 @@ exit_with_failure()
 [[ -d "../../ios-framework/Xcode12AndHigher/LofeltHaptics.xcframework" ]] || exit_with_failure "iOS framework has not been built"
 
 echo "==========================================="
-echo "Archiving pre-authored example"
+echo "Archiving example"
 echo "==========================================="
 cd LofeltHapticsExamplePreAuthored/
 xcodebuild clean archive \
@@ -17,5 +17,5 @@ xcodebuild clean archive \
     CODE_SIGN_ENTITLEMENTS="" \
     CODE_SIGNING_ALLOWED="NO" \
     -configuration Release \
-    -project LofeltHapticsExamplePreAuthored.xcodeproj || exit_with_failure "Failed to archive pre-authored example"
+    -project LofeltHapticsExamplePreAuthored.xcodeproj || exit_with_failure "Failed to archive example"
 cd ..

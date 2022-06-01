@@ -14,6 +14,6 @@ echo "➡️ Running tests"
 cd ../../..
 
 cd examples/ios
-echo "➡️ Archiving examples"
-./archive-examples.sh || exit_with_failure "Archiving examples failed"
+echo "➡️ Archiving example"
+./archive-example.sh || exit_with_failure "Archiving example failed"
 cd ../..
