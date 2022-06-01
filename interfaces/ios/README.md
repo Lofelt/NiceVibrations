@@ -12,11 +12,9 @@
 - [Including the framework in an app](#including-the-framework-in-an-app)
   - [Including the framework binary in an iOS app](#including-the-framework-binary-in-an-ios-app)
   - [Including the framework source in an iOS app](#including-the-framework-source-in-an-ios-app)
-- [Running automated tests](#running-automated-tests)
-  - [Simulator Tests](#simulator-tests)
-  - [Device Tests](#device-tests)
-    - [From Command Line](#from-command-line)
-    - [From Xcode](#from-xcode)
+- [Running automated device tests](#running-automated-device-tests)
+  - [From Command Line](#from-command-line)
+  - [From Xcode](#from-xcode)
 
 
 # Lofelt SDK for iOS
@@ -27,7 +25,6 @@ This folder has the iOS Framework project containing source code for the Lofelt 
 
 - `LofeltHaptics` folder contains the Xcode project with source files and tests of the iOS Frameworks.
     - `LofeltHaptics` contains the source and header files of the iOS Framework, and is where the Public API for iOS is defined.
-    - `LofeltHapticsTestMacOS` contains integration tests that can run on a simulator, like DSP and Audio tests.
     - `LofeltHapticsTestAppTests` contains integration tests that can only run on iPhones (they can't run on a simulator)
     - `LofeltHapticsTestApp` host app to run LofeltHapticsTestAppTests on iPhones.
 - `build-xcframework.sh` is a script to build pre-compiled framework binaries for all iOS platforms. This allows integration of our framework without users having access to the source code. It does not need to be used for development and can be a way for building and distributing the framework without the use of CocoaPods.
@@ -167,17 +164,9 @@ bitcode enabled vs disabled). Be aware of the following restrictions:
 
 Now you can debug your project and the framework together.
 
-# Running automated tests
+# Running automated device tests
 
-## Simulator Tests
-- Select `LofeltHapticsTestsMacOS` as the active scheme (dropdown to the right of the stop button in Xcode)
-- Select your mac as the target device
-- From menu choose Product > Test or press ⌘U
-- Xcode will notify you if tests succeed or fail
-- You can also see test results in the [Test Navigator](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/05-running_tests.html)
-
-## Device Tests
-### From Command Line
+## From Command Line
 - Make sure you have an iPhone connected
 - Run `xcrun xctrace list devices` to get the name of your iPhone
 - `cd "interfaces/ios/LofeltHaptics"`
@@ -187,7 +176,7 @@ Alternatively run the tests from the lofelt-sdk root
 - Run `xcrun xctrace list devices` to get the name of your iPhone
 - `sh test-on-device.sh ios "My iPhone"`
 
-### From Xcode
+## From Xcode
 - Select `LofeltHapticsTestApp` as the active scheme (dropdown to the right of the stop button in Xcode)
 - Select iPhone as the target device
 - In `LofeltHapticsTestAppTests.swift` you can select if you want to run Performance Tests, by setting `enablePerformanceTests = true`. By default, they don't run.

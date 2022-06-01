@@ -20,20 +20,6 @@
                ReferencedContainer = "container:LofeltHaptics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4AFDBE78248FBBA200976026"
-               BuildableName = "LofeltHapticsTests.xctest"
-               BlueprintName = "LofeltHapticsTests"
-               ReferencedContainer = "container:LofeltHaptics.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4AFDBE93248FC3A500976026"
-               BuildableName = "LofeltHapticsTestsMacOS.xctest"
-               BlueprintName = "LofeltHapticsTestsMacOS"
-               ReferencedContainer = "container:LofeltHaptics.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
