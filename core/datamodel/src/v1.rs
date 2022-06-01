@@ -6,9 +6,6 @@ use crate::MAX_ENVELOPE_AMPLITUDE;
 use crate::MIN_ENVELOPE_AMPLITUDE;
 use serde::{Deserialize, Serialize};
 
-#[cfg(target_arch = "wasm32")]
-use wasm_bindgen::prelude::*;
-
 impl DataModelVersion for DataModel {
     const CURRENT: Version = Version {
         major: 1,

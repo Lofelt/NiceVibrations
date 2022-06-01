@@ -10,9 +10,6 @@
 /// A trait that is implemented by each haptic data model to provide its current version
 use serde::{Deserialize, Serialize};
 
-#[cfg(target_arch = "wasm32")]
-use wasm_bindgen::prelude::*;
-
 ///Lofelt data models versioning structure
 #[derive(Clone, Copy, Serialize, Deserialize, Debug, PartialEq, PartialOrd)]
 pub struct Version {
