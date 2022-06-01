@@ -24,9 +24,6 @@
 		6D92329724F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92329624F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift */; platformFilter = ios; };
 		6D9232A624F00D1B00DF80D6 /* LofeltHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */; };
 		6D9232A724F00D1B00DF80D6 /* LofeltHaptics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6D9232B224F00DB000DF80D6 /* 30s-limit-test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */; };
-		6D9232B324F00DB000DF80D6 /* 30s-limit-test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */; };
-		6D9232B424F00F7E00DF80D6 /* test-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDBE85248FBBFE00976026 /* test-sound.wav */; };
 		6D92974726E0CFAB00849EBB /* SystemHaptics.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D74548126D3E3BA002484EB /* SystemHaptics.h */; };
 		6DD485322428FFBD00D3BDD8 /* LofeltHaptics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD485312428FFBD00D3BDD8 /* LofeltHaptics.m */; };
 		6DFB16E8252DFBFB0096BA6A /* LofeltHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */; platformFilter = ios; };
@@ -74,7 +71,6 @@
 		4AC87D16248A08B1001924A0 /* NativeDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeDriver.h; sourceTree = "<group>"; };
 		4AFDBE10248F711F00976026 /* liblofelt_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblofelt_sdk.a; path = ../../../target/universal/debug/liblofelt_sdk.a; sourceTree = "<group>"; };
 		4AFDBE17248F72AA00976026 /* liblofelt_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblofelt_sdk.a; path = ../../../target/debug/liblofelt_sdk.a; sourceTree = "<group>"; };
-		4AFDBE85248FBBFE00976026 /* test-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "test-sound.wav"; sourceTree = "<group>"; };
 		4AFDBEC32492740B00976026 /* CoreHapticsDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreHapticsDriver.h; sourceTree = "<group>"; };
 		4AFDBEC42492740B00976026 /* CoreHapticsDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreHapticsDriver.m; sourceTree = "<group>"; };
 		6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LofeltHaptics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +90,6 @@
 		6D92329224F00ADD00DF80D6 /* LofeltHapticsTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LofeltHapticsTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D92329624F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LofeltHapticsTestAppTests.swift; sourceTree = "<group>"; };
 		6D92329824F00ADD00DF80D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "30s-limit-test.wav"; sourceTree = "<group>"; };
 		6DD485312428FFBD00D3BDD8 /* LofeltHaptics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LofeltHaptics.m; sourceTree = "<group>"; };
 		73ECE2DC256EB3FC00633770 /* LofeltHapticsCbinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LofeltHapticsCbinding.m; sourceTree = "<group>"; };
 		E971DE8E25596D73001C3112 /* CoreHapticsPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreHapticsPlayer.h; sourceTree = "<group>"; };
@@ -135,8 +130,6 @@
 		4AFDBE84248FBBFE00976026 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4AFDBE85248FBBFE00976026 /* test-sound.wav */,
-				6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -358,9 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D92328C24F00ADD00DF80D6 /* LaunchScreen.storyboard in Resources */,
-				6D9232B424F00F7E00DF80D6 /* test-sound.wav in Resources */,
 				6D92328924F00ADD00DF80D6 /* Preview Assets.xcassets in Resources */,
-				6D9232B224F00DB000DF80D6 /* 30s-limit-test.wav in Resources */,
 				6D92328624F00ADD00DF80D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +360,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9232B324F00DB000DF80D6 /* 30s-limit-test.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
