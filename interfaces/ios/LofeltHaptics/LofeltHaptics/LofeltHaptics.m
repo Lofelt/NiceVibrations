@@ -341,11 +341,11 @@ void handleInitThread(void) {
     // reasonably accurate, as the kernel will demote the thread if we lie blatently about
     // the requirements. The numbers themselves don't seem to have any influence on the jitter.
     //
-    // Therefore I measured how long the commands in the thread's main loop took to execute,
+    // One has measured how long the commands in the thread's main loop took to execute,
     // on an iPhone SE (2nd generation), in release mode, playing the "Achievement" clip:
-    // Playing an event (after timeout): ~500µs
-    // Loading a clip: ~1000ns
-    // Playing a clip: ~1000ns
+    // - Playing an event (after timeout): ~500µs
+    // - Loading a clip: ~1000ns
+    // - Playing a clip: ~1000ns
     // Lofelt Studio's maximum setting for converting audio to haptics is 60 breakpoints per
     // second, which is ~17ms per breakpoint. Manual editing allows for breakpoints to be less
     // than 1ms apart though.

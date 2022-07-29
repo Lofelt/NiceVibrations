@@ -3,7 +3,6 @@ name = "datamodel"
 version = "0.3.0"
 authors = ["João Freire <joao@lofelt.com>", "Thomas McGuire <thomas@lofelt.com>", "Tomash Ghz <tomash@lofelt.com>"]
 edition = "2018"
-repository = "ssh://git@github.com/lofelt/lofelt-sdk.git"
 description = "The schema of the Lofelt SDK data model as well as related functions, conversions, and versioning."
 
 [dependencies]

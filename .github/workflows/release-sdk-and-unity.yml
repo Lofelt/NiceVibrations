@@ -78,7 +78,6 @@ jobs:
           brew install rename doxygen graphviz
           echo PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH" >> $GITHUB_ENV
 
-# TODO: remove once https://lofelt.atlassian.net/browse/SDK-15 is fixed
     - name: Install Rust 1.55.0 toolchain
       uses: actions-rs/toolchain@v1
       with:

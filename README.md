@@ -1,6 +1,6 @@
-![](https://github.com/Lofelt/lofelt-sdk/workflows/ios/badge.svg)
-![](https://github.com/Lofelt/lofelt-sdk/workflows/android/badge.svg)
-![](https://github.com/Lofelt/lofelt-sdk/workflows/rust-core/badge.svg)
+![](https://github.com/Lofelt/NiceVibrations/workflows/ios/badge.svg)
+![](https://github.com/Lofelt/NiceVibrations/workflows/android/badge.svg)
+![](https://github.com/Lofelt/NiceVibrations/workflows/rust-core/badge.svg)
 
 # Contents
 

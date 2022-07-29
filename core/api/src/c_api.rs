@@ -2,9 +2,6 @@
 
 //! The functions are exposed in a way so they can be called as a C API
 //!
-//! This code uses the `c-to-rust-and-back-with-data` code pattern.  It is explained step-by-step in
-//! the [code-patterns repo](https://github.com/Lofelt/code-patterns/tree/master/c-to-rust-and-back-with-data).
-//!
 //! # Safety
 //! All functions taking a `*mut LofeltSdkController` as an argument are unsafe. To be safe, the
 //! argument needs to be a valid pointer to a `HapticsController`, created with

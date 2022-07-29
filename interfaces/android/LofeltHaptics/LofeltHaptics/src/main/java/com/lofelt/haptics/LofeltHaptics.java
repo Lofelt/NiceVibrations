@@ -135,7 +135,6 @@ class Player {
     }
 
     //Calculates the padding timing value (ms) added to the end of the timings array
-    //More info about this here: https://lofelt.atlassian.net/l/c/uvtqnrMx
     private long calculatePaddingTiming(long[] timings) {
         //constants for the log function to calculate
         //the padding based on duration and number of breakpoints

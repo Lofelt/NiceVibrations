@@ -16,8 +16,6 @@ const EMPHASIS_AMPLITUDE: f32 = 1.0;
 
 impl Default for EmphasisParameters {
     fn default() -> Self {
-        // See https://lofelt.atlassian.net/wiki/spaces/PD/pages/2020409347/Emphasis#Subjective-Testing-Result
-        // for how the values were chosen
         Self {
             ducking_before_length: Duration::from_millis(30),
             emphasis_length: Duration::from_millis(30),
@@ -67,8 +65,6 @@ pub fn emphasize(
 ///
 /// The above algorithm is implemented in process().
 ///
-/// See also https://lofelt.atlassian.net/wiki/spaces/PD/pages/2020409347/Emphasis for
-/// more details.
 struct Emphasizer<'bps> {
     parameters: EmphasisParameters,
     amplitude_breakpoints: &'bps [AmplitudeBreakpoint],

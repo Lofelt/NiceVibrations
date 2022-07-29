@@ -67,7 +67,6 @@ fn convert_clip_to_waveform(clip: &DataModel) -> Waveform {
     /// glitch bug (see Player::getPaddedEffect() in LofeltHaptics.java).
     /// Perceptually if you use less than 25ms, you can’t feel the difference
     /// on the interpolation.
-    /// See also https://lofelt.atlassian.net/wiki/spaces/PD/pages/1308065808/Interpolation#Determination-of-minimum-time-and-amplitude-step
     const MIN_TIME_STEP: f32 = 0.025;
 
     let interpolator = Interpolator::new(InterpolationParameters::new(Q_BITS, MIN_TIME_STEP));

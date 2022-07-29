@@ -27,8 +27,6 @@ Currently, it provides JSON serialization and deserialization of Lofelt Data, up
 
 ![](./media/v1-diag.svg)
 
-Currently this version is a WIP and can be discussed in a [Lofelt Confluence page](https://lofelt.atlassian.net/wiki/spaces/PD/pages/196116488/Haptic+File+Format).
-
 ## Version 0.2(.0)
 
 
@@ -201,5 +199,3 @@ To adjust this timing change the Duration in the benchmark.
 ````  brew install gnuplot````
 
 Reports can be found as datamodel/target/.criterion/report/index.html
-
-
