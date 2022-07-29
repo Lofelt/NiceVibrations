@@ -53,16 +53,3 @@ jobs:
         arch: x86_64
         script: ./gradlew connectedCheck
         ndk: 21.3.6528147
-
-    # The webhook is configured at https://api.slack.com/apps/A01HJJHNK1N/incoming-webhooks?
-    # and added to the GitHub repo as a secret on https://github.com/Lofelt/lofelt-sdk/settings/secrets/actions
-    - name: Report CI Failure to Slack
-      if: ${{ failure() && github.ref == 'refs/heads/main' }}
-      uses: 8398a7/action-slack@v3
-      with:
-        status: ${{ job.status }}
-        fields: commit,eventName,ref,workflow,action,author,job,took
-        text: ':x: CI Failed :x:'
-        author_name: CI Failure Bot 3000
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.CI_FAILURES_SLACK_WEBHOOK }}

@@ -18,7 +18,6 @@ NS_ASSUME_NONNULL_BEGIN
 API_AVAILABLE(ios(13.0))
 @interface CoreHapticsDriver: NSObject<NativeDriver> {
     CHHapticEngine *_hapticEngine;
-    CoreHapticsPlayer *_audioToHapticsPlayer;
     CoreHapticsPlayer *_preauthoredHapticPlayer;
     StopCallback _stopCallback;
 

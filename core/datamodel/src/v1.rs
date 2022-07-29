@@ -5,10 +5,6 @@ use crate::Validation;
 use crate::MAX_ENVELOPE_AMPLITUDE;
 use crate::MIN_ENVELOPE_AMPLITUDE;
 use serde::{Deserialize, Serialize};
-use typescript_definitions_local::TypescriptDefinition;
-
-#[cfg(target_arch = "wasm32")]
-use wasm_bindgen::prelude::*;
 
 impl DataModelVersion for DataModel {
     const CURRENT: Version = Version {
@@ -23,7 +19,7 @@ impl DataModelVersion for DataModel {
 }
 
 /// Main structure containing V1.0.0 of Lofelt Data Model
-#[derive(Debug, Clone, Serialize, Deserialize, PartialEq, TypescriptDefinition)]
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct DataModel {
     pub version: Version,
     #[serde(default)]
@@ -42,7 +38,7 @@ impl Default for DataModel {
 }
 
 ///(optional) Metadata structure
-#[derive(Default, Clone, Serialize, Deserialize, PartialEq, Debug, TypescriptDefinition)]
+#[derive(Default, Clone, Serialize, Deserialize, PartialEq, Debug)]
 pub struct MetaData {
     #[serde(default)]
     pub editor: String,
@@ -63,18 +59,18 @@ pub struct MetaData {
 /// - A `SignalContinuous` that represents a decomposed haptic signal over a period of time (required)
 ///
 /// A `SignalContinuous` requires an `EnvelopeAmplitude`, and can have an optional `EnvelopeFrequency`.
-#[derive(Default, Clone, PartialEq, Debug, Serialize, Deserialize, TypescriptDefinition)]
+#[derive(Default, Clone, PartialEq, Debug, Serialize, Deserialize)]
 pub struct Signals {
     pub continuous: SignalContinuous,
 }
 
 /// Represents a decomposed haptic signal over a period of time
-#[derive(Default, Clone, PartialEq, Debug, Serialize, Deserialize, TypescriptDefinition)]
+#[derive(Default, Clone, PartialEq, Debug, Serialize, Deserialize)]
 pub struct SignalContinuous {
     pub envelopes: Envelopes,
 }
 
-#[derive(Default, Clone, PartialEq, Debug, Serialize, Deserialize, TypescriptDefinition)]
+#[derive(Default, Clone, PartialEq, Debug, Serialize, Deserialize)]
 /// Envelopes of a `SignalContinuous`. Allows to change `amplitude` and `frequency` of a `SignalContinuous` over time.
 pub struct Envelopes {
     pub amplitude: Vec<AmplitudeBreakpoint>,
@@ -83,7 +79,7 @@ pub struct Envelopes {
 }
 
 /// Amplitude breakpoints of a `SignalContinuous` Amplitude envelope. Allows to apply emphasis to a point.
-#[derive(Default, Clone, PartialEq, Debug, Serialize, Deserialize, TypescriptDefinition)]
+#[derive(Default, Clone, PartialEq, Debug, Serialize, Deserialize)]
 pub struct AmplitudeBreakpoint {
     pub time: f32,
     pub amplitude: f32,
@@ -112,7 +108,7 @@ impl AmplitudeBreakpoint {
 }
 
 /// Emphasis structure associated with a Amplitude envelope breakpoint. Allows for a "haptic highlight" of the breakpoint.
-#[derive(Clone, Copy, Default, PartialEq, Debug, Serialize, Deserialize, TypescriptDefinition)]
+#[derive(Clone, Copy, Default, PartialEq, Debug, Serialize, Deserialize)]
 #[repr(C)]
 pub struct Emphasis {
     pub amplitude: f32,
@@ -120,7 +116,7 @@ pub struct Emphasis {
 }
 
 /// Data associated with a Frequency envelope breakpoint.
-#[derive(Clone, Copy, Default, PartialEq, Debug, Serialize, Deserialize, TypescriptDefinition)]
+#[derive(Clone, Copy, Default, PartialEq, Debug, Serialize, Deserialize)]
 pub struct FrequencyBreakpoint {
     pub time: f32,
     pub frequency: f32,

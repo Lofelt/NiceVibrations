@@ -53,7 +53,6 @@
         });
     };
 
-    _audioToHapticsPlayer = [[CoreHapticsPlayer alloc] init:_hapticEngine];
     _preauthoredHapticPlayer = [[CoreHapticsPlayer alloc] init:_hapticEngine];
 
     return self;
@@ -84,7 +83,6 @@
             return;
         }
         [_preauthoredHapticPlayer reset];
-        [_audioToHapticsPlayer reset];
         _engineStopped = NO;
     }
     @finally {

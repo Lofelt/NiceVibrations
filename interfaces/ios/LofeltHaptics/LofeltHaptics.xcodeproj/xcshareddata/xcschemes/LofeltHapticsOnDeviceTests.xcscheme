@@ -16,16 +16,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4AFDBE93248FC3A500976026"
-               BuildableName = "LofeltHapticsTestsMacOS.xctest"
-               BlueprintName = "LofeltHapticsTestsMacOS"
-               ReferencedContainer = "container:LofeltHaptics.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "6D92329124F00ADD00DF80D6"
                BuildableName = "LofeltHapticsTestAppTests.xctest"
                BlueprintName = "LofeltHapticsTestAppTests"

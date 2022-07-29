@@ -10,14 +10,8 @@
 		4A407DED255E98B7008F52E4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A407DEC255E98B7008F52E4 /* Helpers.swift */; };
 		4A6BEC62247FE3E600E53884 /* LofeltHaptics+ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A6BEC61247FE3E600E53884 /* LofeltHaptics+ClassExtension.h */; };
 		4AFDBE11248F711F00976026 /* liblofelt_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFDBE10248F711F00976026 /* liblofelt_sdk.a */; settings = {ATTRIBUTES = (Weak, ); }; };
-		4AFDBE97248FC3A500976026 /* LofeltHapticsTestsMacOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDBE96248FC3A500976026 /* LofeltHapticsTestsMacOS.m */; };
-		4AFDBEA1248FC6A600976026 /* LofeltHaptics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD485312428FFBD00D3BDD8 /* LofeltHaptics.m */; };
-		4AFDBEA6248FC81300976026 /* test-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDBE85248FBBFE00976026 /* test-sound.wav */; };
-		4AFDBEAF248FED6F00976026 /* MockNativeDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDBE9F248FC67B00976026 /* MockNativeDriver.m */; };
 		4AFDBEC52492740B00976026 /* CoreHapticsDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AFDBEC32492740B00976026 /* CoreHapticsDriver.h */; };
 		4AFDBEC62492740B00976026 /* CoreHapticsDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDBEC42492740B00976026 /* CoreHapticsDriver.m */; };
-		4AFDBEC72492749B00976026 /* CoreHapticsDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDBEC42492740B00976026 /* CoreHapticsDriver.m */; };
-		4AFDBECD2493CCC300976026 /* liblofelt_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFDBE17248F72AA00976026 /* liblofelt_sdk.a */; };
 		6D1CD1CC2412D6940078F5BF /* LofeltHaptics.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1CD1BE2412D6940078F5BF /* LofeltHaptics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D2AB77C24337BD5009D3973 /* CoreHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2AB77B24337BD5009D3973 /* CoreHaptics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6D74547D26D3E391002484EB /* SystemHaptics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D74547C26D3E390002484EB /* SystemHaptics.m */; };
@@ -30,13 +24,6 @@
 		6D92329724F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92329624F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift */; platformFilter = ios; };
 		6D9232A624F00D1B00DF80D6 /* LofeltHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */; };
 		6D9232A724F00D1B00DF80D6 /* LofeltHaptics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6D9232AE24F00DB000DF80D6 /* drive-drums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AB24F00DB000DF80D6 /* drive-drums.wav */; };
-		6D9232AF24F00DB000DF80D6 /* drive-drums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AB24F00DB000DF80D6 /* drive-drums.wav */; };
-		6D9232B024F00DB000DF80D6 /* drive-drums-pre-post-roll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AC24F00DB000DF80D6 /* drive-drums-pre-post-roll.wav */; };
-		6D9232B124F00DB000DF80D6 /* drive-drums-pre-post-roll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AC24F00DB000DF80D6 /* drive-drums-pre-post-roll.wav */; };
-		6D9232B224F00DB000DF80D6 /* 30s-limit-test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */; };
-		6D9232B324F00DB000DF80D6 /* 30s-limit-test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */; };
-		6D9232B424F00F7E00DF80D6 /* test-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDBE85248FBBFE00976026 /* test-sound.wav */; };
 		6D92974726E0CFAB00849EBB /* SystemHaptics.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D74548126D3E3BA002484EB /* SystemHaptics.h */; };
 		6DD485322428FFBD00D3BDD8 /* LofeltHaptics.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD485312428FFBD00D3BDD8 /* LofeltHaptics.m */; };
 		6DFB16E8252DFBFB0096BA6A /* LofeltHaptics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */; platformFilter = ios; };
@@ -45,18 +32,9 @@
 		E971DE9525596E3E001C3112 /* HapticRamp.m in Sources */ = {isa = PBXBuildFile; fileRef = E971DE9425596E3E001C3112 /* HapticRamp.m */; };
 		E971DEA125596EE3001C3112 /* HapticRamp.h in Headers */ = {isa = PBXBuildFile; fileRef = E971DE9925596E76001C3112 /* HapticRamp.h */; };
 		E971DEAF255975D8001C3112 /* CoreHapticsPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E971DE8E25596D73001C3112 /* CoreHapticsPlayer.h */; };
-		E971DEB3255975E4001C3112 /* CoreHapticsPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E971DE8F25596D8A001C3112 /* CoreHapticsPlayer.m */; };
-		E971DEB725597607001C3112 /* HapticRamp.m in Sources */ = {isa = PBXBuildFile; fileRef = E971DE9425596E3E001C3112 /* HapticRamp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4AFDBE9C248FC57000976026 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6D1CD1B22412D6940078F5BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D1CD1BA2412D6940078F5BF;
-			remoteInfo = LofeltHaptics;
-		};
 		6D92329324F00ADD00DF80D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6D1CD1B22412D6940078F5BF /* Project object */;
@@ -93,12 +71,6 @@
 		4AC87D16248A08B1001924A0 /* NativeDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeDriver.h; sourceTree = "<group>"; };
 		4AFDBE10248F711F00976026 /* liblofelt_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblofelt_sdk.a; path = ../../../target/universal/debug/liblofelt_sdk.a; sourceTree = "<group>"; };
 		4AFDBE17248F72AA00976026 /* liblofelt_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = liblofelt_sdk.a; path = ../../../target/debug/liblofelt_sdk.a; sourceTree = "<group>"; };
-		4AFDBE85248FBBFE00976026 /* test-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "test-sound.wav"; sourceTree = "<group>"; };
-		4AFDBE94248FC3A500976026 /* LofeltHapticsTestsMacOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LofeltHapticsTestsMacOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AFDBE96248FC3A500976026 /* LofeltHapticsTestsMacOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LofeltHapticsTestsMacOS.m; sourceTree = "<group>"; };
-		4AFDBE98248FC3A500976026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AFDBE9E248FC67B00976026 /* MockNativeDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockNativeDriver.h; sourceTree = "<group>"; };
-		4AFDBE9F248FC67B00976026 /* MockNativeDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockNativeDriver.m; sourceTree = "<group>"; };
 		4AFDBEC32492740B00976026 /* CoreHapticsDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreHapticsDriver.h; sourceTree = "<group>"; };
 		4AFDBEC42492740B00976026 /* CoreHapticsDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreHapticsDriver.m; sourceTree = "<group>"; };
 		6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LofeltHaptics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,9 +90,6 @@
 		6D92329224F00ADD00DF80D6 /* LofeltHapticsTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LofeltHapticsTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D92329624F00ADD00DF80D6 /* LofeltHapticsTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LofeltHapticsTestAppTests.swift; sourceTree = "<group>"; };
 		6D92329824F00ADD00DF80D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D9232AB24F00DB000DF80D6 /* drive-drums.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drive-drums.wav"; sourceTree = "<group>"; };
-		6D9232AC24F00DB000DF80D6 /* drive-drums-pre-post-roll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "drive-drums-pre-post-roll.wav"; sourceTree = "<group>"; };
-		6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "30s-limit-test.wav"; sourceTree = "<group>"; };
 		6DD485312428FFBD00D3BDD8 /* LofeltHaptics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LofeltHaptics.m; sourceTree = "<group>"; };
 		73ECE2DC256EB3FC00633770 /* LofeltHapticsCbinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LofeltHapticsCbinding.m; sourceTree = "<group>"; };
 		E971DE8E25596D73001C3112 /* CoreHapticsPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreHapticsPlayer.h; sourceTree = "<group>"; };
@@ -130,14 +99,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4AFDBE91248FC3A500976026 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AFDBECD2493CCC300976026 /* liblofelt_sdk.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6D1CD1B82412D6940078F5BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,23 +130,8 @@
 		4AFDBE84248FBBFE00976026 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4AFDBE85248FBBFE00976026 /* test-sound.wav */,
-				6D9232AD24F00DB000DF80D6 /* 30s-limit-test.wav */,
-				6D9232AC24F00DB000DF80D6 /* drive-drums-pre-post-roll.wav */,
-				6D9232AB24F00DB000DF80D6 /* drive-drums.wav */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		4AFDBE95248FC3A500976026 /* LofeltHapticsTestsMacOS */ = {
-			isa = PBXGroup;
-			children = (
-				4AFDBE9E248FC67B00976026 /* MockNativeDriver.h */,
-				4AFDBE9F248FC67B00976026 /* MockNativeDriver.m */,
-				4AFDBE96248FC3A500976026 /* LofeltHapticsTestsMacOS.m */,
-				4AFDBE98248FC3A500976026 /* Info.plist */,
-			);
-			path = LofeltHapticsTestsMacOS;
 			sourceTree = "<group>";
 		};
 		6D1CD1B12412D6940078F5BF = {
@@ -193,7 +139,6 @@
 			children = (
 				4AFDBE84248FBBFE00976026 /* Resources */,
 				6D1CD1BD2412D6940078F5BF /* LofeltHaptics */,
-				4AFDBE95248FC3A500976026 /* LofeltHapticsTestsMacOS */,
 				6D92327E24F00ADB00DF80D6 /* LofeltHapticsTestApp */,
 				6D92329524F00ADD00DF80D6 /* LofeltHapticsTestAppTests */,
 				6D1CD1BC2412D6940078F5BF /* Products */,
@@ -205,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				6D1CD1BB2412D6940078F5BF /* LofeltHaptics.framework */,
-				4AFDBE94248FC3A500976026 /* LofeltHapticsTestsMacOS.xctest */,
 				6D92327D24F00ADB00DF80D6 /* LofeltHapticsTestApp.app */,
 				6D92329224F00ADD00DF80D6 /* LofeltHapticsTestAppTests.xctest */,
 			);
@@ -294,25 +238,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4AFDBE93248FC3A500976026 /* LofeltHapticsTestsMacOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4AFDBE99248FC3A500976026 /* Build configuration list for PBXNativeTarget "LofeltHapticsTestsMacOS" */;
-			buildPhases = (
-				4AFDBECC2493CC6800976026 /* ShellScript */,
-				4AFDBE90248FC3A500976026 /* Sources */,
-				4AFDBE91248FC3A500976026 /* Frameworks */,
-				4AFDBE92248FC3A500976026 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4AFDBE9D248FC57000976026 /* PBXTargetDependency */,
-			);
-			name = LofeltHapticsTestsMacOS;
-			productName = LofeltHapticsTestsMacOS;
-			productReference = 4AFDBE94248FC3A500976026 /* LofeltHapticsTestsMacOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		6D1CD1BA2412D6940078F5BF /* LofeltHaptics */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D1CD1CF2412D6940078F5BF /* Build configuration list for PBXNativeTarget "LofeltHaptics" */;
@@ -380,9 +305,6 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = Lofelt;
 				TargetAttributes = {
-					4AFDBE93248FC3A500976026 = {
-						CreatedOnToolsVersion = 11.5;
-					};
 					6D1CD1BA2412D6940078F5BF = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
@@ -410,7 +332,6 @@
 			projectRoot = "";
 			targets = (
 				6D1CD1BA2412D6940078F5BF /* LofeltHaptics */,
-				4AFDBE93248FC3A500976026 /* LofeltHapticsTestsMacOS */,
 				6D92327C24F00ADB00DF80D6 /* LofeltHapticsTestApp */,
 				6D92329124F00ADD00DF80D6 /* LofeltHapticsTestAppTests */,
 			);
@@ -418,14 +339,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4AFDBE92248FC3A500976026 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AFDBEA6248FC81300976026 /* test-sound.wav in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6D1CD1B92412D6940078F5BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,12 +351,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D92328C24F00ADD00DF80D6 /* LaunchScreen.storyboard in Resources */,
-				6D9232AE24F00DB000DF80D6 /* drive-drums.wav in Resources */,
-				6D9232B424F00F7E00DF80D6 /* test-sound.wav in Resources */,
 				6D92328924F00ADD00DF80D6 /* Preview Assets.xcassets in Resources */,
-				6D9232B224F00DB000DF80D6 /* 30s-limit-test.wav in Resources */,
 				6D92328624F00ADD00DF80D6 /* Assets.xcassets in Resources */,
-				6D9232B024F00DB000DF80D6 /* drive-drums-pre-post-roll.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,32 +360,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D9232B324F00DB000DF80D6 /* 30s-limit-test.wav in Resources */,
-				6D9232B124F00DB000DF80D6 /* drive-drums-pre-post-roll.wav in Resources */,
-				6D9232AF24F00DB000DF80D6 /* drive-drums.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4AFDBECC2493CC6800976026 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$HOME/.cargo/bin:$PATH\"\ncd ../../../\n\ncargo build --package api\n";
-		};
 		6DD485352429046400D3BDD8 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,19 +387,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4AFDBE90248FC3A500976026 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E971DEB725597607001C3112 /* HapticRamp.m in Sources */,
-				E971DEB3255975E4001C3112 /* CoreHapticsPlayer.m in Sources */,
-				4AFDBEAF248FED6F00976026 /* MockNativeDriver.m in Sources */,
-				4AFDBE97248FC3A500976026 /* LofeltHapticsTestsMacOS.m in Sources */,
-				4AFDBEA1248FC6A600976026 /* LofeltHaptics.m in Sources */,
-				4AFDBEC72492749B00976026 /* CoreHapticsDriver.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6D1CD1B72412D6940078F5BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,11 +422,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4AFDBE9D248FC57000976026 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6D1CD1BA2412D6940078F5BF /* LofeltHaptics */;
-			targetProxy = 4AFDBE9C248FC57000976026 /* PBXContainerItemProxy */;
-		};
 		6D92329424F00ADD00DF80D6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6D92327C24F00ADB00DF80D6 /* LofeltHapticsTestApp */;
@@ -575,59 +446,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4AFDBE9A248FC3A500976026 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=macosx*]" = arm64;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/LofeltHaptics",
-					"$(PROJECT_DIR)/../../../core/api",
-				);
-				INFOPLIST_FILE = LofeltHapticsTestsMacOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../target/debug/\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lofelt.LofeltHapticsTestsMacOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		4AFDBE9B248FC3A500976026 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				"EXCLUDED_ARCHS[sdk=macosx*]" = arm64;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/LofeltHaptics",
-					"$(PROJECT_DIR)/../../../core/api",
-				);
-				INFOPLIST_FILE = LofeltHapticsTestsMacOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/../../../target/debug/\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lofelt.LofeltHapticsTestsMacOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 		6D1CD1CD2412D6940078F5BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -931,15 +749,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4AFDBE99248FC3A500976026 /* Build configuration list for PBXNativeTarget "LofeltHapticsTestsMacOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4AFDBE9A248FC3A500976026 /* Debug */,
-				4AFDBE9B248FC3A500976026 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6D1CD1B52412D6940078F5BF /* Build configuration list for PBXProject "LofeltHaptics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

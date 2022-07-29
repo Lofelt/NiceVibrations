@@ -9,15 +9,9 @@
 
 /// A trait that is implemented by each haptic data model to provide its current version
 use serde::{Deserialize, Serialize};
-use typescript_definitions_local::TypescriptDefinition;
-
-#[cfg(target_arch = "wasm32")]
-use wasm_bindgen::prelude::*;
 
 ///Lofelt data models versioning structure
-#[derive(
-    Clone, Copy, Serialize, Deserialize, Debug, PartialEq, PartialOrd, TypescriptDefinition,
-)]
+#[derive(Clone, Copy, Serialize, Deserialize, Debug, PartialEq, PartialOrd)]
 pub struct Version {
     pub major: u32,
     #[serde(default = "Version::default_minor_patch")]

@@ -63,7 +63,6 @@ NSString *const LofeltErrorDomain = @"com.lofelt.LofeltSDK";
 
 // When resuming, we:
 // - Reset the CoreHapticsDriver, which will re-start the haptic engine and re-create the players
-// - Re-install the audio tap we removed before in suspend()
 - (void) resume API_AVAILABLE(ios(13)) {
     [_nativeDriver reset];
 }
@@ -282,13 +281,14 @@ NSString *const LofeltErrorDomain = @"com.lofelt.LofeltSDK";
 /*! @brief          handleStreamingAmplitudeEvent(nativeDriverPassedBack, event)
                     Callback for receiving a streaming amplitude event for pre-authored
                     clip playback from Rust.
-    @discussion     The event is forwarded to the native driver, similar to how
-                    handleAudioToHapticEvents() works.
+    @discussion     The event is forwarded to the native driver.
                     Since the callback's signature doesn't allow returning an error,
                     any error is printed here.
 
     @param nativeDriverPassedBack
-                    Same as in handleAudioToHapticEvents()
+                    A raw C pointer to the native driver that was passed to the Rust core in
+                    @c- (instance) initWithNativeDriver;
+                    above. Here the Rust core passes it back.
     @param event    The amplitude event that should be played back
 */
 void handleStreamingAmplitudeEvent(void *nativeDriverPassedBack, AmplitudeEvent event) {
@@ -310,7 +310,7 @@ void handleStreamingAmplitudeEvent(void *nativeDriverPassedBack, AmplitudeEvent 
     @discussion     Same as handleStreamingAmplitudeEvent(), but for frequency instead of
                     amplitude events
     @param nativeDriverPassedBack
-                    Same as in handleAudioToHapticEvents()
+                    Same as in handleStreamingAmplitudeEvent()
     @param event    The frequency event that should be played back
 */
 void handleStreamingFrequencyEvent(void *nativeDriverPassedBack, FrequencyEvent event) {
