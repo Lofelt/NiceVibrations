@@ -44,11 +44,5 @@ jobs:
           sh ./install.sh
           cd ..
 
-    - name: Install iOS development certificate
-      uses: apple-actions/import-codesign-certs@v1
-      with:
-        p12-file-base64: ${{ secrets.APPLE_DEVELOPMENT_CERT }}
-        p12-password: ${{ secrets.APPLE_DEVELOPMENT_CERT_PWD }}
-
     - name: Run CI script
       run: ./ci-ios.sh

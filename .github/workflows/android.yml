@@ -32,24 +32,5 @@ jobs:
       run: rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android
 
     # Skip the connected checks in the CI script, as they require an emulator setup.
-    # Instead, run the connected checks in an emulator environment in the steps below.
     - name: Run CI script
       run: ./ci-android.sh --skip-connected-check
-
-    - name: Run tests on emulator with Android 8
-      uses: ReactiveCircus/android-emulator-runner@v2
-      with:
-        working-directory: ./interfaces/android/LofeltHaptics
-        api-level: 26 #Android 8 API level
-        arch: x86_64
-        script: ./gradlew connectedCheck
-        ndk: 21.3.6528147
-
-    - name: Run tests on emulator with Android 10
-      uses: ReactiveCircus/android-emulator-runner@v2
-      with:
-        working-directory: ./interfaces/android/LofeltHaptics
-        api-level: 29 #Android 10 API level
-        arch: x86_64
-        script: ./gradlew connectedCheck
-        ndk: 21.3.6528147
