@@ -5,13 +5,11 @@ exit_with_failure()
     echo "❌ $*" 1>&2 ; exit 1;
 }
 
-package_name=$1
-binary_name=$2
-version=$3
+package_name=haptic2ahap
+binary_name=haptic2ahap
+version=$1
 
-[[ -n "$package_name" ]] || exit_with_failure "No package name passed as first argument"
-[[ -n "$binary_name" ]] || exit_with_failure "No binary name passed as second argument"
-[[ -n "$version" ]] || exit_with_failure "No version passed as third argument"
+[[ -n "$version" ]] || exit_with_failure "No version passed as first argument"
 
 echo "Releasing package $package_name version $version as binary $binary_name"
 

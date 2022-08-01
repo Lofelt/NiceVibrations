@@ -18,7 +18,7 @@ jobs:
           ~/.cargo/registry
           ~/.cargo/git
           target
-        key: release-internal-app-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+        key: release-haptic2ahap-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
 
       # GITHUB_REF will be something like refs/tags/haptic2ahap-0.3.0. This step extracts
       # the last part, haptic2ahap-0.3.0, into a RELEASE_TAG variable, and the version,
@@ -29,7 +29,7 @@ jobs:
         echo RELEASE_VERSION=${GITHUB_REF#refs/*/*-*} >> $GITHUB_ENV
 
     - name: Build .zip
-      run: ./release-internal-app.sh haptic2ahap haptic2ahap ${{ env.RELEASE_VERSION }}
+      run: ./release-haptic2ahap.sh ${{ env.RELEASE_VERSION }}
 
     - name: Create GitHub Release
       id: create_release
