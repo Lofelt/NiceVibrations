@@ -175,9 +175,3 @@ jobs:
         asset_path: ./release/unity-api-docs-${{ env.RELEASE_UNITY_VERSION }}.zip
         asset_name: unity-api-docs-${{ env.RELEASE_UNITY_VERSION }}.zip
         asset_content_type: application/zip
-
-    - name: Upload Android package to GitHub
-      working-directory: interfaces/android/LofeltHaptics
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: ./gradlew publish

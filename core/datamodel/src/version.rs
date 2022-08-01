@@ -2,7 +2,6 @@
 //!
 //! The model version follows the ideas of [Semantic Versioning][1]:
 //!
-//!
 //! [1]: https://semver.org/
 
 /// A trait that is implemented by each haptic data model to provide its current version
