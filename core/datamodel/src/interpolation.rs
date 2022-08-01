@@ -37,8 +37,7 @@ impl InterpolationParameters {
 
 // Can't use f32::clamp(), which was introduced in Rust 1.50.0. We are stuck
 // with a lower version of Rust and therefore need to implement clamp() ourselves.
-// This can be removed once we support Rust >= 1.50.0, see
-// https://lofelt.atlassian.net/browse/PD-2055.
+// This can be removed once we support Rust >= 1.50.0.
 fn clamp(number: f32, min: f32, max: f32) -> f32 {
     number.min(max).max(min)
 }

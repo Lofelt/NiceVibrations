@@ -2,10 +2,8 @@
 //!
 //! The model version follows the ideas of [Semantic Versioning][1]:
 //!
-//! See [this page][2] for details.
 //!
 //! [1]: https://semver.org/
-//! [2]: https://lofelt.atlassian.net/wiki/spaces/PD/pages/385679560
 
 /// A trait that is implemented by each haptic data model to provide its current version
 use serde::{Deserialize, Serialize};

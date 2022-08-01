@@ -23,7 +23,6 @@ jobs:
           target
         key: ios-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-v3
 
-# TODO: remove once https://lofelt.atlassian.net/browse/SDK-15 is fixed
     - name: Install Rust 1.55.0 toolchain
       uses: actions-rs/toolchain@v1
       with:

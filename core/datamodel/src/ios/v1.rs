@@ -7,8 +7,6 @@ use v1::AmplitudeBreakpoint;
 const DELTA_ERR: f32 = 0.000_000_1;
 const AMPLITUDE_DUCKING: f32 = 0.2;
 
-// As per documentation at https://developer.apple.com/documentation/corehaptics/chhapticevent/eventtype/3081794-hapticcontinuous,
-// a continuous event is limited to 30 seconds.
 const MAX_CONTINUOUS_EVENT_DURATION: f32 = 30.0;
 
 ///Core Haptics AHAP data model structure
@@ -291,8 +289,6 @@ impl From<v1::DataModel> for Ahap {
 
 fn get_intensity_from_amplitude_bp(breakpoint: &AmplitudeBreakpoint) -> f32 {
     if breakpoint.emphasis.is_some() {
-        // reason for sqrt can be found here in pages from 8 to 10
-        // https://docs.google.com/presentation/d/1XX1lm4WLANF1wXDk0TnkBcPSx4QfneYybNDmksS5I2Q/edit?usp=drivesdk
         breakpoint.amplitude.sqrt() * (1.0 - AMPLITUDE_DUCKING)
     } else {
         breakpoint.amplitude.sqrt()

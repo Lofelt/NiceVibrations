@@ -12,10 +12,6 @@
   - [From Command Line](#from-command-line-1)
   - [From Android Studio](#from-android-studio-1)
 - [Building the example app](#building-the-example-app)
-- [Using GitHub packages with the library](#using-github-packages-with-the-library)
-  - [Setting up credentials](#setting-up-credentials)
-  - [Publishing the library to GitHub packages](#publishing-the-library-to-github-packages)
-  - [Consuming the library from GitHub packages](#consuming-the-library-from-github-packages)
 - [Caveats and issues](#caveats-and-issues)
 
 # Lofelt SDK for Android
@@ -95,7 +91,9 @@ This should print something along the lines of:
 ```
 > Task :LofeltHaptics:cargoBuildX86_64
 ...
-Starting process 'command 'cargo''. Working directory: /Users/thomas/Code/lofelt-sdk/core/api Command: cargo build --verbose --release --target=x86_64-linux-android
+Starting process 'command 'cargo''.
+Command: cargo build --verbose --release --target=x86_64-linux-android
+
 ```
 You can then invoke this `cargo` command manually, after changing into the correct working
 directory.
@@ -166,63 +164,12 @@ The following changes are needed:
     +        classpath 'gradle.plugin.org.mozilla.rust-android-gradle:plugin:0.8.3'
     ```
 
-# Using GitHub packages with the library
-
-As part of the release process of the SDK, the Android library is published to GitHub Packages as
-a private Maven package.
-
-## Setting up credentials
-1. [Create a GitHub personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) with permissions to read and write packages
-2. Set up your GitHub credentials in `~/.gradle/gradle.properties` or in the project's
-`local.properties`:
-   ```
-   gpr.key=<YOUR_GITHUB_TOKEN>
-   gpr.user=<YOUR_GITHUB_USERNAME>
-   ```
-
-## Publishing the library to GitHub packages
-These are the instructions on how to manually publish the library to GitHub packages. It normally
-isn't necessary to do this, as the library is automatically published as part of the GitHub Actions
-workflow for releasing the SDK.
-
-1. Make sure your credentials are set up, as described above
-2. Change into `interfaces/android/LofeltHaptics`
-3. Run `./gradlew build publish`
-4. Verify that the package has been correctly uploaded to https://github.com/orgs/Lofelt/packages
-
-## Consuming the library from GitHub packages
-
-To use the library in your application:
-1. Make sure your credentials are set up, as described above
-2. Add the GitHub Maven repository to your top-level `build.gradle`:
-   ```
-   allprojects {
-       repositories {
-           [..]
-           maven {
-               name = "GitHubPackages"
-               url = uri("https://maven.pkg.github.com/Lofelt/lofelt-sdk")
-               credentials {
-                   username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR")
-                   password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
-               }
-           }
-       }
-   }
-   ```
-3. Add the Lofelt library to your app's dependencies in your app's `build.gradle`:
-   ```
-   dependencies {
-     [..]
-     implementation 'com.lofelt.haptics:lofelt-haptics:1.1.0'
-   }
-   ```
 
 # Caveats and issues
 - **Changes to the Rust library are only included in the Android library when building twice**.
   Building twice is done by the build script `build-library.sh`, but in Android Studio you need
   to do this manually yourself.
-- Debugging the native Rust code is not yet possible, see [PD-1566](https://lofelt.atlassian.net/browse/PD-1566)
+- Debugging the native Rust code is not yet possible.
 - `stdout` (`println!()`, `dbg!()`) and `stderr` (`eprintln!()`) are not forwarded
   to the Android logging system and are not visible anywhere. Use the `log` crate instead when
   doing print-style debugging.

@@ -45,24 +45,15 @@ This folder has the iOS Framework project containing source code for the Lofelt 
 
   Download from https://github.com/getditto/rust-bitcode/releases/tag/nightly-2021-10-05 and follow the [installation instructions](https://github.com/getditto/rust-bitcode#pre-compiled-releases).
 
-  This is required when building the framework with bitcode enabled, which is needed when running the `build-xcframework.sh` script.
+  > ℹ️ This is required when building the framework with bitcode enabled, which is needed when running the `build-xcframework.sh` script.
 
-- Make sure your Apple ID is added to the Lofelt organization:
-
-  If you can see Lofelt's apps on the [App Store Connect page](https://appstoreconnect.apple.com/apps), then the organization is set up correctly.
-  If you are not yet in the organization, ask on chat to be added.
-
-- Install Xcode 11.5 or later from the App Store and add your Apple ID to Preferences > Accounts
-
-- Install the developer and distribution certificates required for code signing:
-
-  The certificates are `.p12` files that can be found in the [ios-composer-app repository](https://github.com/Lofelt/ios-composer-app/tree/main/provisioning). Downloading and double-clicking should add them to your keychain. The password is empty.
+- Install Xcode 11.5 or later from the App Store.
 
 - Update your iPhone or simulator to iOS 13.0 or later
 
 - Allow to run the Rust toolchain in the Gatekeeper settings
 
-  During the first build, you'll get macOS Gatekeeper warnings like "'cargo' cannot be opened because the developer cannot be verified". To allow to run these programs, go to System Preferences > Security and Privacy, then click the button to allow the program that was blocked and restart the build. This step needs to be repeated multiple times.
+  Eventually, during the first build, you'll get macOS Gatekeeper warnings like "'cargo' cannot be opened because the developer cannot be verified". To allow to run these programs, go to System Preferences > Security and Privacy, then click the button to allow the program that was blocked and restart the build. This step needs to be repeated multiple times.
 
 # Building
 
@@ -147,7 +138,7 @@ Whichever of these is chosen, copy the entire .xcframework or .framework folder 
 - Under Build Phases, expand "Link Binaries With Libraries"
 - Click +
 - Click "Add other"
-- Browse to: lofelt-sdk/interfaces/ios/LofeltHaptics/LofeltHaptics.xcodeproj
+- Browse to: NiceVibrations/interfaces/ios/LofeltHaptics/LofeltHaptics.xcodeproj
 
 Now the framework project shows up under Frameworks in the Xcode Project Navigator
 
@@ -172,7 +163,7 @@ Now you can debug your project and the framework together.
 - `cd "interfaces/ios/LofeltHaptics"`
 - `sh tests-run-on-device.sh "My iPhone"`
 
-Alternatively run the tests from the lofelt-sdk root
+Alternatively run the tests from the repository's root
 - Run `xcrun xctrace list devices` to get the name of your iPhone
 - `sh test-on-device.sh ios "My iPhone"`
 
