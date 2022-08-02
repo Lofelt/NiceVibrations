@@ -1,14 +1,12 @@
-- [SDK Data Model](#sdk-data-model)
-  - [Version 1.0(.0)](#version-100)
-  - [Version 0.2(.0)](#version-020)
-    - [VIJ Root](#vij-root)
-    - [VIJ Non Haptic Data](#vij-non-haptic-data)
-      - [Metadata](#metadata)
-      - [Variation](#variation)
-    - [VIJ Haptic Data](#vij-haptic-data)
-      - [Voices](#voices)
+- [Haptic Data Model](#haptic-data-model)
+  - [Version 1.0.0](#version-100)
+    - [Content](#content)
+    - [Non-haptic Data](#non-haptic-data)
+    - [Haptic Data](#haptic-data)
+      - [Continuous Signal structure](#continuous-signal-structure)
+      - [Emphasis structure](#emphasis-structure)
     - [Validation Rules](#validation-rules)
-    - [JSON schema](#json-schema)
+  - [Data Model Versioning](#data-model-versioning)
 - [Benchmarking](#benchmarking)
   - [Criterion](#criterion)
   - [Benchmark Data](#benchmark-data)
@@ -17,126 +15,175 @@
     - [Timing](#timing)
   - [Reports](#reports)
 
-#  SDK Data Model
-The Lofelt Data Model describes vibrotactile content derived from an audio signal source.
+#  Haptic Data Model
+
+The Lofelt Haptic Data Model it's a describes vibrotactile content derived from an audio signal source in a parametric way. This useful to:
+- Decouple design intent and playback.
+- Allow device-independent and backward compability.
 
 This crate contains the schema of the Lofelt SDK Data model as well as related functions, conversions, and versioning.
-Currently, it provides JSON serialization and deserialization of Lofelt Data, upgrade, as well as conversion to  platform-specific haptic data.
+Currently, it provides JSON serialization and deserialization of Lofelt Data, upgrade, as well as conversion to platform-specific haptic data.
 
-## Version 1.0(.0)
+## Version 1.0.0
+
+> Older versions can be found at in the [archive](ARCHIVE.md)
 
 ![](./media/v1-diag.svg)
 
-## Version 0.2(.0)
+An overview of the Lofelt SDK Haptic Data JSON format can be seen below.
 
-
-### VIJ Root
-
-| **Field**  | **Type**        | **Description**                   | **Required**            |
-| ---------- | --------------- | --------------------------------- | ----------------------- |
-| Metadata   | Structure array | Contextual data for the VIJ data. | ![](./media/image1.png) |
-| Variations | Structure array | ?                                 | ![](./media/image2.png) |
-| Voices     | Structure Array | Contains haptic data.             | ![](./media/image1.png) |
-
-### VIJ Non Haptic Data
-
-#### Metadata
-
-| **Field** | **Type** | **Description**                           | **Required**            | **Default** |
-| --------- | -------- | ----------------------------------------- | ----------------------- | ----------- |
-| Editor    | String   | Name of tool generating the file          | ![](./media/image2.png) | ““          |
-| Format    | String   | Format of DSP analysis                    | ![](./media/image2.png) | ““          |
-| Duration  | Float    | Duration of the haptic content in seconds | ![](./media/image1.png) | 0.0         |
-
-#### Variation
-
-| **Field**  | **Type** | **Range** | **Description**                     | **Required**            | **Default** |
-| ---------- | -------- | --------- | ----------------------------------- | ----------------------- | ----------- |
-| Total gain | Float    | 0.0 – 1.0 | Global gain of the amplitude values | ![](./media/image2.png) | 1.0         |
-| Partials   | Float    |           | ?                                   | ![](./media/image2.png) | Empty       |
-
-### VIJ Haptic Data
-
-#### Voices
-
-| **Field**  | **Sub-field** | **Type**        | **Range**         | **Description**                                                                                                                                                        | **Required**                            | **Default** |
-| ---------- | ------------- | --------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | ----------- |
-| Envelopes  |               | Structure Array |                   | Contains multiple arrays modulating each band, where the first array correspondents to an envelope of Amplitude, and the second array to Frequency Modulation.         | ![](./media/image1.png)At least 1 array |             |
-|            | Time          | double          | 0.0 - ≈1.798E+308 | Point in time of envelope point                                                                                                                                        | ![](./media/image1.png)                 |             |
-|            | Amplitude     | double          | 0.0 – 1.0         | Amplitude value of envelope point                                                                                                                                      | ![](./media/image1.png)                 |             |
-| Bands      | ?             |                 |                   | ?                                                                                                                                                                      | ![](./media/image2.png)                 |             |
-| Transients |               | Structure Array |                   | Contains multiple arrays describing transient events, where the first array correspondents to their Amplitude values in time, and the second array to their Frequency. | ![](./media/image2.png)                 |             |
-|            | Time          | double          | 0.0 - ≈1.798E+308 | Point in time of transient                                                                                                                                             | ![](./media/image1.png)                 |             |
-|            | Amplitude     | double          | 0.0 - 1.0         | Amplitude value of transient                                                                                                                                           | ![](./media/image1.png)                 |             |
-
-### Validation Rules
-
-- Voices Envelopes':
-  - Needs to have breakpoints
-  - Needs to have the first envelope array (corresponding to amplitude envelope) not empty
-  - Breakpoint `time` needs to be consecutive
-  - Breakpoints `amplitude` needs to be in its *Range*
- - Transients
-   - Breakpoint `time` needs to be consecutive
-   - Breakpoints `amplitude` needs to be in its *Range*
-   - The transient amplitude and frequency arrays need to have matching `time` values
-   - The transient amplitude and frequency arrays need to have the same array length
-
-
-
-### JSON schema
-
-````
+```
 {
+  "version": {
+    "major": int,
+    "minor": int,
+    "patch": int
+  },
   "metadata": {
-    "editor": string,
-    "format": string,
-    "duration": float
-  },
-  "variation": {
-    "total gain": float,
-    "partials": float
-  },
-  "voices": {
-    "envelopes": [
-      [
-        {
-          "time": float,
-          "amplitude": float
-        },
-		...
-      ],
-      [
-        {
-          "time": float,
-          "amplitude": float
-        },
-		...
-      ]
+    "editor": String,
+    "author": String,
+    "source": String,
+    "project":String,
+    "tags": [
+        String
     ],
-    "bands": [],
-    "transients": [
-      [
-        {
-          "time": float,
-          "amplitude": float
-        },
-		...
-      ],
-      [
-        {
-          "time": float,
-          "amplitude": float
-        },
-		...
-      ]
-    ]
+    "description": String
+  },
+  "signals": {
+    "continuous": {
+      "envelopes": {
+        "amplitude": [
+          {
+            "time": float,
+            "amplitude": float
+          },
+          {
+            "time": float,
+            "amplitude": float,
+            "emphasis": {
+              "amplitude": float,
+              "frequency": float
+            }
+          },
+          {...}
+        ],
+        "frequency": [
+          {
+            "time": float,
+            "frequency": float
+          },
+          {...}
+        ]
+      }
+    }
   }
 }
 
+```
+
+### Content
+
+We have agreed to have the following data structure of the model.
+
+| **Field**              | **Type**              | **Description**                                              | **Required** | **Default** |
+| ---------------------- | --------------------- | ------------------------------------------------------------ | ------------ | ----------- |
+| Version                | Structure of Integers | Version number represented by Major, Minor and Patch integer | ✅<br>        |             |
+| Metadata               | Structure             | Contextual data for the pattern.                             | ❌<br>        | None        |
+| Haptic Data: `signals` | Structure Array       | Contains haptic data.                                        | ✅<br>        |             |
+
+### Non-haptic Data
+
+**Version**
+
+| **Field** | **Type** | **Description**     | **Required** | **Default** |
+| --------- | -------- | ------------------- | ------------ | ----------- |
+| Major     | Integer  | Major version value | ✅<br>        | 1.0.0       |
+| Minor     | Integer  | Minor version value | ❌<br>        | 0           |
+| Patch     | Integer  | Patch version value | ❌<br>        | 0           |
+
+**Metadata**
+
+| **Field**       | **Type**     | **Description**                                     | **Required** |
+| --------------- | ------------ | --------------------------------------------------- | ------------ |
+| Editor          | String       | Tool generating file + version:<br>cli, Lofelt Composer, Lofelt Studio, etc.         | ❌<br>        |
+| Author          | String       | Name of the person (company) authoring/editing the haptic data. | ❌<br>        |
+| Source          | String       | Name of the source file.                            | ❌<br>        |
+| Project         | String       | Project this haptid data is used for.                       | ❌<br>        |
+| Analysis Config | Structure    | Analysis parameters used, format, etc. (TBD)        | ❌<br>        |
+| Tags            | String Array | Tags used for indexing in a haptic data database.           | ❌<br>        |
+| Description     | String       | Description and comments on file.                   | ❌<br>        |
+
+### Haptic Data
+
+This model represents haptic data as signals, which contain a group of
+multiple signal types.
+
+Currently, there can only exist **one** continuous signal.\
+A continuous signal must have an amplitude envelope with multiple
+amplitude breakpoints and can also have a frequency envelope (comparable
+to the iOS Sharpness) with multiple frequency breakpoints. In addition,
+each amplitude breakpoints may have emphasis. emphasis is defined by its
+amplitude and frequency values that are applied to an amplitude
+breakpoint.
+
+#### Continuous Signal structure
+
+| **Signals** | **Signal field** | **Envelope Fields** | **Parameter Fields** | **Type**           | **Range (min, max)** | **Default** | **Description**                                              | **Required**  |
+| ----------- | ---------------- | ------------------- | -------------------- | ------------------ | -------------------- | ----------- | ------------------------------------------------------------ | ------------- |
+| Continuous  |                  |                     |                      |                    |                      |             | Content of a continuous haptic signal                        | ✅<br>Only one |
+|             | Envelopes        |                     |                      |                    |                      |             | Parameter modulation envelopes                               | ✅             |
+|             |                  | Amplitude           |                      |                    |                      |             | Defines amplitude values over time with multiple breakpoints | ✅             |
+|             |                  |                     | Time                 | Float              | 0.0, ≈3.4e+38 \[s\]  | 0.0         | Time value (in seconds) of amplitude breakpoint              | ✅             |
+|             |                  |                     | Amplitude            | Float              | 0.0, 1.0             | 0.0         | Amplitude value of amplitude breakpoint                      | ✅             |
+|             |                  |                     | Emphasis             | Emphasis Structure |                      |             |                                                              | ❌             |
+|             |                  | Frequency           |                      |                    |                      |             | Modulates frequency ratio over time multiple breakpoints     | ❌             |
+|             |                  |                     | Time                 | Float              | 0.0, ≈3.4e+38 \[s\]  | 0.0         | Time value (in seconds) of frequency breakpoint              | ✅             |
+|             |                  |                     | Frequency            | Float              | 0.0 - 1.0            | 0.0         | Normalised frequency value of frequency breakpoint\*         | ✅             |
+
+> *The normalised frequency value here (ranging from 0.0 to 1.0) corresponds with the scaled output of the centroid tracker (as long as we have only one).
+
+#### Emphasis structure
+
+| **Emphasis field** | **Type** | **Range(min. max)** | **Description**                                                                   | **Required** |
+| ------------------ | -------- | ------------------- | --------------------------------------------------------------------------------- | ------------ |
+| Amplitude          | Float    | 0.0 - 1.0           | Emphasis Amplitude to be applied to the corresponding Amplitude breakpoints       | ✅            |
+| Frequency          | Float    | 0.0 - 1.0           | Normalised Frequency\* value of the Emphasis applied to the Amplitude breakpoints | ✅            |
+
+>*The normalised frequency value here (ranging from 0.0 to 1.0)
+corresponds with the scaled output of the centroid tracker (as long as
+we have only one).
+
+### Validation Rules
+
+This rules are being checked upon playback. Also, Composer should make
+sure to export data that follows this rules.
+
+ **List of Validation rules**
+
+| Field                                              | Rule                                                                         |
+| ------------------------------------------------- | ----------------------------------------------------------------------------- |
+| **Continuous:** Amplitude Envelope                | Cannot be Empty                                                               |
+| **Continuous**: Amplitude and Frequency Envelopes | Breakpoints need to have consecutive `time` values                            |
+|                                                   | Breakpoints need to be limited to their _Range (min,max)_                     |
+| **Emphasis**                                      | Needs to contain `frequency` and `amplitude` values                            |
+|                                                   | Frequency and amplitude values need to be limited to their _Range (min, max)_ |
 
 
-````
+## Data Model Versioning
+
+**Currently implemented preliminary rules**
+
+Major version increments are non directly compatible and have to be
+transformed (upgraded), minor increments and patches must be backwards
+compatible within the same major version.
+
+Changes in the the data model like deletion of fields and restructuring
+of parameter groups would contribute to the **increase of major
+version**. In such case a mapping of the new data model is defined in
+order to ensure upgradability.
+
+Addition of optional fields, enum types and renaming of fields(?) would
+contribute to the **increase of minor version.**
 
 # Benchmarking
 ## Criterion
