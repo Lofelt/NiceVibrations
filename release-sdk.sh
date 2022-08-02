@@ -17,8 +17,8 @@ fi
 echo "Cleaning release directory"
 rm -rf release/
 
-sh build-sdk.sh ios || exit_with_failure "Building for iOS failed"
-sh build-sdk.sh android || exit_with_failure "Building for Android failed"
+sh build-platform.sh ios || exit_with_failure "Building for iOS failed"
+sh build-platform.sh android || exit_with_failure "Building for Android failed"
 
 # Zip everything up and put the result in a new 'release/' directory
 mkdir -p release

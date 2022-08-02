@@ -6,7 +6,7 @@ exit_with_failure()
 }
 
 echo "➡️ Building"
-./build-sdk.sh ios || exit_with_failure "Building failed"
+./build-platform.sh ios || exit_with_failure "Building failed"
 
 cd examples/ios
 echo "➡️ Archiving example"
