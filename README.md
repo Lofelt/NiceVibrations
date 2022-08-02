@@ -2,13 +2,13 @@
 ![](https://github.com/Lofelt/NiceVibrations/workflows/android/badge.svg)
 ![](https://github.com/Lofelt/NiceVibrations/workflows/rust-core/badge.svg)
 
-# Contents
+# ℹ️ Contents
 
-- [Contents](#contents)
-- [What is Nice Vibrations?](#what-is-nice-vibrations)
+- [ℹ️ Contents](#ℹ️-contents)
+- [🎮 What is Nice Vibrations?](#-what-is-nice-vibrations)
   - [Main features](#main-features)
-- [Documentation](#documentation)
-- [Getting Started](#getting-started)
+- [📖 Documentation](#-documentation)
+- [🆕 Getting Started](#-getting-started)
   - [Setting up the Development Environment on macOS](#setting-up-the-development-environment-on-macos)
     - [Lofelt Studio SDK](#lofelt-studio-sdk)
     - [Nice Vibrations](#nice-vibrations)
@@ -19,67 +19,77 @@
   - [Build and Test Lofelt Unity Editor plugin host](#build-and-test-lofelt-unity-editor-plugin-host)
   - [Git rules](#git-rules)
 
-# What is Nice Vibrations?
+# 🎮 What is Nice Vibrations?
 
-Built on top of Lofelt Studio SDK, Nice Vibrations offers a universal interface to trigger HD haptic
-feedback on supported Unity platforms platforms at once, as well as ways to get exactly the right
-vibration on each platform.
+Built on top of Lofelt Studio SDK, Nice Vibrations is a Unity Asset which offers a universal interface to trigger HD haptic
+feedback on supported Unity platforms platforms at once, as well as ways to get exactly the right vibration on each platform.
 
-Nice Vibrations provides full support for Android and iOS haptic APIs (including iOS Core Haptics)
-as well as gamepad rumble.
+Nice Vibrations provides full support for:
 
-Nice Vibrations now comes with a growing collection of royalty-free HD haptic (and audio) assets
-ready for quick prototyping and testing. No design skills or tasks required. The assets cover
+🤖 Android
+
+🍏 iOS haptic APIs (including iOS Core Haptics)
+
+🎮 Gamepad rumble.
+
+Nice Vibrations comes with a growing collection of royalty-free HD haptic (and audio) assets
+ready for quick prototyping and testing. No design skills or tasks required.
+The assets cover
 various use cases like Application UX, Game FX, Game Objects, and more.
 
-This repository contains both the source of Lofelt Studio SDK and Nice Vibrations.
+This repository contains both the open-source code of Lofelt Studio SDK and Nice Vibrations.
 
 ## Main features
-- Play and Stop: play and stop complex HD haptic clips (.haptic files).
-- iOS improved performance: load and play haptic clips 2x faster than on Nice Vibrations 3.9
-- Loop: loop a playing clip.
-- Seek: jump into any point of your haptic clip before or during playback depending on what is
-happening in your game.
-- Modulate Frequency or Amplitude: adjust the strength or frequency of your playing haptic clip in
-  reaction to other on screen events (distance between characters, size of a collision), or just to
-  create variation in the pattern playback (repetitive actions like weapon firing or footsteps and
-  jumps).
-- Haptic Voice Priority: set the priority of your haptic clip. Lower priority will be silenced if
-  higher priority clips are triggered at the same time.
-- Code Only API: no need to be stuck in Unity and tied to MonoBehaviours.
-  With the code-only API, you can work in any development environment.
-- MonoBehaviour API: play haptics by just using the Unity Editor, without writing a single line of
-  C# code.
-- Platform Independence: use the same C# and the same .haptic file on all platforms, no need to
-  write platform-specific code for Android or iOS.
-- Haptic Library: no need to design your own haptics. A growing library of clips is included to get
-  you started quickly and with limited experience.
-- Global Haptic Level and Mute: disable haptics entirely with one switch or reduce the intensity of
-  haptics across the whole application.
-- Fully Featured Demos: demos included to help you learn how to apply all of the features for your
-  specific use case. These demos will also help you see how to migrate your existing Nice Vibrations
-  code to the new API’s.
-- Haptic Presets Support: trigger 9 predefined haptic patterns with a single line of code.
-- Gamepad Rumble: play .haptic files on gamepads supported by Unity.
-- Fallback Support: play basic haptics on older phones and operating systems.
-- And more..
 
-# Documentation
+🕹 **Play and Stop**: play and stop complex HD haptic clips (.haptic files).
+
+📂 **iOS improved performance**: load and play haptic clips 2x faster than on Nice Vibrations 3.9
+
+➰ **Loop**: loop a playing haptic clip.
+
+👇 **Seek**: jump into any point of your haptic clip before or during playback depending on what is happening in your game.
+
+🔣 **Modulate Frequency or Amplitude**: adjust the strength or frequency of your playing haptic clip in  reaction to other on screen events (distance between characters, size of a collision), or just to create variation in the pattern playback (repetitive actions like weapon firing or footsteps and jumps).
+
+⏱ **Haptic Priority**: set the priority of your haptic clip. Lower priority will be silenced if higher priority haptic clips are triggered at the same time.
+
+💼 **Code Only API**: no need to be stuck in Unity and tied to MonoBehaviours. With the code-only API, you can work in any development environment.
+
+🖋 **MonoBehaviour API**: play haptics by just using the Unity Editor, without writing a single line of C# code.
+
+✒ **Platform Independence**: use the same C# and the same .haptic file on all platforms, no need to write platform-specific code for Android or iOS.
+
+📕 **Haptic Library**: no need to design your own haptics. A growing library of haptic clips is included to get you started quickly and with limited experience.
+
+🎚 **Global Haptic Level and Mute**: disable haptics entirely with one switch or reduce the intensity of haptics across the whole application.
+
+💁 **Fully Featured Demos**: demos included to help you learn how to apply all of the features for your specific use case. These demos will also help you see how to migrate your existing Nice Vibrations code to the new API’s.
+
+🎗 **Haptic Presets Support**: trigger 9 predefined haptic patterns with a single line of code.
+
+🎳 **Gamepad Rumble**: play .haptic files on gamepads supported by Unity.
+
+☎ **Fallback Support**: play basic haptics on older phones and operating systems.
+
+And more..
+
+
+# 📖 Documentation
 
 The [Nice Vibrations documentation](https://lofelt.github.io/integrating-haptics/nice-vibrations-by-lofelt/)
 explains how to integrate and use Nice Vibrations with new or existing Unity projects.
 
-# Getting Started
+# 🆕 Getting Started
 
 ## Setting up the Development Environment on macOS
 
 Nice Vibrations depends on the cross-platform Lofelt Studio SDK which means that the Lofelt Studio
 SDK needs to be build first in order to use Nice Vibrations on Unity.
 
-Currently, all the steps below were tested using a macOS environment. Windows steps are not provided at
+Currently, all the steps below were tested using a macOS environment. 👎 Windows steps are not provided at
 the moment.
 
-However, Windows support is available if iOS support is not required. You just need to skip the steps
+However, Windows support is available if iOS build support is not required. You just need to skip the steps
 required for the macOS/iOS builds and edit the build scripts according to your needs.
 
 ### Lofelt Studio SDK
