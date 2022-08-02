@@ -142,12 +142,12 @@ If you're not using Unity and just need the iOS Framework or Android library, ch
 
 To build for iOS (after doing the [setup for iOS](./interfaces/ios/README.md)):
 ```
-sh build-sdk.sh ios
+sh build-platform.sh ios
 ```
 
 To build for Android (after doing the [setup for Android](./interfaces/android/README.md)):
 ```
-sh build-sdk.sh android
+sh build-platform.sh android
 ```
 
 To build the SDK for iOS and Android for distribution:

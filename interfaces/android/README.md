@@ -126,10 +126,10 @@ See the [Android developer documentation on tests](https://developer.android.com
 
 # Building the example app
 
-The example app references `android-library/LofeltHaptics.aar`. That file is created by `build-sdk.sh`,
+The example app references `android-library/LofeltHaptics.aar`. That file is created by `build-platform.sh`,
 so in order to build the example app, the build script needs to be run first:
 ```
-./build-sdk.sh android
+./build-platform.sh android
 ```
 
 It is also possible to create a project that includes both the example app and the library with its

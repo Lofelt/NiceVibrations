@@ -8,4 +8,4 @@ edition = "2018"
 
 [dependencies]
 clap = "2.33.0"
-datamodel = {path = "../../../core/datamodel"}
+datamodel = {path = "../../core/datamodel"}

@@ -4,6 +4,6 @@ members = [
     "core/api",
     "core/lib",
     "core/datamodel",
-    "apps/internal/haptic2ahap",
+    "apps/haptic2ahap",
     "unity-editor-plugin",
 ]

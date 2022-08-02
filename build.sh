@@ -12,9 +12,9 @@ SOURCE_UNITY_DIR=interfaces/unity
 echo "➡️ Cleaning Nice Vibrations asset artifacts"
 rm -rf $DEST_NICE_VIBRATIONS_ASSET_DIR
 
-sh build-sdk.sh ios || exit 1
-sh build-sdk.sh android || exit 1
-sh build-sdk.sh unity-editor-plugin-host || exit 1
+sh build-platform.sh ios || exit 1
+sh build-platform.sh android || exit 1
+sh build-platform.sh unity-editor-plugin-host || exit 1
 
 echo "➡️ Copying license file"
 cp licenses/3RD-PARTY-LICENSES.md $SOURCE_NICE_VIBRATIONS_FILES_DIR/ || exit_with_failure "Unable to copy the license file"
