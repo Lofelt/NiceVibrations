@@ -13,7 +13,7 @@
 # Background
 
 This folder contains a plugin for the Unity editor, which is used by our Nice Vibrations
-Unity plugin.
+Unity asset.
 
 The plugin converts `.haptic` clips to a structure suitable for playback on gamepads with Unity's
 Gamepad API.

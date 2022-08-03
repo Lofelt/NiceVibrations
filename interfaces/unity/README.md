@@ -12,7 +12,7 @@
 
 # Overview
 
-This folder contains our Unity plugin. It consists of:
+This folder contains the Nice Vibrations Unity asset. It consists of:
 - The plugin script code (in `Assets/NiceVibrations/Scripts/`)
 - The iOS and Android plugins from our Lofelt SDK, which are used by the script
   code (in `Assets/NiceVibrations/Plugins`)

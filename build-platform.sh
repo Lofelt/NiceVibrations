@@ -43,7 +43,7 @@ if [ "$TARGET" = "ios" ]; then
     mkdir -p $DEST_IOS_FRAMEWORK_DIR || exit_with_failure "Unable to create iOS framework directory"
     mkdir -p $DEST_IOS_FRAMEWORK_DIR/Xcode11 || exit_with_failure "Unable to create iOS framework directory"
     mkdir -p $DEST_IOS_FRAMEWORK_DIR/Xcode12AndHigher || exit_with_failure "Unable to create iOS framework directory"
-    mkdir -p $DEST_UNITY_IOS_PLUGIN_DIR || exit_with_failure "Unable to create Android Unity plugin directory"
+    mkdir -p $DEST_UNITY_IOS_PLUGIN_DIR || exit_with_failure "Unable to create Android Unity asset directory"
 
     cp -vr $SOURCE_IOS_DEVICE_FRAMEWORK_DIR/ $DEST_IOS_FRAMEWORK_DIR/Xcode11/devices/ || exit_with_failure "Copying iOS devices framework failed"
     cp -vr $SOURCE_IOS_SIMULATOR_FRAMEWORK_DIR/ $DEST_IOS_FRAMEWORK_DIR/Xcode11/simulator/ || exit_with_failure "Copying iOS simulator framework failed"
@@ -62,7 +62,7 @@ elif [ "$TARGET" = "android" ]; then
 
     echo "➡️ Copying build artifacts"
     mkdir -p $DEST_ANDROID_LIBRARY_DIR || exit_with_failure "Unable to create Android library directory"
-    mkdir -p $DEST_UNITY_ANDROID_PLUGIN_DIR || exit_with_failure "Unable to create Android Unity plugin directory"
+    mkdir -p $DEST_UNITY_ANDROID_PLUGIN_DIR || exit_with_failure "Unable to create Android asset directory"
 
     cp -vr $SOURCE_ANDROID_AAR_FILE $DEST_ANDROID_LIBRARY_DIR/LofeltHaptics.aar || exit_with_failure "Copying Android library failed"
     cp -vr $SOURCE_ANDROID_JAVADOC_DIR/ $DEST_ANDROID_LIBRARY_DIR/docs || exit_with_failure "Copying Android API documentation failed"
