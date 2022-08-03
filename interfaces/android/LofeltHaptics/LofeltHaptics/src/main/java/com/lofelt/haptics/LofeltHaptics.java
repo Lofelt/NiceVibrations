@@ -249,11 +249,11 @@ public class LofeltHaptics {
 
     // Unfortunately javadoc doesn't understand @hide, so this method will appear
     // in the documentation even though we don't want users to use this method.
-    // We only need it here for our Unity plugin.
+    // We only need it here for the Unity asset scripts.
     //
     // @SuppressWarnings("unused") is used to suppress an Android Studio linter warning about
     // this method not being used. While we indeed don't call it from any of the tests, it
-    // is used by our Unity plugin.
+    // is used by the Unity asset scripts.
 
     /**
      * Returns a handle to the controller of the native library.

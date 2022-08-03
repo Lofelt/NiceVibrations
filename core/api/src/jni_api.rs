@@ -324,7 +324,7 @@ pub fn load_direct_inner(
 // C API for directly loading a clip, bypassing the JNI API
 // `Java_com_lofelt_haptics_LofeltHaptics_load()`.
 //
-// This is called from our Unity plugin when loading a clip. For all other operations
+// This is called from the Unity asset scripts when loading a clip. For all other operations
 // apart from loading a clip, Unity calls into the Java API, which in turn calls the
 // JNI API in this file.
 //

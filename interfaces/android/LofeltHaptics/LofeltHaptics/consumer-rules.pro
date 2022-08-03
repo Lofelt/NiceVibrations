@@ -9,9 +9,7 @@
 -keep class com.lofelt.haptics.Player { *; }
 
 # Keep the public API of the "LofeltHaptics" and "HapticPatterns" classes. This is needed if the API
-# is used via JNI, like in the C# scripts of the Nice Vibrations Unity plugin. ProGuard/R8 is unable
+# is used via JNI, like in the C# scripts of the Nice Vibrations Unity asset. ProGuard/R8 is unable
 # to detect calls made via JNI.
 -keep class com.lofelt.haptics.LofeltHaptics { *; }
 -keep class com.lofelt.haptics.HapticPatterns { *; }
-
-
