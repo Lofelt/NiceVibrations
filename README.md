@@ -18,6 +18,9 @@
   - [Build and Test Lofelt SDK for Android](#build-and-test-lofelt-sdk-for-android)
   - [Build and Test Lofelt Unity Editor plugin host](#build-and-test-lofelt-unity-editor-plugin-host)
   - [Git rules](#git-rules)
+- [🏗️ Continuous Integration](#️-continuous-integration)
+  - [GitHub actions](#github-actions)
+  - [Locally](#locally)
 
 # 🎮 What is Nice Vibrations?
 
@@ -210,3 +213,26 @@ The source code for Unity Editor plugin is available in `unity-editor-plugin`. C
 ## Git rules
 
 We ensure code quality by using git hooks provided by [`rusty-hooks`](https://github.com/swellaby/rusty-hook) for cargo. The git hook setup can be seen in `.rusty-hook.toml` file.
+
+# 🏗️ Continuous Integration
+
+## GitHub actions
+
+For CI, this repository uses Git Hub Actions (GHA). All the workflows are under `.github/worklfows` folder.
+In a nutshell, they setup the development environment with the required dependencies and then run a `ci-<platform>.sh` script with the appropriate steps we want to be valid.
+
+The running strategy is as follows:
+- On push: [rust-core.yml](.github/workflows/rust-core.yml)
+- When merging to main: [ios.yml](.github/workflows/ios.yml), [android.yml](.github/workflows/android.yml) and [unity-editor-plugin.yml](.github/workflows/unity-editor-plugin.yml)
+
+For releasing there are two workflows:
+- Release SDK and Unity workflow: Install dependencies, run appropriate validation steps and then creates a GitHub release with both packages for the Lofelt Studio SDK and a Nice Vibrations. It is triggered once a tag is pushed under the `**sdk**unity**` format, e.g. `sdk-12.12.12-unity-10.10.1`.
+- Release haptic2ahap worfklow: Install dependencies and creates a GitHub release with a binary for the haptic2ahap CLI tool. It is triggered once a tag is pushed under the `**haptic2ahap**` format, e.g. `haptic2ahap-9.9.9`
+
+## Locally
+
+For local "sanity checks", the scripts that GHA runs can also be run locally. Ideally they **should** be run before pushing code upstream to "fail fast".
+
+These are all available under the `ci-<platform>.sh` pattern.
+
+Currently. the `ci-unity.sh` does not run on GHA as this requires a Unity license to be setup. Ideally, this script should be run before pushing code upstream or releasing.
