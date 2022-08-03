@@ -31,6 +31,8 @@ This folder has the iOS Framework project containing source code for the Lofelt 
 
 # Setting up the Development Environment
 
+- ⚠️ Make sure you have set Rust's 1.55 toolchain as the default toolchain. Currently, building for iOS requires Rust 1.55 toolchain.
+
 - Install cargo-lipo:
 
    `cargo install cargo-lipo`
@@ -47,13 +49,14 @@ This folder has the iOS Framework project containing source code for the Lofelt 
 
   > ℹ️ This is required when building the framework with bitcode enabled, which is needed when running the `build-xcframework.sh` script.
 
-- Install Xcode 11.5 or later from the App Store.
+- Install Xcode 13 or later from the App Store.
+  > ℹ️ The latest version used for these steps was Xcode 13.4.
 
 - Update your iPhone or simulator to iOS 13.0 or later
 
 - Allow to run the Rust toolchain in the Gatekeeper settings
 
-  Eventually, during the first build, you'll get macOS Gatekeeper warnings like "'cargo' cannot be opened because the developer cannot be verified". To allow to run these programs, go to System Preferences > Security and Privacy, then click the button to allow the program that was blocked and restart the build. This step needs to be repeated multiple times.
+  The first time you build for iOS you'll eventually get macOS Gatekeeper warnings like "'cargo' cannot be opened because the developer cannot be verified". To allow to run these programs, go to System Preferences > Security and Privacy, then click the button to allow the program that was blocked and restart the build. This step needs to be repeated multiple times.
 
 # Building
 

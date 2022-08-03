@@ -1,6 +1,8 @@
 - [Overview](#overview)
-- [Developing the Unity plugin](#developing-the-unity-plugin)
-- [Profiling the Unity plugin](#profiling-the-unity-plugin)
+- [Development](#development)
+  - [Unity features](#unity-features)
+  - [Platform changes](#platform-changes)
+- [Profiling the Nice Vibrations](#profiling-the-nice-vibrations)
 - [API Documentation](#api-documentation)
 - [Unit Tests](#unit-tests)
   - [Running Tests](#running-tests)
@@ -17,15 +19,22 @@ This folder contains our Unity plugin. It consists of:
 - Audio and haptic example files (in `Assets/NiceVibrations/HapticSamples/`)
 - Example scene (in `Assets/NiceVibrations/Demo/`)
 
-# Developing the Unity plugin
 
-Under `interfaces/unity/NiceVibrations/Assets/Development` there is a scene that can be used to quickly implement and test new features. As the bigger `Demo` scene requires much more design work and doesn't cover all usecases.
+# Development
+
+## Unity features
+
+Under `interfaces/unity/NiceVibrations/Assets/Development` there is a scene that can be used to quickly implement and test new features. the bigger `Demo` scene requires much more design work and doesn't cover all usecases for now.
 
 Simply create new tab for any new features that don't fit the previous ones.
 
-# Profiling the Unity plugin
+## Platform changes
 
-Under `interfaces/unity/NiceVibrations/Assets/Profiling` there are scenes for profiling our Unity plugin. Inside it you will find both a baseline and main profiling scene. You can run the baseline scene on an iPhone (for example) and use the Debug Navigator in Xcode to measure CPU, memory and energy impact. Then you can do the same measurement with the main profiling scene having kicked off one of the tests from the phone. The difference between the measurements then, is the impact of our plugin on a game under certain conditions.
+When changes are done for the iOS, Android or the Unity Editor plugin host platforms, you will need to run `build-platform.sh` to make sure that the latest changes from those libraries are then copied into the appropriate Unity asset folder.
+
+# Profiling the Nice Vibrations
+
+Under `interfaces/unity/NiceVibrations/Assets/Profiling` there are scenes for profiling the Nice Vibrations asset. Inside it you will find both a baseline and main profiling scene. You can run the baseline scene on an iPhone (for example) and use the Debug Navigator in Xcode to measure CPU, memory and energy impact. Then you can do the same measurement with the main profiling scene having kicked off one of the tests from the phone. The difference between the measurements then, is the impact of our plugin on a game under certain conditions.
 
 The baseline scene contains redundant game objects (dead buttons, game objects with no scripts applied) because the idea is to make it match the main profiling scene as closely as possible.
 
@@ -39,13 +48,8 @@ following files:
 - `Mainpage.dox`: The content of the main page that is shown when first opening the API documentation
 - `Lofelt_Logo.png`: The Lofelt logo that is included in the API documentation
 - `generate-api-docs.sh`: A script that generates the API documentation by running Doxygen
-- `doxygen/html/`: The output directory into which the generated API documentation will be put
+- `doxygen/html/`: The output directory into which the generated API documentation will be put in.
 
-The executables `doxygen` and `dot` (from the `graphviz` package) need to be installed on the system.
-On macOS, they can be installed with `brew`:
-```
-brew install doxygen graphviz
-```
 
 `create-release-zip.sh` creates two ZIP files, one for the Unity package and one for the API
 documentation.
