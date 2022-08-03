@@ -6,6 +6,5 @@ exit_with_failure()
 }
 
 command -v doxygen &> /dev/null || exit_with_failure "Doxygen is not installed"
-command -v dot &> /dev/null || exit_with_failure "Dot (graphviz) is not installed"
 
 doxygen Doxygen.conf || exit_with_failure "Doxygen run failed"
