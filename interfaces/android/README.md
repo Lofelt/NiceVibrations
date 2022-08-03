@@ -8,6 +8,7 @@
     - [Android Library](#android-library)
     - [Rust Library](#rust-library)
   - [From Android Studio](#from-android-studio)
+  - [Troubleshooting](#troubleshooting)
 - [Running automated tests](#running-automated-tests)
   - [From Command Line](#from-command-line-1)
   - [From Android Studio](#from-android-studio-1)
@@ -28,10 +29,9 @@ This folder has the Android library project containing source code for the Lofel
   - `build-library.sh` contains a script that builds the Android library in release mode
   - `build/` contains the build artifacts. The Android library gets put in `outputs/aar/`.
 
-
 # Setting up the Development Environment
 
-- Install Android Studio
+- Install the latest Android Studio version with Standard settings.
 - In Android Studio, install the SDK for the API level we're compiling against (currently API level
   30, see `compileSdkVersion` in `interfaces/android/LofeltHaptics/LofeltHaptics/build.gradle`).
   SDKs can be installed with *Tools->SDK Manager->SDK Platforms*. If you want to debug into the
@@ -64,6 +64,7 @@ All the instructions below assume that the current working directory is the
 
 ## From Command Line
 ### Android Library
+
 To build the Android library in release mode, just run:
 ```
 ./build-library.sh
@@ -103,6 +104,16 @@ directory.
 - In the *Project* sidebar, select the LofeltHaptics module (not the project)
 - Chose the desired build type (debug or release) with *Build->Select Build Variant...*
 - Build with *Build->Make Module LofeltHaptics.LofeltHaptics*
+
+## Troubleshooting
+
+If you got a similar error to the one below:
+```
+(..)
+Please check that /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home contains a valid JDK installation.
+```
+
+Make sure you have `JAVA_HOME` set as an environment variable. Depending on your macOS version it should located at */Library/Java/JavaVirtualMachines/<jdk_folder>/Contents/Home/*
 
 # Running automated tests
 
