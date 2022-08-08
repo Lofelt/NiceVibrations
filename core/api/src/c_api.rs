@@ -341,7 +341,7 @@ mod tests {
                 panic!("Should return an Error");
             } else if lofelt_sdk_get_error_message_length() <= 0 {
                 panic!("Error message length should be > 0");
-            } // TODO: test getting error string with lofelt_sdk_get_error_message
+            } // TODO: Test getting error string with lofelt_sdk_get_error_message
         }
     }
 

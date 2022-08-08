@@ -179,7 +179,7 @@ pub fn convert_haptic_to_gamepad_rumble_inner(data: &[u8]) -> Result<GamepadRumb
         &breakpoint_times(&low_frequency_motor_breakpoints),
     );
 
-    // TODO (PD-3367): Add a step to reduce the amount of breakpoints
+    // TODO: Add a step to reduce the amount of breakpoints
 
     // Step 6: Convert breakpoints to a Waveform
     let low_frequency_motor_waveform = Waveform::from_breakpoints(
@@ -353,7 +353,7 @@ mod tests {
     // amplitude breakpoints.
     // This tests the case in which the call to extend_breakpoints() in our algorithm produces new
     // breakpoints.
-    // TODO (PD-3367): This test produces a GamepadRumble with many entries close to each other,
+    // TODO: This test produces a GamepadRumble with many entries close to each other,
     //                 which could be improved.
     #[test]
     fn different_amplitude_frequency_timings() {

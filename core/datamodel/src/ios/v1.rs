@@ -152,8 +152,6 @@ impl From<v1::DataModel> for Ahap {
     fn from(v1: v1::DataModel) -> Self {
         let ahap_version = 1.0;
 
-        //TODO: add v1 validation before converting to AHAP
-
         let v1_signals = &v1.signals;
 
         // ----------------------------------------------------------------
