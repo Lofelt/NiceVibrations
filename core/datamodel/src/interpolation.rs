@@ -110,7 +110,7 @@ impl Interpolator {
         // Only interpolate with 3 points in the linear space otherwise it's pointless
         // to interpolate
         if interval > self.parameters.min_time_step && total_points >= 3 {
-            // TODO: [PD-2273] Remove itertools_num dependency
+            // TODO: Remove itertools_num dependency
             let interp_time =
                 itertools_num::linspace(time_a, time_b, total_points).collect::<Vec<f32>>();
 
