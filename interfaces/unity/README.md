@@ -24,7 +24,7 @@ This folder contains the Nice Vibrations Unity asset. It consists of:
 
 ## Unity features
 
-Under `interfaces/unity/NiceVibrations/Assets/Development` there is a scene that can be used to quickly implement and test new features. the bigger `Demo` scene requires much more design work and doesn't cover all usecases for now.
+Under `interfaces/unity/NiceVibrations/Assets/Development` there is a scene that can be used to quickly implement and test new features. the bigger `Demo` scene requires much more design work and doesn't cover all use cases for now.
 
 Simply create new tab for any new features that don't fit the previous ones.
 

@@ -90,7 +90,7 @@ It must be run from its own directory.
 After running this script you will have two new folders under `interfaces/ios/LofeltHaptics/build`:
 
 - `XCArchive` - containing archived `ios` (`devices`) and `simulator` images.
-- `XCFramework` - containing combined image (formely `universal`).
+- `XCFramework` - containing combined image (formerly `universal`).
 
 XCArchive contains the `devices` and `simulator` builds separately and is not intended for distribution. The XCFramework folder contains the single, multi-platform library recommended for distribution.
 

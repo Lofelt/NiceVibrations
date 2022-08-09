@@ -19,7 +19,7 @@
 
 The Lofelt Haptic Data Model it's a describes vibrotactile content derived from an audio signal source in a parametric way. This useful to:
 - Decouple design intent and playback.
-- Allow device-independent and backward compability.
+- Allow device-independent and backward compatibility.
 
 This crate contains the schema of the Lofelt SDK Data model as well as related functions, conversions, and versioning.
 Currently, it provides JSON serialization and deserialization of Lofelt Data, upgrade, as well as conversion to platform-specific haptic data.
@@ -108,7 +108,7 @@ We have agreed to have the following data structure of the model.
 | Editor          | String       | Tool generating file + version:<br>cli, Lofelt Composer, Lofelt Studio, etc.         | ❌<br>        |
 | Author          | String       | Name of the person (company) authoring/editing the haptic data. | ❌<br>        |
 | Source          | String       | Name of the source file.                            | ❌<br>        |
-| Project         | String       | Project this haptid data is used for.                       | ❌<br>        |
+| Project         | String       | Project this haptic data is used for.                       | ❌<br>        |
 | Analysis Config | Structure    | Analysis parameters used, format, etc. (TBD)        | ❌<br>        |
 | Tags            | String Array | Tags used for indexing in a haptic data database.           | ❌<br>        |
 | Description     | String       | Description and comments on file.                   | ❌<br>        |
@@ -138,18 +138,18 @@ breakpoint.
 |             |                  |                     | Emphasis             | Emphasis Structure |                      |             |                                                              | ❌             |
 |             |                  | Frequency           |                      |                    |                      |             | Modulates frequency ratio over time multiple breakpoints     | ❌             |
 |             |                  |                     | Time                 | Float              | 0.0, ≈3.4e+38 \[s\]  | 0.0         | Time value (in seconds) of frequency breakpoint              | ✅             |
-|             |                  |                     | Frequency            | Float              | 0.0 - 1.0            | 0.0         | Normalised frequency value of frequency breakpoint\*         | ✅             |
+|             |                  |                     | Frequency            | Float              | 0.0 - 1.0            | 0.0         | Normalized frequency value of frequency breakpoint\*         | ✅             |
 
-> *The normalised frequency value here (ranging from 0.0 to 1.0) corresponds with the scaled output of the centroid tracker (as long as we have only one).
+> *The normalized frequency value here (ranging from 0.0 to 1.0) corresponds with the scaled output of the centroid tracker (as long as we have only one).
 
 #### Emphasis structure
 
 | **Emphasis field** | **Type** | **Range(min. max)** | **Description**                                                                   | **Required** |
 | ------------------ | -------- | ------------------- | --------------------------------------------------------------------------------- | ------------ |
 | Amplitude          | Float    | 0.0 - 1.0           | Emphasis Amplitude to be applied to the corresponding Amplitude breakpoints       | ✅            |
-| Frequency          | Float    | 0.0 - 1.0           | Normalised Frequency\* value of the Emphasis applied to the Amplitude breakpoints | ✅            |
+| Frequency          | Float    | 0.0 - 1.0           | Normalized Frequency\* value of the Emphasis applied to the Amplitude breakpoints | ✅            |
 
->*The normalised frequency value here (ranging from 0.0 to 1.0)
+>*The normalized frequency value here (ranging from 0.0 to 1.0)
 corresponds with the scaled output of the centroid tracker (as long as
 we have only one).
 
@@ -180,7 +180,7 @@ compatible within the same major version.
 Changes in the the data model like deletion of fields and restructuring
 of parameter groups would contribute to the **increase of major
 version**. In such case a mapping of the new data model is defined in
-order to ensure upgradability.
+order to ensure upgradeability.
 
 Addition of optional fields, enum types and renaming of fields(?) would
 contribute to the **increase of minor version.**
@@ -208,7 +208,7 @@ for the following lengths of audio:
 
  Samples were chopped in Ableton Live from "wildfire.mp3" then run through Studio Desktop
  with the settings:
- - normalise enabled
+ - normalize enabled
  - bptransients enable
 
 NOTE: this data will need to be recreated every time our data model changes
@@ -220,7 +220,7 @@ All benchmarks are currently sitting as one big group in ` ` ` benches/datamodel
 
 ## Running Benchmarks
 
-Currently we are benchmarking all deserialisation, validation and conversion functions for v1, v0 and ahap.
+Currently we are benchmarking all deserialization, validation and conversion functions for v1, v0 and ahap.
 This tool can be used to look for regressions in all of these areas and further benches can be added for other core data manipulation as we go.
 
 Run:
