@@ -21,6 +21,8 @@
 - [🏗️ Continuous Integration](#️-continuous-integration)
   - [GitHub actions](#github-actions)
   - [Locally](#locally)
+- [©️ License](#️-license)
+- [✍️ Authors](#️-authors)
 
 # 🎮 What is Nice Vibrations?
 
@@ -75,7 +77,6 @@ This repository contains both the open-source code of Lofelt Studio SDK and Nice
 ☎ **Fallback Support**: play basic haptics on older phones and operating systems.
 
 And more..
-
 
 # 📖 Documentation
 
@@ -182,7 +183,6 @@ cargo build
 ```
 The available binaries of the static library are located in `target/<debug> or <release>/liblofelt_sdk.a`
 
-
 To run the unit tests of the Rust core library:
 ```
 cargo test
@@ -218,7 +218,7 @@ We ensure code quality by using git hooks provided by [`rusty-hooks`](https://gi
 
 ## GitHub actions
 
-For CI, this repository uses Git Hub Actions (GHA). All the workflows are under `.github/worklfows` folder.
+For CI, this repository uses Git Hub Actions (GHA). All the workflows are under `.github/workflows` folder.
 In a nutshell, they setup the development environment with the required dependencies and then run a `ci-<platform>.sh` script with the appropriate steps we want to be valid.
 
 The running strategy is as follows:
@@ -227,7 +227,7 @@ The running strategy is as follows:
 
 For releasing there are two workflows:
 - Release SDK and Unity workflow: Install dependencies, run appropriate validation steps and then creates a GitHub release with both packages for the Lofelt Studio SDK and a Nice Vibrations. It is triggered once a tag is pushed under the `**sdk**unity**` format, e.g. `sdk-12.12.12-unity-10.10.1`.
-- Release haptic2ahap worfklow: Install dependencies and creates a GitHub release with a binary for the haptic2ahap CLI tool. It is triggered once a tag is pushed under the `**haptic2ahap**` format, e.g. `haptic2ahap-9.9.9`
+- Release haptic2ahap workflow: Install dependencies and creates a GitHub release with a binary for the haptic2ahap CLI tool. It is triggered once a tag is pushed under the `**haptic2ahap**` format, e.g. `haptic2ahap-9.9.9`
 
 ## Locally
 
@@ -236,3 +236,16 @@ For local "sanity checks", the scripts that GHA runs can also be run locally. Id
 These are all available under the `ci-<platform>.sh` pattern.
 
 Currently. the `ci-unity.sh` does not run on GHA as this requires a Unity license to be setup. Ideally, this script should be run before pushing code upstream or releasing.
+
+# ©️ License
+
+Nice Vibrations is [MIT Licensed](LICENSE.md)
+
+# ✍️ Authors
+
+Nice Vibrations and Lofelt SDK were developed by Lofelt GmbH and the main contributors were:
+- [James Kneafsey](https://github.com/sesneaky)
+- [João Freire](https://github.com/joaomcfreire)
+- [Tomash Ghzegovsky](https://github.com/ghztomash)
+- [Thomas Mcguire](https://github.com/tmcguire)
+- [Ian Hobson](https://github.com/irh)
