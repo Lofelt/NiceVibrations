@@ -1,7 +1,7 @@
 [package]
 name = "unity-editor-plugin"
 version = "0.1.1"
-authors = ["Thomas McGuire <thomas@lofelt.com>"]
+authors = ["Thomas McGuire <thomas@lofelt.com>", "João Freire <joao@lofelt.com>"]
 edition = "2018"
 
 [lib]
