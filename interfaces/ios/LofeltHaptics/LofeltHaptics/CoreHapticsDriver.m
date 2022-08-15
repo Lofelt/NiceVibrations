@@ -21,6 +21,16 @@
         return nil;
     }
 
+    // Set the engine to play haptics only. We don't use audio events such as
+    // CHHapticEventTypeAudioContinuous and CHHapticEventTypeAudioCustom. Since
+    // iOS 15, iOS mutes haptics when another audio stream is playing in some
+    // circumstances, and setting this property to true prevents that.
+    // See https://stackoverflow.com/questions/69951347/core-haptics-not-playing-in-ios-15-with-certain-avaudiosession-configurations
+    //
+    // The property needs to be set before starting the engine, otherwise it has
+    // no effect.
+    [_hapticEngine setPlaysHapticsOnly:true];
+
     if (![_hapticEngine startAndReturnError:error]) {
         _hapticEngine = nil;
         return nil;

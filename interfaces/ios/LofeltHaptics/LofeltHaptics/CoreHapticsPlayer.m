@@ -164,6 +164,42 @@ const float TIME_LIMIT = 29.0;
                               error:error];
 }
 
+
+- (BOOL)playStreamingAmplitudeEvent:(AmplitudeEvent)event error:(NSError *_Nullable *_Nullable)error {
+    CHHapticParameterCurveControlPoint* controlPointCurrent = [[CHHapticParameterCurveControlPoint alloc]
+                                                               initWithRelativeTime:0.0
+                                                                              value:_intensity.end_value];
+
+    // reason for sqrt() used in the calls below can be found here in pages from 8 to 10
+    // https://docs.google.com/presentation/d/1XX1lm4WLANF1wXDk0TnkBcPSx4QfneYybNDmksS5I2Q/edit?usp=drivesdk
+
+    // Event with emphasis
+    if (!isnan(event.emphasis.amplitude) && !isnan(event.emphasis.frequency)) {
+        [_intensity chainNextValue:event.duration end_value:sqrt(event.amplitude) * (1.0 - AMPLITUDE_DUCKING)];
+        if (![self playTransient:sqrt(event.emphasis.amplitude)
+                       sharpness:event.emphasis.frequency
+                           error:error]) {
+            return NO;
+        }
+    }
+
+    // Event without emphasis
+    else {
+        [_intensity chainNextValue:event.duration end_value:sqrt(event.amplitude)];
+    }
+
+    CHHapticParameterCurveControlPoint *controlPointNext = [[CHHapticParameterCurveControlPoint alloc]
+                                                            initWithRelativeTime:[_intensity getDuration]
+                                                                           value:_intensity.end_value];
+
+    NSMutableArray<CHHapticParameterCurveControlPoint *> *controlPoints = [NSMutableArray arrayWithCapacity:2];
+    [controlPoints addObject:controlPointCurrent];
+    [controlPoints addObject:controlPointNext];
+
+    return [self playParameterCurve:controlPoints parameterID:CHHapticDynamicParameterIDHapticIntensityControl
+                              error:error];
+}
+
 - (BOOL)playStreamingFrequencyEvent:(FrequencyEvent)event error:(NSError *_Nullable *_Nullable)error {
     CHHapticParameterCurveControlPoint* controlPointCurrent = [[CHHapticParameterCurveControlPoint alloc]
                                                                initWithRelativeTime:0.0
