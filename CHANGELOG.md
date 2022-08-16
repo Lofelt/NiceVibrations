@@ -9,6 +9,7 @@
 ##### 🚀 **Improvements**
 - Fixed an output level issue on gamepads. The output level is now set after loading a clip into the GamepadRumbler.
 - Fixed builds when building for tvOS. Nice Vibrations doesn't support tvOS but it was breaking the build. Now, this problem is fixed.
+- When using Nice Vibrations on iPhones, sometimes haptics didn't play. And also, there was a big memory leak on iPhones. This iOS specific issues are now fixed.
 
 ### Nice Vibrations for Unity `4.1.1`
 
