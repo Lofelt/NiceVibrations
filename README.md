@@ -23,23 +23,6 @@
   - [Locally](#locally)
 - [©️ License](#️-license)
 - [✍️ Authors](#️-authors)
-    macOS](#setting-up-the-development-environment-on-macos)
-    - [Lofelt Studio SDK](#lofelt-studio-sdk)
-    - [Nice Vibrations](#nice-vibrations)
-  - [Build and use Nice Vibrations Asset](#build-and-use-nice-vibrations-asset)
-  - [Build Lofelt Studio SDK individually and run
-    tests](#build-lofelt-studio-sdk-individually-and-run-tests)
-  - [Build and Test Lofelt SDK for iOS](#build-and-test-lofelt-sdk-for-ios)
-  - [Build and Test Lofelt SDK for
-    Android](#build-and-test-lofelt-sdk-for-android)
-  - [Build and Test Lofelt Unity Editor plugin
-    host](#build-and-test-lofelt-unity-editor-plugin-host)
-  - [Git rules](#git-rules)
-- [🏗️ Continuous Integration](#️-continuous-integration)
-  - [GitHub actions](#github-actions)
-  - [Locally](#locally)
-- [©️ License](#️-license)
-- [✍️ Authors](#️-authors)
 
 # 🎮 What is Nice Vibrations?
 
@@ -299,11 +282,11 @@ The running strategy is as follows:
   [unity-editor-plugin.yml](.github/workflows/unity-editor-plugin.yml)
 
 For releasing there are two workflows:
-- Release SDK and Unity workflow: Install dependencies, run appropriate
+- **Release SDK and Unity workflow**: Install dependencies, run appropriate
   validation steps and then creates a GitHub release with both packages for the
   Lofelt Studio SDK and a Nice Vibrations. It is triggered once a tag is pushed
-  under the `**sdk**unity**` format, e.g. `sdk-12.12.12-unity-10.10.1`.
-- Release haptic2ahap workflow: Install dependencies and creates a GitHub
+  under the `**sdk**nicevibrations**` format, e.g. `sdk-12.12.12-nicevibrations-10.10.1`.
+- **Release haptic2ahap workflow**: Install dependencies and creates a GitHub
   release with a binary for the haptic2ahap CLI tool. It is triggered once a tag
   is pushed under the `**haptic2ahap**` format, e.g. `haptic2ahap-9.9.9`
 
