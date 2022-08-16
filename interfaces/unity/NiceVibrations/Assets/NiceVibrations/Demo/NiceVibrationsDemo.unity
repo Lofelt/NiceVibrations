@@ -44958,7 +44958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c0f36737ce72e4282216983bcc84d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Version: v4.1.1
+  Version: v4.1.2
 --- !u!114 &1839090468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44991,7 +44991,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: v4.1.1
+  m_Text: v4.1.2
 --- !u!222 &1839090469
 CanvasRenderer:
   m_ObjectHideFlags: 0
