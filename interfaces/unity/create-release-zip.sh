@@ -36,7 +36,7 @@ echo "➡️ Generating API documentation"
 echo "➡️ Creating ZIP file for Nice Vibrations asset"
 mkdir -p ../../release
 cd NiceVibrations/Assets
-zip --verbose --recurse-paths -X "../../../../release/nice-vibrations-$RELEASE_VERSION.zip" \
+zip --verbose --recurse-paths -X "../../../../release/nicevibrations-$RELEASE_VERSION.zip" \
     NiceVibrations \
     --exclude "*.gitignore" \
     --exclude "*DS_Store" || exit_with_failure "Creating .zip for main asset failed"
@@ -45,7 +45,7 @@ cd ../..
 
 echo "➡️ Creating ZIP file for API documentation"
 cd doxygen/html || exit_with_failure "Failed to change to directory of generated API docs"
-zip --verbose --recurse-paths -X "../../../../release/nice-vibrations-api-docs-$RELEASE_VERSION.zip" \
+zip --verbose --recurse-paths -X "../../../../release/nicevibrations-api-docs-$RELEASE_VERSION.zip" \
     * \
     --exclude "*.gitignore" \
     --exclude "*DS_Store" || exit_with_failure "Creating .zip for API documentation failed"
