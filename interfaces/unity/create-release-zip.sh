@@ -5,10 +5,10 @@ exit_with_failure()
     echo "❌ $*" 1>&2 ; exit 1;
 }
 
-UNITY_VERSION=$1
+RELEASE_VERSION=$1
 [ "$2" != "--skip-unity-editor-plugin" ] ; SKIP_UNITY_EDITOR_PLUGIN=$?
 
-[[ -n "$UNITY_VERSION" ]] || exit_with_failure "No version passed as first argument"
+[[ -n "$RELEASE_VERSION" ]] || exit_with_failure "No version passed as first argument"
 [ -d "NiceVibrations/Assets/NiceVibrations/Plugins/iOS/LofeltHaptics.framework" ] || exit_with_failure "iOS framework missing"
 [ -f "NiceVibrations/Assets/NiceVibrations/Plugins/Android/libs/LofeltHaptics.aar" ] || exit_with_failure "Android library missing"
 
@@ -33,16 +33,19 @@ cp ../../licenses/3RD-PARTY-LICENSES.md NiceVibrations/Assets/NiceVibrations/ ||
 echo "➡️ Generating API documentation"
 ./generate-api-docs.sh || exit_with_failure "Generating API documentation failed"
 
-echo "➡️ Creating ZIP file for main asset"
+echo "➡️ Creating ZIP file for Nice Vibrations asset"
 mkdir -p ../../release
-zip --verbose --recurse-paths -X "../../release/unity-$UNITY_VERSION.zip" \
+cd NiceVibrations/Assets
+zip --verbose --recurse-paths -X "../../../../release/nice-vibrations-$RELEASE_VERSION.zip" \
     NiceVibrations \
     --exclude "*.gitignore" \
     --exclude "*DS_Store" || exit_with_failure "Creating .zip for main asset failed"
 
+cd ../..
+
 echo "➡️ Creating ZIP file for API documentation"
 cd doxygen/html || exit_with_failure "Failed to change to directory of generated API docs"
-zip --verbose --recurse-paths -X "../../../../release/unity-api-docs-$UNITY_VERSION.zip" \
+zip --verbose --recurse-paths -X "../../../../release/nice-vibrations-api-docs-$RELEASE_VERSION.zip" \
     * \
     --exclude "*.gitignore" \
     --exclude "*DS_Store" || exit_with_failure "Creating .zip for API documentation failed"
