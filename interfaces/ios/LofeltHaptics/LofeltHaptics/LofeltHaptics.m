@@ -168,8 +168,7 @@ NSString *const LofeltErrorDomain = @"com.lofelt.LofeltSDK";
     } else if (loadResult == PARTIAL_VERSION_SUPPORT) {
         os_log_info(OS_LOG_DEFAULT, "The haptic clip you are attempting to play is of a newer version "
                                     "than what is supported by this framework. Some playback features "
-                                    "may not work. Please obtain the latest version of the framework "
-                                    "from lofelt.com.");
+                                    "may not work. Please obtain the latest version of the framework");
     }
 
     return YES;

@@ -11,10 +11,6 @@ This Asset Package includes everything you need to begin adding advanced haptic 
 
 - Older Versions: Older versions of Nice Vibrations are included as well, for reference and as a porting aid. You can run the current version side-by-side with the older 3.9 version in case you haven't ported everything to the new API yet.
 
-Full documentation can be found at https://developer.lofelt.com, and API documentation at https://developer.lofelt.com/nice-vibrations-api-docs/index.html.
-
-Information about the entire Lofelt Studio Ecosystem, including the haptic design tools, can be found at https://lofelt.com.
-
-And if you haven’t got it already, the free Studio mobile app for iOS and Android can be downloaded fro the Apple App Store and Google Play Store, respectively.
+Full documentation can be found at https://github.com/Lofelt/NiceVibrations/wiki.
 
 Nice Vibrations includes the Lofelt Studio SDK, which uses third-party libraries. See 3RD-PARTY-LICENSES.md for a list of libraries and their licenses.
