@@ -1,6 +1,6 @@
 [package]
 name = "haptic2ahap"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["João Freire <joao@lofelt.com>", "Thomas McGuire <thomas@lofelt.com>"]
 edition = "2018"
 
