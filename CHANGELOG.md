@@ -96,7 +96,7 @@ This enables developers to make better decisions when some haptic capabilities a
 These are the changes [since Nice Vibrations 3.9](https://nice-vibrations.moremountains.com/nice-vibrations-releases)
 ##### ✨ **New features**
 
-- Core functionality using new native libraries based on [Lofelt Studio SDK](https://github.com/Lofelt/lofelt-studio-sdk);
+- Core functionality using new native libraries based on [Lofelt Studio SDK](https://github.com/Lofelt/NiceVibrations);
 - Playback of haptic clips (.haptic files) with a universal haptic format that allows you to play haptics on supported platforms (iOS and Android for now);
 - Loop haptic clips;
 - Seek functionality that lets you jump into any point of your haptic clip before or during playback;
