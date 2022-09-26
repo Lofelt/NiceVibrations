@@ -17,6 +17,7 @@
   - [Build and Test Lofelt SDK for iOS](#build-and-test-lofelt-sdk-for-ios)
   - [Build and Test Lofelt SDK for Android](#build-and-test-lofelt-sdk-for-android)
   - [Build and Test Lofelt Unity Editor plugin host](#build-and-test-lofelt-unity-editor-plugin-host)
+  - [Development](#development)
   - [Git rules](#git-rules)
 - [🏗️ Continuous Integration](#️-continuous-integration)
   - [GitHub actions](#github-actions)
@@ -163,6 +164,7 @@ The source code of Nice Vibrations can be found in the
 [interfaces/unity/NiceVibrations](./interfaces/unity/NiceVibrations/) Unity
 project.
 
+
 ## Build and use Nice Vibrations Asset
 
 Once the development environment is setup as specified in [Setting up the
@@ -259,6 +261,12 @@ the [README](./interfaces/android/README.md) for more info.
 
 The source code for Unity Editor plugin is available in `unity-editor-plugin`.
 Check the [README](./unity-editor-plugin/README.md) for more info.
+
+## Development
+
+An overview on how the code is structured can be seen in
+[CONTRIBUTING.md](./CONTRIBUTING.md). If you would like to make changes, please
+read it as it will be an easier starting to point.
 
 ## Git rules
 
