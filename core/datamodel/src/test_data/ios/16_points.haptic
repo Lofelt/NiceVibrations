@@ -1,0 +1,97 @@
+{
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "metadata": {
+        "editor": "Lofelt GmbH",
+        "author": "",
+        "source": "",
+        "project": "",
+        "tags": [],
+        "description": ""
+    },
+    "signals": {
+        "continuous": {
+            "envelopes": {
+                "amplitude": [
+                    {
+                        "time": 0,
+                        "amplitude": 0
+                    },
+                    {
+                        "time": 1,
+                        "amplitude": 0.1
+                    },
+                    {
+                        "time": 2,
+                        "amplitude": 0.2
+                    },
+                    {
+                        "time": 3,
+                        "amplitude": 0.3
+                    },
+                    {
+                        "time": 4,
+                        "amplitude": 0.4
+                    },
+                    {
+                        "time": 5,
+                        "amplitude": 0.5
+                    },
+                    {
+                        "time": 6,
+                        "amplitude": 0.6
+                    },
+                    {
+                        "time": 7,
+                        "amplitude": 0.7
+                    },
+                    {
+                        "time": 8,
+                        "amplitude": 0.8
+                    },
+                    {
+                        "time": 9,
+                        "amplitude": 0.9
+                    },
+                    {
+                        "time": 10,
+                        "amplitude": 0.1
+                    },
+                    {
+                        "time": 11,
+                        "amplitude": 0.11
+                    },
+                    {
+                        "time": 12,
+                        "amplitude": 0.12
+                    },
+                    {
+                        "time": 13,
+                        "amplitude": 0.13
+                    },
+                    {
+                        "time": 14,
+                        "amplitude": 0.14
+                    },
+                    {
+                        "time": 15,
+                        "amplitude": 0.15
+                    }
+                ],
+                "frequency": [
+                    {
+                        "time": 0,
+                        "frequency": 0
+                    },
+                    {
+                        "time": 15,
+                        "frequency": 1
+                    }
+                ]
+            }
+        }
+    }
+}

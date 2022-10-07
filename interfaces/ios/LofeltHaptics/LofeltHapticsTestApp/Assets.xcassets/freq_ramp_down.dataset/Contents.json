@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "freq_ramp_down.haptic",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

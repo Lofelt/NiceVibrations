@@ -1,0 +1,171 @@
+# Creates the .zip file of the SDK + examples and a .zip file of the Nice
+# Vibrations asset package, and uploads both to a new GitHub release
+name: release-sdk-and-nicevibrations
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - '**sdk**nicevibrations**'
+
+jobs:
+  release-unity-editor-plugin:
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cargo/registry
+          ~/.cargo/git
+          target
+        key: release-sdk-and-nicevibrations-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+    - name: Install rustup macOS Apple Silicon target
+      run: rustup target add aarch64-apple-darwin
+
+    - name: Run CI script
+      run: sh ci-unity-editor-plugin.sh
+
+    - uses: actions/upload-artifact@v2
+      with:
+        name: unity-editor-plugins-folder
+        path: |
+          interfaces/unity/NiceVibrations/Assets/NiceVibrations/Plugins/Windows/x64/
+          interfaces/unity/NiceVibrations/Assets/NiceVibrations/Plugins/macOS/
+
+  release-sdk-and-nicevibrations-macos:
+    needs: release-unity-editor-plugin
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cargo/registry
+          ~/.cargo/git
+          target
+        key: release-sdk-and-nicevibrations-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+    # This step gets the Unity editor plugin artifacts from the previous job.
+    # It's the first step after the repo checkout so that it can fail fast in case something went
+    # wrong with the previous job.
+    # This step moves the Unity Editor plugin dynamic libraries into the right folder for creating
+    # the Nice Vibrations asset package later in the workflow.
+    - name: Get Unity Editor Plugin artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: unity-editor-plugins-folder
+        path: interfaces/unity/NiceVibrations/Assets/NiceVibrations/Plugins/
+
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+
+    - name: Install brew dependencies
+      run: |
+          brew install rename doxygen graphviz
+          echo PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH" >> $GITHUB_ENV
+
+    - name: Install Rust 1.55.0 toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+          toolchain: 1.55.0
+          override: true
+          components: rustfmt, clippy
+
+    - name: Install cargo-lipo
+      run: cargo install cargo-lipo
+
+    - name: Install rustup iOS and macOS targets
+      run: rustup target add aarch64-apple-ios x86_64-apple-ios
+
+    - name: Install bitcode-enabled Rust iOS toolchain
+      run: |
+          wget https://github.com/getditto/rust-bitcode/releases/download/nightly-2021-10-05/rust-ios-arm64-nightly-2021-10-05.zip
+          unzip rust-ios-arm64-nightly-2021-10-05.zip
+          cd rust-ios-arm64-nightly-2021-10-05
+          sh ./install.sh
+          cd ..
+
+    - name: Install NDK version 21.3.6528147
+      run: sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;21.3.6528147"
+
+    - name: Install Rust Android targets
+      run: rustup target add aarch64-linux-android armv7-linux-androideabi i686-linux-android x86_64-linux-android
+
+    # GITHUB_REF will be something like refs/tags/sdk-0.9.0-nicevibrations-4.0.0-alpha.0.
+    # The last part, sdk-0.9.0-nicevibrations-4.0.0-alpha.0, is extracted into a RELEASE_TAG variable.
+    # The version numbers of the SDK (0.9.0) and Nice Vibrations (4.0.0-alpha.0) are extracted into
+    # RELEASE_SDK_VERSION and RELEASE_NICEVIBRATIONS_VERSION.
+    - name: Extract version from tag
+      run: |
+        echo RELEASE_TAG=${GITHUB_REF#refs/*/} >> $GITHUB_ENV
+        echo RELEASE_SDK_VERSION=`echo $GITHUB_REF | sed 's/.*sdk-\(.*\)-nicevibrations-\(.*\)/\1/'` >> $GITHUB_ENV
+        echo RELEASE_NICEVIBRATIONS_VERSION=`echo $GITHUB_REF | sed 's/.*sdk-\(.*\)-nicevibrations-\(.*\)/\2/'` >> $GITHUB_ENV
+
+    # Nice Vibrations' create-release-zip.sh clones a repository using the git protocol.
+    # This step changes it to use the https protocol, as https can be used together with an access
+    # token. This makes it possible to clone the repository on GitHub Actions.
+    - name: Set up git access token
+      run: |
+        git config --global url."https://${{ secrets.GH_TOKEN }}@github.com/".insteadOf git@github.com:
+
+    - name: Build SDK .zip
+      run: ./release-sdk.sh ${{ env.RELEASE_SDK_VERSION }}
+
+    - name: Build Nice Vibrations asset package .zip
+      working-directory: interfaces/unity
+      run: ./create-release-zip.sh ${{ env.RELEASE_NICEVIBRATIONS_VERSION }}
+
+    - name: Create GitHub Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ env.RELEASE_TAG }}
+        release_name: SDK ${{ env.RELEASE_SDK_VERSION }} & Nice Vibrations ${{ env.RELEASE_NICEVIBRATIONS_VERSION }}
+        draft: false
+        prerelease: false
+
+    - name: Upload SDK ZIP to GitHub Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release/sdk-${{ env.RELEASE_SDK_VERSION }}.zip
+        asset_name: sdk-${{ env.RELEASE_SDK_VERSION }}.zip
+        asset_content_type: application/zip
+
+    - name: Upload Nice Vibrations Asset Package ZIP to GitHub Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release/nicevibrations-${{ env.RELEASE_NICEVIBRATIONS_VERSION }}.zip
+        asset_name: nicevibrations-${{ env.RELEASE_NICEVIBRATIONS_VERSION }}.zip
+        asset_content_type: application/zip
+
+    - name: Upload Nice Vibrations API Docs ZIP to GitHub Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./release/nicevibrations-api-docs-${{ env.RELEASE_NICEVIBRATIONS_VERSION }}.zip
+        asset_name: nicevibrations-api-docs-${{ env.RELEASE_NICEVIBRATIONS_VERSION }}.zip
+        asset_content_type: application/zip

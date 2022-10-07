@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "OP-Z.haptic",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

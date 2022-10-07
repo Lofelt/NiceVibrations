@@ -1,0 +1,143 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "metadata": {
+    "editor": "VSCode",
+    "author": "SDK Team",
+    "source": "",
+    "project": "",
+    "tags": [
+      "Test"
+    ],
+    "description": "Testing"
+  },
+  "signals": {
+    "continuous": {
+      "envelopes": {
+        "amplitude": [
+          {
+            "time": 0.0,
+            "amplitude": 0.2
+          },
+          {
+            "time": 0.1,
+            "amplitude": 0.3
+          },
+          {
+            "time": 0.2,
+            "amplitude": 0.2,
+            "emphasis": {
+              "amplitude": 0.6,
+              "frequency": 0.7
+            }
+          },
+          {
+            "time": 0.3,
+            "amplitude": 1.5
+          }
+        ],
+        "frequency": [
+          {
+            "time": 0.01,
+            "frequency": 0.99
+          },
+          {
+            "time": 0.02,
+            "frequency": 0.54
+          },
+          {
+            "time": 0.025,
+            "frequency": 0.8
+          },
+          {
+            "time": 0.03,
+            "frequency": 0.9
+          },
+          {
+            "time": 0.04,
+            "frequency": 0.99
+          },
+          {
+            "time": 0.05,
+            "frequency": 0.54
+          },
+          {
+            "time": 0.06,
+            "frequency": 0.8
+          },
+          {
+            "time": 0.07,
+            "frequency": 0.9
+          },
+          {
+            "time": 0.08,
+            "frequency": 0.99
+          },
+          {
+            "time": 0.09,
+            "frequency": 0.54
+          },
+          {
+            "time": 0.10,
+            "frequency": 0.8
+          },
+          {
+            "time": 0.11,
+            "frequency": 0.9
+          },
+          {
+            "time": 0.12,
+            "frequency": 0.99
+          },
+          {
+            "time": 0.13,
+            "frequency": 0.54
+          },
+          {
+            "time": 0.14,
+            "frequency": 0.8
+          },
+          {
+            "time": 0.15,
+            "frequency": 0.9
+          },
+          {
+            "time": 0.16,
+            "frequency": 0.99
+          },
+          {
+            "time": 0.17,
+            "frequency": 0.54
+          },
+          {
+            "time": 0.18,
+            "frequency": 0.8
+          },
+          {
+            "time": 0.19,
+            "frequency": 0.9
+          },
+          {
+            "time": 0.20,
+            "frequency": 0.99
+          },
+          {
+            "time": 0.21,
+            "frequency": 0.54
+          },
+          {
+            "time": 0.22,
+            "frequency": 0.8
+          },
+          {
+            "time": 0.23,
+            "frequency": 0.9
+          }
+        ]
+      }
+    }
+  }
+}

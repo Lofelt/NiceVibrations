@@ -1,0 +1,13 @@
+[package]
+name = "unity-editor-plugin"
+version = "0.1.1"
+authors = ["Thomas McGuire <thomas@lofelt.com>", "João Freire <joao@lofelt.com>"]
+edition = "2018"
+
+[lib]
+name = "nice_vibrations_editor_plugin"
+crate_type = ["cdylib"]
+
+[dependencies]
+datamodel = {path = "../core/datamodel"}
+utils = {path = "../core/utils"}

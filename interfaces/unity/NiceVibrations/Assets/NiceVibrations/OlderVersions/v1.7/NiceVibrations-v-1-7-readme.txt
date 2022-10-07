@@ -1,0 +1,2 @@
+This UnityPackage contains Nice Vibrations v1.7, the last version before v2.0, which introduced Core Haptics support.
+If for some reason you'd prefer running this old version, just remove entirely the current version from your project, and import this UnityPackage instead.

@@ -1,0 +1,37 @@
+{
+    "Version": 1.0,
+    "Metadata":
+        {
+            "Project" : "Haptic Sampler",
+            "Created" : "5 June 2019",
+            "Description" : "A combination of transient and continuous events to create a pop with trailing sparkles."
+        },
+    "Pattern":
+    [
+        {
+            "Event":
+            {
+                "Time": 0.0,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 1.0 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.6 }
+                ]
+            }
+        },
+        {
+            "ParameterCurves":
+            {
+                "ParameterID": "HapticIntensityControl",
+                "Time": 0.024,
+                "ParameterCurveControlPoints":
+                [
+                    { "Time": 0.0, "ParameterValue": 1.0 },
+                    { "Time": 0.025, "ParameterValue": 0.45 },
+                    { "Time": 0.15, "ParameterValue": 0.0 }
+                ]
+            }
+        }
+    ]
+}

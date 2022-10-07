@@ -1,0 +1,187 @@
+html {
+    margin: 0
+}
+
+body {
+    color: black;
+    margin: 0;
+}
+
+div#titlearea {
+    padding: 1em 1em 1.5em;
+    border-bottom: none;
+    background-color: #3FC4C2;
+}
+
+td#projectalign {
+    vertical-align: bottom;
+    padding-bottom: .75em;
+}
+
+div#projectname {
+    width: max-content;
+}
+
+td#projectnav {
+    width: 100%;
+}
+td#mobilenav {
+    display: none;
+}
+
+tr#mobilecolumn {
+    width: 100%;
+}
+
+div#lofeltdocs {
+    float: right;
+    font-size: 14px;
+    padding: 0.5em 0.7em;
+    border: 2px solid black;
+    margin-right: 2em;
+    margin-top: 3.6em;
+}
+
+
+@media only screen and (max-width: 600px) {
+    div#titlearea {
+        padding: 2em;
+        border-bottom: none;
+        background-color: #3FC4C2;
+    }
+    td#projectnav {
+      display: none;
+    }
+    td#mobilenav {
+        display: block;
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    div#lofeltdocs {
+        float: none;
+        text-align: center;
+        font-size: 14px;
+        padding: 0.5em 0.7em;
+        border: 2px solid black;
+        margin-top: 1em;
+    }
+    div#projectname {
+        width: auto;
+    }
+  }
+
+
+
+div#lofeltdocs a {
+    color: black
+}
+
+
+div#lofeltdocs:hover, div#lofeltdocs:hover a {
+    text-decoration: none;
+    background-color: black;
+    color: #3FC4C2;
+}
+
+#MSearchBox {
+    padding: .3em;
+    border-radius: 0px;
+}
+
+#nav-tree {
+    background: none;
+    padding-left: 1em;
+    color: 
+}
+
+#nav-tree .label {
+    font-family: Helvetica, sans-serif;
+}
+
+div#side-nav {
+    padding-right: 0px;
+}
+
+div.item span.arrow {
+    color: #d9e1e2;
+}
+
+div.item a {
+    font-size: 14px;
+    color: #1b2934;
+}
+
+div#nav-path.navpath ul {
+    background-image: none;
+}
+
+div#selected.selected {
+background-image: none;
+background-color: #3FC4C2;
+text-shadow: none;
+}
+
+div#selected.selected span.arrow {
+    color: white;
+}
+
+div.ui-resizable-handle.ui-resizable-e {
+    width: 1px;
+    background-color: #d9e1e2;
+    background-image: none;
+}
+
+
+div.contents {
+    margin-bottom: 10px;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+div.contents li {
+    font-family: Courier New, sans-serif;
+    color: black;
+}
+div.header {
+    background-image: none;
+    background-color: white;
+}
+
+
+h2.memtitle, table.memname {
+    font-family: Courier New, sans-serif;
+    color: black;
+}
+
+ul.sm-dox a {
+    background-image: none;
+    color: black;
+    text-shadow: none;
+     font-family: Helvetica, sans-serif;
+}
+
+ul.sm-dox {
+    background-image: none;
+    text-shadow: none;
+    border-bottom: 1px solid #d9e1e2;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+ul.sm-dox a:hover {
+    text-shadow: none;
+    font-family: Helvetica, sans-serif;
+    background-image: none;
+    background-color: #3FC4C2;
+}
+
+div.sm-dox {
+    background-image: none;
+}
+
+

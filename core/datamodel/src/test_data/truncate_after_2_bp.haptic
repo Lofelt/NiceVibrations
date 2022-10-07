@@ -1,0 +1,45 @@
+{
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "metadata": {
+        "editor": "Lofelt GmbH",
+        "author": "",
+        "source": "",
+        "project": "",
+        "tags": [],
+        "description": ""
+    },
+    "signals": {
+        "continuous": {
+            "envelopes": {
+                "amplitude": [
+                    {
+                        "time": 0,
+                        "amplitude": 0.1
+                    },
+                    {
+                        "time": 0.5,
+                        "amplitude": 0.2,
+                        "emphasis": {
+                            "amplitude": 0.6,
+                            "frequency": 0.7
+                        }
+                    }
+                ],
+                "frequency": [
+                    {
+                        "time": 0,
+                        "frequency": 0.1
+                    },
+                    {
+                        "time": 0.5,
+                        "frequency": 0.2
+                    }
+                ]
+            }
+        }
+    }
+}

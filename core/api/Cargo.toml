@@ -1,0 +1,24 @@
+[package]
+name = "api"
+version = "1.3.4"
+authors = ["João Freire <joao@lofelt.com>", "Thomas McGuire <thomas@lofelt.com>", "Tomash Ghz <tomash@lofelt.com>"]
+edition = "2018"
+
+[lib]
+name = "lofelt_sdk"
+crate_type = ["staticlib", "cdylib"]
+
+[dependencies]
+lib = {path = "../lib"}
+
+[target.'cfg(target_os="android")'.dependencies]
+jni = { version = "0.17", default-features = false }
+log-panics = "2.0"
+android_logger = "0.9"
+log = "0.4"
+
+[target.'cfg(not(target_os="android"))'.dependencies]
+env_logger = "0.8"
+
+[build-dependencies]
+cbindgen = "0.13.2"

@@ -1,0 +1,81 @@
+{
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "metadata": {
+        "author": "",
+        "editor": "",
+        "source": "",
+        "project": "",
+        "tags": [],
+        "description": ""
+    },
+    "signals": {
+        "continuous": {
+            "envelopes": {
+                "amplitude": [
+                    {
+                        "time": 0.0,
+                        "amplitude": 0.0
+                    },
+                    {
+                        "time": 5.0,
+                        "amplitude": 0.5,
+                        "emphasis": {
+                            "amplitude": 0.75,
+                            "frequency": 1.0
+                        }
+                    },
+                    {
+                        "time": 10.0,
+                        "amplitude": 1.0
+                    },
+                    {
+                        "time": 20.0,
+                        "amplitude": 0.0
+                    },
+                    {
+                        "time": 40.0,
+                        "amplitude": 1.0
+                    },
+                    {
+                        "time": 50.0,
+                        "amplitude": 0.0
+                    },
+                    {
+                        "time": 70.0,
+                        "amplitude": 1.0
+                    }
+                ],
+                "frequency": [
+                    {
+                        "time": 0.0,
+                        "frequency": 0.0
+                    },
+                    {
+                        "time": 10.0,
+                        "frequency": 1.0
+                    },
+                    {
+                        "time": 20.0,
+                        "frequency": 0.0
+                    },
+                    {
+                        "time": 40.0,
+                        "frequency": 1.0
+                    },
+                    {
+                        "time": 50.0,
+                        "frequency": 0.0
+                    },
+                    {
+                        "time": 70.0,
+                        "frequency": 1.0
+                    }
+                ]
+            }
+        }
+    }
+}

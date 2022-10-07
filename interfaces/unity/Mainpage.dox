@@ -1,0 +1,13 @@
+/*! \mainpage Overview
+ *
+ * This is the API documentation for Nice Vibrations, a Unity asset by
+ * Lofelt that provides haptic feedback for mobile devices
+ * and gamepads. See the \ref Lofelt.NiceVibrations namespace for a list of all classes available
+ * in the API.
+ *
+ * Read the <a href="https://github.com/Lofelt/NiceVibrations/wiki">
+ * online documentation</a> for an introduction and more high-level guide to Nice Vibrations.
+ *
+ * Get Nice Vibrations from <a href="https://github.com/Lofelt/NiceVibrations/releases">
+ * GitHub releases</a> or build it from source.
+ */

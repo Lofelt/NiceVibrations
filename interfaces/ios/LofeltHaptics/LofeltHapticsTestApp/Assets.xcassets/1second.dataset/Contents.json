@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "1second.haptic",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
