@@ -1,0 +1,40 @@
+# Builds, lints and tests the core and the internal apps.
+name: rust-core
+
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore:
+      - 'prototype**'
+
+jobs:
+  build-test-rust-core:
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash
+
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/cache@v2
+      with:
+        path: |
+          ~/.cargo/registry
+          ~/.cargo/git
+          target
+        key: rust-core-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+    - name: Install Rust 1.55.0 toolchain
+      uses: actions-rs/toolchain@v1
+      with:
+          toolchain: 1.55.0
+          override: true
+          components: rustfmt, clippy
+
+    - name: Run CI script
+      run: sh ci-rust-core.sh

@@ -1,0 +1,8 @@
+[package]
+name = "utils"
+version = "0.1.0"
+authors = ["James Kneafsey <james@lofelt.com>"]
+edition = "2018"
+
+[target.'cfg(target_os="android")'.dependencies]
+jni = { version = "0.17", default-features = false }

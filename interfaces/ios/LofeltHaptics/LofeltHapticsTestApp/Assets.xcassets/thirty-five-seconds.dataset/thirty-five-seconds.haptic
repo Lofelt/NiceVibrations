@@ -1,0 +1,97 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "metadata": {
+    "editor": "Lofelt GmbH",
+    "author": "",
+    "source": "",
+    "project": "",
+    "tags": [],
+    "description": ""
+  },
+  "signals": {
+    "continuous": {
+      "envelopes": {
+        "amplitude": [
+          {
+            "time": 0.0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 1.0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 2.0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 3.0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 4.0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 5.0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 20.0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 36.0,
+            "amplitude": 1.0
+          },
+          {
+            "time": 37.0,
+            "amplitude": 1.0
+          }
+        ],
+        "frequency": [
+          {
+            "time": 0,
+            "frequency": 0.0
+          },
+          {
+            "time": 1.0,
+            "frequency": 0.5
+          },
+          {
+            "time": 2.0,
+            "frequency": 0.2
+          },
+          {
+            "time": 3.0,
+            "frequency": 0.6
+          },
+          {
+            "time": 4.0,
+            "frequency": 1.0
+          },
+          {
+            "time": 9.0,
+            "frequency": 1.0
+          },
+          {
+            "time": 17.0,
+            "frequency": 0.0
+          },
+          {
+            "time": 36.0,
+            "frequency": 0.5
+          },
+          {
+            "time": 37.0,
+            "frequency": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

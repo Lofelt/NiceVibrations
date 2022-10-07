@@ -1,0 +1,33 @@
+{
+    "version": {
+        "major": 1,
+        "minor": 0,
+        "patch": 0
+    },
+    "signals": {
+        "continuous": {
+            "envelopes": {
+                "amplitude": [
+                    {
+                        "time": 0.0,
+                        "amplitude": 1.0
+                    },
+                    {
+                        "time": {duration},
+                        "amplitude": 1.0
+                    }
+                ],
+                "frequency": [
+                    {
+                        "time": 0,
+                        "frequency": 0.0
+                    },
+                    {
+                        "time": {duration},
+                        "frequency": 0.0
+                    }
+                ]
+            }
+        }
+    }
+}

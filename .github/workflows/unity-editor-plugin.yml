@@ -1,0 +1,36 @@
+# Builds the Unity Editor plugin on macOS and Windows
+name: unity-editor-plugin
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+
+jobs:
+  unity-editor-plugin:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v2
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: rust-core-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Install rustup macOS Apple Silicon target
+        run: rustup target add aarch64-apple-darwin
+        shell: bash
+
+      - name: Run CI script
+        run: sh ci-unity-editor-plugin.sh
+        shell: bash
+
+

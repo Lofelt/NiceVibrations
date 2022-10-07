@@ -1,0 +1,15 @@
+[package]
+name = "clip-players"
+version = "0.1.0"
+authors = ["Se Sneaky <se@sesneaky.com>", "Thomas McGuire <thomas@lofelt.com>", "Tomash Ghz <tomash@lofelt.com>", "João Freire <joao@lofelt.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4"
+crossbeam-channel = "0.5"
+utils = {path = "../core/utils"}
+datamodel = {path = "../core/datamodel"}
+
+[dev-dependencies]
+env_logger = "0.8"
+

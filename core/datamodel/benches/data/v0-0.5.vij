@@ -1,0 +1,44 @@
+{
+    "metadata": {
+        "editor": "Lofelt GmbH",
+        "format": "Additive",
+        "duration": 0.049931972789115646
+    },
+    "variation": {
+        "total gain": 0.0,
+        "partials": 0.0
+    },
+    "voices": {
+        "envelopes": [
+            [
+                {
+                    "time": 0.0,
+                    "amplitude": 0.013631321633282904
+                },
+                {
+                    "time": 0.0009070294784580499,
+                    "amplitude": 0.965535992828059
+                },
+                {
+                    "time": 0.049886621315192746,
+                    "amplitude": 0.35489308989997204
+                }
+            ],
+            [
+                {
+                    "time": 0.0,
+                    "amplitude": 0.8038471767934869
+                },
+                {
+                    "time": 0.049931972789115646,
+                    "amplitude": 0.4138736012265119
+                }
+            ]
+        ],
+        "bands": [],
+        "transients": [
+            [],
+            []
+        ]
+    }
+}

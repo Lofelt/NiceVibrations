@@ -1,0 +1,6 @@
+[hooks]
+pre-commit = "cargo fmt -- --check"
+pre-push = "./ci-rust-core.sh"
+
+[logging]
+verbose = true

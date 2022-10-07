@@ -1,0 +1,46 @@
+{
+  "metadata": {
+    "editor": "Lofelt GmbH",
+    "format": "additive",
+    "duration": 9.961360544217687
+  },
+  "variation": {
+    "total gain": 0.0,
+    "partials": 0.0
+  },
+  "voices": {
+    "envelopes": [
+      [
+        {
+          "time": 0.0,
+          "amplitude": 0.2
+        },
+        {
+          "time": 0.1,
+          "amplitude": 0.3
+        },
+        {
+          "time": 0.2,
+          "amplitude": 0.2
+        },
+        {
+          "time": 0.3,
+          "amplitude": 0.5
+        }
+		]
+	],
+    "bands": [],
+    "transients": [
+      [
+        {
+          "time": 0.1,
+          "amplitude": 1.0
+        },
+        {
+          "time": 0.76,
+          "amplitude": 1.0
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "metadata": {
+    "author": "andrew@lofelt.com",
+    "editor": "Lofelt Studio",
+    "source": "Award 1.wav",
+    "project": "Award 1",
+    "tags": [],
+    "description": ""
+  },
+  "signals": {
+    "continuous": {
+      "envelopes": {
+        "amplitude": [
+          {
+            "time": 0,
+            "amplitude": 0.10986463,
+            "emphasis": {
+              "amplitude": 0.13733079,
+              "frequency": 0.13733079
+            }
+          },
+          {
+            "time": 0.0010204081,
+            "amplitude": 0.13733079
+          },
+          {
+            "time": 0.01201814,
+            "amplitude": 0.52519286
+          },
+          {
+            "time": 0.053015873,
+            "amplitude": 0.46487224
+          },
+          {
+            "time": 0.059002265,
+            "amplitude": 0.64323366
+          },
+          {
+            "time": 0.07102041,
+            "amplitude": 0.6401495
+          },
+          {
+            "time": 0.07900227,
+            "amplitude": 0.5185357
+          },
+          {
+            "time": 0.08900227,
+            "amplitude": 0.7438167
+          },
+          {
+            "time": 0.10501134,
+            "amplitude": 0.5071727
+          },
+          {
+            "time": 0.12002268,
+            "amplitude": 0.5013771
+          },
+          {
+            "time": 0.1240136,
+            "amplitude": 0.6808917
+          },
+          {
+            "time": 0.14301588,
+            "amplitude": 0.4757209
+          },
+          {
+            "time": 0.15800454,
+            "amplitude": 0.7132401
+          },
+          {
+            "time": 0.17002267,
+            "amplitude": 0.59389853
+          },
+          {
+            "time": 0.1840136,
+            "amplitude": 0.61164725
+          },
+          {
+            "time": 0.19600907,
+            "amplitude": 0.4848396
+          },
+          {
+            "time": 0.20800453,
+            "amplitude": 0.7215152
+          },
+          {
+            "time": 0.21900226,
+            "amplitude": 0.557937
+          },
+          {
+            "time": 0.24002267,
+            "amplitude": 0.4747394
+          },
+          {
+            "time": 0.2510204,
+            "amplitude": 0.49489325
+          },
+          {
+            "time": 0.2570068,
+            "amplitude": 0.7079323
+          },
+          {
+            "time": 0.29900226,
+            "amplitude": 0.2941388
+          },
+          {
+            "time": 0.3170068,
+            "amplitude": 0.2647706
+          },
+          {
+            "time": 0.31800452,
+            "amplitude": 0.36751625
+          },
+          {
+            "time": 0.33800453,
+            "amplitude": 0.2600176
+          },
+          {
+            "time": 0.38501135,
+            "amplitude": 0.2786307
+          },
+          {
+            "time": 0.4010204,
+            "amplitude": 0.18144362
+          },
+          {
+            "time": 0.42501134,
+            "amplitude": 0.14689037
+          },
+          {
+            "time": 0.44600907,
+            "amplitude": 0.21291243
+          },
+          {
+            "time": 0.46201813,
+            "amplitude": 0.13906313
+          },
+          {
+            "time": 0.5293879103448274,
+            "amplitude": 0
+          },
+          {
+            "time": 0.96,
+            "amplitude": 0
+          }
+        ],
+        "frequency": [
+          {
+            "time": 0,
+            "frequency": 0.32290703
+          },
+          {
+            "time": 0.008707482,
+            "frequency": 0.45830125
+          },
+          {
+            "time": 0.037732422,
+            "frequency": 0.49636945
+          },
+          {
+            "time": 0.055147387,
+            "frequency": 0.41676614
+          },
+          {
+            "time": 0.089977324,
+            "frequency": 0.5800106
+          },
+          {
+            "time": 0.113197275,
+            "frequency": 0.62579364
+          },
+          {
+            "time": 0.12190475,
+            "frequency": 0.3416194
+          },
+          {
+            "time": 0.13641724,
+            "frequency": 0.19682209
+          },
+          {
+            "time": 0.14222223,
+            "frequency": 0.3308805
+          },
+          {
+            "time": 0.1509297,
+            "frequency": 0.1895402
+          },
+          {
+            "time": 0.19736962,
+            "frequency": 0.29087844
+          },
+          {
+            "time": 0.22058958,
+            "frequency": 0.15099466
+          },
+          {
+            "time": 0.2496145,
+            "frequency": 0.08343977
+          },
+          {
+            "time": 0.27283448,
+            "frequency": 0.11145025
+          },
+          {
+            "time": 0.29605442,
+            "frequency": 0.31076247
+          },
+          {
+            "time": 0.34249434,
+            "frequency": 0.26093072
+          },
+          {
+            "time": 0.3599093,
+            "frequency": 0.13103388
+          },
+          {
+            "time": 0.38312924,
+            "frequency": 0.13340199
+          },
+          {
+            "time": 0.38893422,
+            "frequency": 0.22598417
+          },
+          {
+            "time": 0.42666668,
+            "frequency": 0.33313313
+          },
+          {
+            "time": 0.44408163,
+            "frequency": 0.48599908
+          },
+          {
+            "time": 0.45278913,
+            "frequency": 0.30880123
+          },
+          {
+            "time": 0.47891155,
+            "frequency": 0.6317672
+          },
+          {
+            "time": 0.5079365,
+            "frequency": 0.17719619
+          },
+          {
+            "time": 0.528254,
+            "frequency": 0.24409609
+          },
+          {
+            "time": 0.53696144,
+            "frequency": 0.18008891
+          },
+          {
+            "time": 0.6066213,
+            "frequency": 0.014196219
+          },
+          {
+            "time": 0.62984127,
+            "frequency": 0.042938504
+          },
+          {
+            "time": 0.7082086,
+            "frequency": 0
+          },
+          {
+            "time": 0.93460315,
+            "frequency": 0
+          }
+        ]
+      }
+    }
+  }
+}

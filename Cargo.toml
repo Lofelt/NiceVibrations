@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "clip-players",
+    "core/api",
+    "core/lib",
+    "core/datamodel",
+    "apps/haptic2ahap",
+    "unity-editor-plugin",
+]
