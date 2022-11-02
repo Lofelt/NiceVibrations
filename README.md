@@ -2,6 +2,8 @@
 ![](https://github.com/Lofelt/NiceVibrations/workflows/android/badge.svg)
 ![](https://github.com/Lofelt/NiceVibrations/workflows/rust-core/badge.svg)
 
+![Nice Vibrations 4 Logo](https://github.com/Lofelt/NiceVibrations/wiki/assets/nice-vibrations-4-logo.png)
+
 # ℹ️ Contents
 
 - [ℹ️ Contents](#ℹ️-contents)
