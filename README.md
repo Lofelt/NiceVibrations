@@ -2,7 +2,7 @@
 ![](https://github.com/Lofelt/NiceVibrations/workflows/android/badge.svg)
 ![](https://github.com/Lofelt/NiceVibrations/workflows/rust-core/badge.svg)
 
-![Nice Vibrations 4 Logo](media/nice-vibrations-lofelt-logo-yellow.png)
+![Nice Vibrations 4 Logo](media/nice-vibrations-lofelt-logo-red-yellow.png)
 
 # ℹ️ Contents
 
