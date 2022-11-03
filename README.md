@@ -2,7 +2,7 @@
 ![](https://github.com/Lofelt/NiceVibrations/workflows/android/badge.svg)
 ![](https://github.com/Lofelt/NiceVibrations/workflows/rust-core/badge.svg)
 
-![Nice Vibrations 4 Logo](https://github.com/Lofelt/NiceVibrations/wiki/assets/nice-vibrations-4-logo.png)
+![Nice Vibrations 4 Logo](media/nice-vibrations-lofelt-logo-yellow.png)
 
 # ℹ️ Contents
 
@@ -324,3 +324,4 @@ contributors were:
 - [Tomash Ghzegovsky](https://github.com/ghztomash)
 - [Thomas Mcguire](https://github.com/tmcguire)
 - [Ian Hobson](https://github.com/irh)
+- [Renaud Forestié](https://github.com/reunono)
