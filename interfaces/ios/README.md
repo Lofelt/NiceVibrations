@@ -31,7 +31,7 @@ This folder has the iOS Framework project containing source code for the Lofelt 
 
 # Setting up the Development Environment
 
-- ⚠️ Make sure you have set Rust's 1.55 toolchain as the default toolchain. Currently, building for iOS requires Rust 1.55 toolchain.
+- ⚠️ Make sure you have set Rust's 1.56 toolchain as the default toolchain. Currently, building for iOS requires Rust 1.56 toolchain.
 
 - Install cargo-lipo:
 
