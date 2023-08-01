@@ -78,10 +78,10 @@ jobs:
           brew install rename doxygen graphviz
           echo PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH" >> $GITHUB_ENV
 
-    - name: Install Rust 1.56.0 toolchain
+    - name: Install Rust 1.60.0 toolchain
       uses: actions-rs/toolchain@v1
       with:
-          toolchain: 1.56.0
+          toolchain: 1.60.0
           override: true
           components: rustfmt, clippy
 
