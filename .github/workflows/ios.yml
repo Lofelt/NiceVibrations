@@ -34,7 +34,7 @@ jobs:
       run: cargo install cargo-lipo
 
     - name: Install rustup iOS targets
-      run: rustup target add aarch64-apple-ios x86_64-apple-ios
+      run: rustup target add aarch64-apple-ios x86_64-apple-ios aarch64-apple-ios-sim
 
     - name: Install bitcode-enabled Rust iOS toolchain
       run: |
