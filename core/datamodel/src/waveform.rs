@@ -47,8 +47,7 @@ impl Waveform {
                 // as the rounding error (timing_error_ms) is larger than 1ms, a timing
                 // correction (timing_error_ms) is added to the duration to reduce the
                 // rounding error.
-                let timing_error_ms =
-                    (breakpoint_a.time - accumulated_duration / 1000.0) * 1000.0;
+                let timing_error_ms = (breakpoint_a.time - accumulated_duration / 1000.0) * 1000.0;
                 let duration_ms = ((duration * 1000.0) + timing_error_ms).round() as i64;
 
                 if duration_ms > 0 {
