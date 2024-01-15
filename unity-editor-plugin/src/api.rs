@@ -91,7 +91,7 @@ pub extern "C" fn nv_plugin_convert_haptic_to_gamepad_rumble(
 /// created with nv_plugin_convert_haptic_to_gamepad_rumble().
 #[no_mangle]
 pub unsafe extern "C" fn nv_plugin_destroy(gamepad_rumble: *mut GamepadRumble) {
-    Box::from_raw(gamepad_rumble);
+    let _ = Box::from_raw(gamepad_rumble);
 }
 
 /// Returns the number of entries in the GamepadRumble.

@@ -94,7 +94,7 @@ impl HapticsController {
 
     /// Sets the frequency shift of the loaded clip
     pub fn set_frequency_shift(&mut self, shift: f32) -> Result<(), Error> {
-        if shift.is_nan() || shift.is_infinite() || shift < -1.0 || shift > 1.0 {
+        if shift.is_nan() || shift.is_infinite() || !(-1.0..=1.0).contains(&shift) {
             return Err(Error::new(&format!(
                 "Unable to apply frequency shift {}, needs to be between -1 and 1",
                 shift
