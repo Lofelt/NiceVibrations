@@ -1,5 +1,5 @@
 # This script is invoked from Xcode during a pre-build phase for LofeltHaptics.
-# Copyright (c) Meta Platforms, Inc. and affiliates. 
+# Copyright (c) Meta Platforms, Inc. and affiliates.
 # It relies on environment variables to be set from Xcode, so it isn't intended to be
 # invoked directly, but it's exposed here as a separate file for easy editing.
 
@@ -7,15 +7,6 @@
 export PATH="$HOME/.cargo/bin:$PATH"
 # cd to the workspace root
 cd ../../../
-
-# Work around cargo-lipo linker errors on Big Sur
-# Note that this workaround doesn't work with Rust 1.48,
-# so if you're running into linker issues then try upgrading to 1.49 or later.
-if [ "${MAC_OS_X_VERSION_MAJOR}" -ge "110000" ]; then
-  # See https://github.com/TimNN/cargo-lipo/issues/41
-  SDKROOT=`xcrun --sdk macosx --show-sdk-path`
-  export LIBRARY_PATH="$SDKROOT/usr/lib"
-fi
 
 # Use the ios-arm64 toolchain when the ENABLE_BITCODE flag is set.
 # We only need to enable bitcode when building the framework for distribution
