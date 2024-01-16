@@ -216,7 +216,7 @@ impl PlayerEventRecorder {
                 .push(rounded_event(Event::Frequency(event), 5));
         };
 
-        (*recording_data.lock().unwrap()).start_time = Instant::now();
+        (recording_data.lock().unwrap()).start_time = Instant::now();
         let callbacks = Callbacks {
             amplitude_event: Box::new(amplitude_event_callback),
             frequency_event: Box::new(frequency_event_callback),

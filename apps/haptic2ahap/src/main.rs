@@ -92,7 +92,7 @@ fn export_string_to_ahap_file(filename: &str, data: &str) -> Result<(), String> 
     let display = path.display();
 
     // Open a file in write-only mode
-    match File::create(&path) {
+    match File::create(path) {
         Err(e) => Err(format!("Couldn't create {}: {}", display, e)),
         Ok(mut file) => {
             // Write the ahap data string to `file`

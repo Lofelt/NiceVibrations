@@ -145,7 +145,7 @@ pub unsafe extern "C" fn lofelt_sdk_controller_destroy(
     controller: *mut LofeltSdkController,
 ) -> c_int {
     if !controller.is_null() {
-        Box::from_raw(controller);
+        let _ = Box::from_raw(controller);
         SUCCESS
     } else {
         set_error("Error destroying controller: \nController is null".to_string())

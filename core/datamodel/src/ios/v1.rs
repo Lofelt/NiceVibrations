@@ -373,17 +373,12 @@ pub struct ParameterCurve {
 }
 
 ///Core Haptics AHAP DynamicParameter data structure used in ParameterCurves
-#[derive(Debug, PartialEq, Clone, Serialize, Deserialize)]
+#[derive(Default, Debug, PartialEq, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub enum DynamicParameterId {
+    #[default]
     HapticIntensityControl,
     HapticSharpnessControl,
-}
-
-impl Default for DynamicParameterId {
-    fn default() -> Self {
-        DynamicParameterId::HapticIntensityControl
-    }
 }
 
 ///Core Haptics AHAP ParameterId used to describe the Event type.
