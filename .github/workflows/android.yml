@@ -28,10 +28,10 @@ jobs:
     - name: Install NDK version 21.3.6528147
       run: sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;21.3.6528147"
 
-    - name: Install Rust 1.60.0 toolchain
+    - name: Install Rust 1.65.0 toolchain
       uses: actions-rs/toolchain@v1
       with:
-          toolchain: 1.60.0
+          toolchain: 1.65.0
           override: true
           components: rustfmt, clippy
 
