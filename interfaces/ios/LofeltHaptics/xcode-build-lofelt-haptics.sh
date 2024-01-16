@@ -13,7 +13,7 @@ cd ../../../
 # so if you're running into linker issues then try upgrading to 1.49 or later.
 if [ "${MAC_OS_X_VERSION_MAJOR}" -ge "110000" ]; then
   # See https://github.com/TimNN/cargo-lipo/issues/41
-  SDKROOT=`xcrun --sdk macosx --show-sdk-path`
+  SDKROOT=`xcrun --sdk iphoneos --show-sdk-path`
   export LIBRARY_PATH="$SDKROOT/usr/lib"
 fi
 

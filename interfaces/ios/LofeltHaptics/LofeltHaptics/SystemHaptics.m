@@ -10,7 +10,7 @@ UIImpactFeedbackGenerator* heavyImpactFeedbackGenerator = nil;
 UIImpactFeedbackGenerator* rigidImpactFeedbackGenerator = nil;
 UIImpactFeedbackGenerator* softImpactFeedbackGenerator = nil;
 
-BOOL SystemHapticsInitialize()
+BOOL SystemHapticsInitialize(void)
 {
     selectionFeedbackGenerator = [[UISelectionFeedbackGenerator alloc] init];
     notificationFeedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];
@@ -27,7 +27,7 @@ BOOL SystemHapticsInitialize()
       rigidImpactFeedbackGenerator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleHeavy];
       softImpactFeedbackGenerator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleLight];
     }
-    
+
     if( !selectionFeedbackGenerator    ||
         !notificationFeedbackGenerator ||
         !lightImpactFeedbackGenerator  ||
@@ -41,7 +41,7 @@ BOOL SystemHapticsInitialize()
     }
 }
 
-void SystemHapticsRelease()
+void SystemHapticsRelease(void)
 {
     selectionFeedbackGenerator = nil;
     notificationFeedbackGenerator = nil;
@@ -158,5 +158,3 @@ void SystemHapticsTrigger(SystemHapticsTypes hapticType) {
             break;
     }
 }
-
-
