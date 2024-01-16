@@ -8,12 +8,13 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # cd to the workspace root
 cd ../../../
 
-if [[ -n "${DEVELOPER_SDK_DIR:-}" ]]; then
-  # Assume we're in Xcode, which means we're probably cross-compiling.
-  # In this case, we need to add an extra library search path for build scripts and proc-macros,
-  # which run on the host instead of the target.
-  # (macOS Big Sur does not have linkable libraries in /usr/lib/.)
-  export LIBRARY_PATH="${DEVELOPER_SDK_DIR}/MacOSX.sdk/usr/lib:${LIBRARY_PATH:-}"
+# Work around cargo-lipo linker errors on Big Sur
+# Note that this workaround doesn't work with Rust 1.48,
+# so if you're running into linker issues then try upgrading to 1.49 or later.
+if [ "${MAC_OS_X_VERSION_MAJOR}" -ge "110000" ]; then
+  # See https://github.com/TimNN/cargo-lipo/issues/41
+  SDKROOT=`xcrun --sdk macosx --show-sdk-path`
+  export LIBRARY_PATH="$SDKROOT/usr/lib"
 fi
 
 # Use the ios-arm64 toolchain when the ENABLE_BITCODE flag is set.
