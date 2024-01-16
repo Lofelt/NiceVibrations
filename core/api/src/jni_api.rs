@@ -286,7 +286,9 @@ pub extern "system" fn Java_com_lofelt_haptics_LofeltHaptics_create(
 
 fn destroy_inner(controller_handle: jlong) -> Result<(), lib::Error> {
     let controller = get_controller(controller_handle)?;
-    unsafe { let _ = Box::from_raw(controller); };
+    unsafe {
+        let _ = Box::from_raw(controller);
+    };
     Ok(())
 }
 
