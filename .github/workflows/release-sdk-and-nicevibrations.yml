@@ -36,7 +36,7 @@ jobs:
     - name: Run CI script
       run: sh ci-unity-editor-plugin.sh
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: unity-editor-plugins-folder
         path: |
