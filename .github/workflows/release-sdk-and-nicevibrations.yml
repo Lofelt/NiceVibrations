@@ -36,7 +36,7 @@ jobs:
     - name: Run CI script
       run: sh ci-unity-editor-plugin.sh
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: unity-editor-plugins-folder
         path: |
@@ -63,7 +63,7 @@ jobs:
     # This step moves the Unity Editor plugin dynamic libraries into the right folder for creating
     # the Nice Vibrations asset package later in the workflow.
     - name: Get Unity Editor Plugin artifacts
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v4.1.7
       with:
         name: unity-editor-plugins-folder
         path: interfaces/unity/NiceVibrations/Assets/NiceVibrations/Plugins/
