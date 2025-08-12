@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 17
@@ -14,7 +14,7 @@ android {
         // broke the CI, as the sdkmanager, used to install the NDK on the CI,
         // is not compatible with Java 11.
         //noinspection OldTargetApi
-        targetSdkVersion 31
+        targetSdkVersion 34
 
         versionCode 1
         versionName "1.3.4"
@@ -26,7 +26,7 @@ android {
     // Specifying the version of the NDK is needed because otherwise the Rust
     // plugin doesn't find the NDK. The actual version doesn't matter, any would do.
     // See https://github.com/mozilla/rust-android-gradle/issues/29.
-    android.ndkVersion "21.3.6528147"
+    ndkVersion "29.0.13846066"
 
     buildTypes {
         release {
@@ -138,6 +138,17 @@ afterEvaluate {
             productFlavor += "${it.name.capitalize()}"
         }
         def buildType = "${variant.buildType.name.capitalize()}"
-        tasks["generate${productFlavor}${buildType}Assets"].dependsOn(tasks["cargoBuild"])
+        tasks["generate${productFlavor}${buildType}Assets"].dependsOn(tasks.matching { it.name.startsWith("cargoBuild") })
+    }
+}
+
+afterEvaluate {
+    def cargoTasks = tasks.matching { it.name.startsWith("cargoBuild") }
+    // Merge/packaging task names vary a bit; wire broadly and lazily.
+    tasks.matching { it.name.toLowerCase().contains("merge") && it.name.toLowerCase().contains("jnilib") }.configureEach {
+        dependsOn(cargoTasks)
+    }
+    tasks.matching { it.name.toLowerCase().startsWith("bundle") && it.name.toLowerCase().endsWith("aar") }.configureEach {
+        dependsOn(cargoTasks)
     }
 }
